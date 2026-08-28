@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesiones — Investigación en Urología</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #FAFAF8;
+            color: #1F2937;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2C5A87 0%, #1a3a57 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: calc(100vh - 200px);
+        }
+        .sidebar {
+            width: 280px;
+            background-color: white;
+            border-right: 1px solid #E5E7EB;
+            padding: 1.5rem 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 200px);
+            position: sticky;
+            top: 0;
+        }
+        .sidebar-module {
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .module-title {
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            font-family: 'DM Sans', sans-serif;
+            color: #2C5A87;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+        .module-title:hover {
+            background-color: #F0F3F6;
+        }
+        .module-indicator {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #D97555;
+            margin-right: 0.5rem;
+        }
+        .module-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .module-toggle.open {
+            transform: rotate(180deg);
+        }
+        .session-list {
+            display: none;
+            background-color: #F8F9FA;
+        }
+        .session-list.open {
+            display: block;
+        }
+        .session-item {
+            padding: 0.75rem 1.5rem;
+            padding-left: 2.5rem;
+            cursor: pointer;
+            border-left: 2px solid transparent;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .session-item:hover {
+            background-color: #E8F1F8;
+            border-left-color: #2C5A87;
+        }
+        .session-item.active {
+            background-color: #E8F1F8;
+            border-left-color: #2C5A87;
+            color: #2C5A87;
+            font-weight: 600;
+        }
+        .content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 200px);
+        }
+        .session-content {
+            background: white;
+            border-radius: 8px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 4px solid #2C5A87;
+        }
+        .session-content h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.8rem;
+            color: #2C5A87;
+            margin-bottom: 1rem;
+        }
+        .session-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #E5E7EB;
+            padding-bottom: 1rem;
+        }
+        .meta-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #2C5A87;
+        }
+        .section-block {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background-color: #F8F9FA;
+            border-radius: 6px;
+            border-left: 3px solid #4A9B8E;
+        }
+        .section-block h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.1rem;
+            color: #1F2937;
+            margin-bottom: 0.75rem;
+        }
+        .section-block ul, .section-block ol {
+            margin-left: 1.5rem;
+            color: #666;
+        }
+        .section-block li {
+            margin-bottom: 0.5rem;
+        }
+        .nav-top {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .nav-top a {
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #2C5A87;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .nav-top a:hover {
+            background-color: #2C5A87;
+            color: white;
+        }
+        .nav-top a.active {
+            background-color: #2C5A87;
+            color: white;
+        }
+        footer {
+            background-color: #2C5A87;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+        .toggle-sidebar {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            background: #2C5A87;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 100;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                max-height: none;
+                border-right: none;
+                border-bottom: 1px solid #E5E7EB;
+            }
+            .content {
+                max-height: none;
+                padding: 1.5rem;
+            }
+            .session-content {
+                padding: 1.5rem;
+            }
+            .session-content h2 {
+                font-size: 1.4rem;
+            }
+            .toggle-sidebar {
+                display: block;
+            }
+            .sidebar.hidden {
+                display: none;
+            }
+            .session-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-sidebar" onclick="toggleSidebar()">☰ Sesiones</button>
+
+    <header>
+        <h1>Sesiones del Curso</h1>
+        <p>15 semanas organizadas en 5 módulos temáticos</p>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Módulo 1 -->
+            <div class="sidebar-module">
+                <div class="module-title" onclick="toggleModule(this)">
+                    <span><span class="module-indicator"></span>Módulo 1: Fundamentos (Sem 1–3)</span>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="session-list open">
+                    <div class="session-item active" onclick="loadSession(1, 'L')">Sem 1 (L) — Intro: Proceso Científico</div>
+                    <div class="session-item" onclick="loadSession(1, 'J')">Sem 1 (J) — PICO: Estructura</div>
+                    <div class="session-item" onclick="loadSession(2, 'L')">Sem 2 (L) — PubMed & Búsqueda</div>
+                    <div class="session-item" onclick="loadSession(2, 'J')">Sem 2 (J) — Rayyan & Gestión</div>
+                    <div class="session-item" onclick="loadSession(3, 'L')">Sem 3 (L) — Síntesis PICO</div>
+                    <div class="session-item" onclick="loadSession(3, 'J')">Sem 3 (J) — Presentaciones</div>
+                </div>
+            </div>
+
+            <!-- Módulo 2 -->
+            <div class="sidebar-module">
+                <div class="module-title" onclick="toggleModule(this)">
+                    <span><span class="module-indicator"></span>Módulo 2: Diseños (Sem 4–7)</span>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="session-list">
+                    <div class="session-item" onclick="loadSession(4, 'L')">Sem 4 (L) — Intro Diseños</div>
+                    <div class="session-item" onclick="loadSession(4, 'J')">Sem 4 (J) — Estudios Descriptivos</div>
+                    <div class="session-item" onclick="loadSession(5, 'L')">Sem 5 (L) — Cohorte</div>
+                    <div class="session-item" onclick="loadSession(5, 'J')">Sem 5 (J) — Caso-Control</div>
+                    <div class="session-item" onclick="loadSession(6, 'L')">Sem 6 (L) — RCT</div>
+                    <div class="session-item" onclick="loadSession(6, 'J')">Sem 6 (J) — RCT Análisis Profundo</div>
+                    <div class="session-item" onclick="loadSession(7, 'L')">Sem 7 (L) — Revisiones Sistemáticas</div>
+                    <div class="session-item" onclick="loadSession(7, 'J')">Sem 7 (J) — Matriz Comparativa</div>
+                </div>
+            </div>
+
+            <!-- Módulo 3 -->
+            <div class="sidebar-module">
+                <div class="module-title" onclick="toggleModule(this)">
+                    <span><span class="module-indicator"></span>Módulo 3: Ética (Sem 8–10)</span>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="session-list">
+                    <div class="session-item" onclick="loadSession(8, 'L')">Sem 8 (L) — Principios Belmont</div>
+                    <div class="session-item" onclick="loadSession(8, 'J')">Sem 8 (J) — Consentimiento Informado</div>
+                    <div class="session-item" onclick="loadSession(9, 'L')">Sem 9 (L) — Comités de Ética</div>
+                    <div class="session-item" onclick="loadSession(9, 'J')">Sem 9 (J) — Sesión Simulada</div>
+                    <div class="session-item" onclick="loadSession(10, 'L')">Sem 10 (L) — Integridad</div>
+                    <div class="session-item" onclick="loadSession(10, 'J')">Sem 10 (J) — Análisis de Casos</div>
+                </div>
+            </div>
+
+            <!-- Módulo 4 -->
+            <div class="sidebar-module">
+                <div class="module-title" onclick="toggleModule(this)">
+                    <span><span class="module-indicator"></span>Módulo 4: Appraisal (Sem 11–13)</span>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="session-list">
+                    <div class="session-item" onclick="loadSession(11, 'L')">Sem 11 (L) — CASP: Herramienta</div>
+                    <div class="session-item" onclick="loadSession(11, 'J')">Sem 11 (J) — CASP Práctico</div>
+                    <div class="session-item" onclick="loadSession(12, 'L')">Sem 12 (L) — Niveles de Evidencia</div>
+                    <div class="session-item" onclick="loadSession(12, 'J')">Sem 12 (J) — Estudios → Guías</div>
+                    <div class="session-item" onclick="loadSession(13, 'L')">Sem 13 (L) — Bioestadística Conceptual</div>
+                    <div class="session-item" onclick="loadSession(13, 'J')">Sem 13 (J) — Journal Club</div>
+                </div>
+            </div>
+
+            <!-- Módulo 5 -->
+            <div class="sidebar-module">
+                <div class="module-title" onclick="toggleModule(this)">
+                    <span><span class="module-indicator"></span>Módulo 5: Capstone (Sem 14–15)</span>
+                    <span class="module-toggle">▼</span>
+                </div>
+                <div class="session-list">
+                    <div class="session-item" onclick="loadSession(14, 'L')">Sem 14 (L) — Componentes Protocolo</div>
+                    <div class="session-item" onclick="loadSession(14, 'J')">Sem 14 (J) — Trabajo en Equipos</div>
+                    <div class="session-item" onclick="loadSession(15, 'L')">Sem 15 (L) — Presentaciones</div>
+                    <div class="session-item" onclick="loadSession(15, 'J')">Sem 15 (J) — Cierre</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="nav-top">
+                <a href="index.html">Inicio</a>
+                <a href="sesiones.html" class="active">Sesiones</a>
+                <a href="rubricas.html">Rúbricas</a>
+                <a href="plantillas.html">Plantillas</a>
+                <a href="quiz-disenos.html">Quiz</a>
+            </div>
+
+            <div class="session-content" id="session-display">
+                <h2>Semana 1 (Lunes) — Introducción: Proceso Científico</h2>
+                <div class="session-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Módulo:</span>
+                        <span>Fundamentos</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Horario:</span>
+                        <span>Lunes 10:00–11:00</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Formato:</span>
+                        <span>Clase magistral + discusión</span>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h3>📌 Objetivos</h3>
+                    <ul>
+                        <li>Entender el proceso científico y su rol en medicina.</li>
+                        <li>Diferenciar pregunta clínica de pregunta investigativa.</li>
+                        <li>Introducción a PICO como herramienta de formulación.</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>📚 Temas Clave</h3>
+                    <ul>
+                        <li><strong>Pregunta narrativa:</strong> ¿Cómo saben los urólogos lo que saben?</li>
+                        <li><strong>Ciencia clínica vs. investigación:</strong> Cuándo y por qué surge la pregunta de investigación.</li>
+                        <li><strong>PICO (Patient, Intervention, Comparison, Outcome):</strong> Estructura para formular preguntas contestables.</li>
+                        <li><strong>Ejemplos en urología:</strong> Comparación de preguntas clínicas vs. investigativas en casos reales.</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>💼 Actividades Sincrónicas</h3>
+                    <ul>
+                        <li>Exposición interactiva sobre proceso científico.</li>
+                        <li>Análisis colectivo de pregunta clínica: ¿cómo transformarla en investigativa?</li>
+                        <li>Discusión: barreras para investigación en medicina de pregrado.</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>📖 Trabajo Independiente (≈3–4 horas)</h3>
+                    <ul>
+                        <li>Lectura: Capítulo introductorio sobre proceso científico (20 min).</li>
+                        <li>Video: "Qué es una pregunta PICO" (15 min).</li>
+                        <li>Tarea inicial: Formular 3 preguntas clínicas de urología que te interesan y traerlas a Sem 1 (J).</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>📝 Entregable</h3>
+                    <p>Ninguno formal esta semana; esta es introducción. Prepararse para banco PICO (Sem 3).</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p><strong>Electiva Profesional en Medicina (617017M) — Investigación en Urología</strong></p>
+        <p>Universidad del Valle | Semestres 2024+</p>
+    </footer>
+
+    <script>
+        const sessionData = {
+            '1-L': {
+                title: 'Semana 1 (Lunes) — Introducción: Proceso Científico',
+                module: 'Fundamentos',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase magistral + discusión',
+                objetivos: ['Entender el proceso científico y su rol en medicina.', 'Diferenciar pregunta clínica de pregunta investigativa.', 'Introducción a PICO como herramienta.'],
+                temas: ['Pregunta narrativa: ¿Cómo saben los urólogos lo que saben?', 'Ciencia clínica vs. investigación', 'PICO: estructura básica', 'Ejemplos en urología'],
+                actividades: ['Exposición interactiva sobre proceso científico.', 'Análisis colectivo de pregunta clínica.', 'Discusión: barreras para investigación.'],
+                lectura: 'Capítulo introductorio (20 min), Video PICO (15 min)',
+                tarea: 'Formular 3 preguntas clínicas de interés.',
+                entregable: 'Ninguno formal esta semana.'
+            },
+            '1-J': {
+                title: 'Semana 1 (Jueves) — PICO: Estructura y Ejemplos',
+                module: 'Fundamentos',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Taller interactivo',
+                objetivos: ['Dominar estructura PICO con ejemplos.', 'Práctica en formulación de preguntas.', 'Introducción a P, I, C, O separadamente.'],
+                temas: ['P (Patient/Población): definición y criterios.', 'I (Intervention/Intervención): específico vs. vago.', 'C (Comparison/Comparador): cuándo aplica.', 'O (Outcome/Resultado): medible y clínicamente relevante.'],
+                actividades: ['Trabajo en parejas: reformular preguntas clínicas en PICO.', 'Retroalimentación en vivo.', 'Ejemplos urológicos: cáncer de próstata, cálculos renales.'],
+                lectura: 'Artículo: "PICO Framework Explained" (30 min)',
+                tarea: 'Traer 3 preguntas PICO propias para Sem 2.',
+                entregable: 'Ninguno. Preparación para Sem 3 (Banco PICO).'
+            },
+            '2-L': {
+                title: 'Semana 2 (Lunes) — Búsqueda Bibliográfica: PubMed',
+                module: 'Fundamentos',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Taller demostrativo',
+                objetivos: ['Dominar búsqueda en PubMed.', 'Entender términos MeSH y booleano.', 'Estrategias de filtrado eficiente.'],
+                temas: ['PubMed: interfaz, funciones básicas.', 'MeSH (Medical Subject Headings): cómo encontrarlos.', 'Operadores booleano: AND, OR, NOT.', 'Truncado y campos de búsqueda.', 'Filtros: año, tipo estudio, idioma.'],
+                actividades: ['Demo en vivo de búsqueda en PubMed.', 'Práctica guiada: estudiantes buscan en sus preguntas PICO.', 'Resolución de problemas: ¿por qué demasiados o pocos resultados?'],
+                lectura: 'Tutorial PubMed (20 min)',
+                tarea: 'Ejecutar 2 búsquedas completas en tus preguntas PICO.',
+                entregable: 'Ninguno formal.'
+            },
+            '2-J': {
+                title: 'Semana 2 (Jueves) — Rayyan & Gestión de Referencias',
+                module: 'Fundamentos',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Taller hands-on',
+                objetivos: ['Importar artículos a Rayyan.', 'Organizar referencias.', 'Preparación para screening (Sem 7).'],
+                temas: ['Rayyan: registro, interfaz.', 'Importación de resultados PubMed.', 'Screening de títulos/abstracts.', 'Datos adicionales: autores, año, revista.'],
+                actividades: ['Paso a paso: crear cuenta Rayyan.', 'Importar 10+ artículos de búsqueda.', 'Práctica: cribado colaborativo (mock review).'],
+                lectura: 'Tutorial Rayyan (15 min)',
+                tarea: 'Importar todos tus artículos a Rayyan.',
+                entregable: 'Ninguno. Preparación para Banco PICO.'
+            },
+            '3-L': {
+                title: 'Semana 3 (Lunes) — Síntesis: PICO Refinado',
+                module: 'Fundamentos',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Trabajo colaborativo',
+                objetivos: ['Refinar preguntas PICO.', 'Revisar búsquedas en equipos.', 'Preparación para entrega.'],
+                temas: ['Revisión de criterios PICO.', 'Errores comunes y cómo corregirlos.', 'Búsqueda iterativa: ajustes necesarios.'],
+                actividades: ['Trabajo en equipos: revisar PICO de compañeros.', 'Retroalimentación estructurada.', 'Ajustes finales.'],
+                lectura: 'Ninguna nueva.',
+                tarea: 'Finalizar Banco PICO para entrega Sem 3 (J).',
+                entregable: 'Banco de Preguntas PICO (15% de calificación final) — ENTREGA JUEVES'
+            },
+            '3-J': {
+                title: 'Semana 3 (Jueves) — Presentaciones de Preguntas PICO',
+                module: 'Fundamentos',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Peer-learning',
+                objetivos: ['Presentar y defender preguntas.', 'Aprender de ejemplos de compañeros.', 'Retroalimentación formativa.'],
+                temas: ['Presentación breve (2–3 min): pregunta PICO y búsqueda.', 'Preguntas de audiencia.', 'Feedback formativo.'],
+                actividades: ['Estudiantes presentan sus 3 mejores preguntas PICO.', 'Discusión colectiva.', 'Feedback del instructor (formativo).'],
+                lectura: 'Ninguna.',
+                tarea: 'Incorporar feedback para mejora futura.',
+                entregable: 'BANCO PICO DEBIDO HOY (15% calificación) — inicio Módulo 2'
+            },
+            '4-L': {
+                title: 'Semana 4 (Lunes) — Introducción a Diseños de Estudio',
+                module: 'Diseños',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase + casos',
+                objetivos: ['Visualizar espectro de diseños.', 'Entender observacional vs. experimental.', 'Introducción a estudios descriptivos.'],
+                temas: ['Espectro: Observacional → Experimental.', 'Descriptivos: transversal, serie de casos, reporte de caso.', 'Cuándo usar cada uno.', 'Ejemplo urológico: prevalencia incontinencia urinaria.'],
+                actividades: ['Mapa mental: espectro de diseños.', 'Caso real: estudio prevalencia.', 'Discusión: ventajas/limitaciones de descriptivo.'],
+                lectura: 'Capítulo 1–2 de "Study Designs in Epidemiology" (45 min)',
+                tarea: 'Leer 1 artículo descriptivo de urología.',
+                entregable: 'Ninguno.'
+            },
+            '4-J': {
+                title: 'Semana 4 (Jueves) — Estudios Descriptivos: Profundidad',
+                module: 'Diseños',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Caso real + taller',
+                objetivos: ['Analizar estudio transversal real.', 'Identificar fortalezas/limitaciones.', 'Preparación para matriz comparativa.'],
+                temas: ['Transversales: diseño, sesgos, análisis.', 'Serie de casos: cuándo útil.', 'Ejemplo detallado: incontinencia urinaria en Colombia.'],
+                actividades: ['Análisis en profundidad de un artículo transversal.', 'Taller: matriz fortalezas/limitaciones.', 'Discusión: ¿por qué se eligió este diseño?'],
+                lectura: 'Caso clínico: prevalencia estudio (30 min)',
+                tarea: 'Completar matriz for taller.',
+                entregable: 'Matriz parcial (input a Sem 7).'
+            },
+            '5-L': {
+                title: 'Semana 5 (Lunes) — Estudios de Cohorte',
+                module: 'Diseños',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase + análisis',
+                objetivos: ['Entender diseño cohorte prospectivo/retrospectivo.', 'Identificar sesgos en cohortes.', 'Ejemplo urológico: masas renales.'],
+                temas: ['Cohorte prospectivo vs. retrospectivo.', 'Riesgos relativos, diferencia de riesgo.', 'Sesgos: selección, seguimiento, información.', 'Ejemplo: cohorte pacientes con masas renales complejas.'],
+                actividades: ['Clase magistral con ejemplos.', 'Análisis en vivo de estudio cohorte.', 'Discusión: ¿cuándo preferir cohorte sobre caso-control?'],
+                lectura: 'Capítulo cohorte + 1 artículo modelo (1 hora)',
+                tarea: 'Leer estudio cohorte asignado.',
+                entregable: 'Ninguno.'
+            },
+            '5-J': {
+                title: 'Semana 5 (Jueves) — Estudios de Casos y Controles',
+                module: 'Diseños',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Clase + taller',
+                objetivos: ['Diseño casos-control vs. cohorte.', 'Cuándo es óptimo caso-control.', 'Odds ratio e interpretación.'],
+                temas: ['Casos-control: definición, selección.', 'Controles: criterios de selección.', 'Odds ratio (OR) vs. riesgo relativo (RR).', 'Sesgos específicos de caso-control (memoria, selección).'],
+                actividades: ['Comparación: cohorte vs. caso-control.', 'Caso práctico: seleccionar diseño óptimo.', 'Taller: análisis de caso-control.'],
+                lectura: 'Capítulo caso-control + ejemplo urológico (1 hora)',
+                tarea: 'Análisis comparativo: cohorte vs. caso-control.',
+                entregable: 'Ninguno formal.'
+            },
+            '6-L': {
+                title: 'Semana 6 (Lunes) — Ensayos Controlados Aleatorizados (RCT)',
+                module: 'Diseños',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase magistral',
+                objetivos: ['Entender RCT como estándar de oro.', 'Aleatorización y cegamiento.', 'Ejemplo: cáncer renal avanzado.'],
+                temas: ['RCT: definición, componentes.', 'Aleatorización: métodos, equilibrio.', 'Cegamiento: simple, doble, triple.', 'Análisis por intención de tratar (ITT).', 'Ejemplo urológico: comparar terapias cáncer renal.'],
+                actividades: ['Exposición sobre RCT.', 'Análisis de estudio RCT modelo.', 'Discusión: cuándo es RCT viable en urología?'],
+                lectura: 'Capítulo RCT + guía CONSORT summary (1 hora)',
+                tarea: 'Leer RCT asignado.',
+                entregable: 'Ninguno.'
+            },
+            '6-J': {
+                title: 'Semana 6 (Jueves) — RCT: Análisis Profundo y Errores Comunes',
+                module: 'Diseños',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Taller crítico',
+                objetivos: ['Identificar problemas en RCTs.', 'Sesgos en diseño y reporte.', 'Cómo detectar malos RCTs.'],
+                temas: ['Errores comunes: pérdida al seguimiento, quiebre de cegamiento, análisis múltiples.', 'Sesgos: selección, rendimiento, detección.', 'Interpretación crítica de resultados.', 'Herramienta Cochrane Risk of Bias.'],
+                actividades: ['Taller: identificar sesgos en un "mal" RCT.', 'Grupo: correcciones para diseño mejorado.', 'Discusión: implicaciones clínicas.'],
+                lectura: 'Artículo sobre "Red Flags in RCTs" (30 min)',
+                tarea: 'Completar Risk of Bias tool para un RCT.',
+                entregable: 'Matriz RCT analysis.'
+            },
+            '7-L': {
+                title: 'Semana 7 (Lunes) — Revisiones Sistemáticas y Meta-análisis',
+                module: 'Diseños',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase + prácticas Rayyan',
+                objetivos: ['Entender síntesis de evidencia.', 'Metodología de revisión sistemática.', 'Meta-análisis: cuándo y cómo.'],
+                temas: ['Revisión sistemática: protocolo, búsqueda.', 'Cribado: títulos, abstracts, full-text.', 'Extracción de datos.', 'Meta-análisis: heterogeneidad, forest plots.', 'PRISMA checklist.'],
+                actividades: ['Clase sobre revisiones sistemáticas.', 'Rayyan en vivo: importar, cribar estudios.', 'Lectura de forest plot.'],
+                lectura: 'Tutorial: "Systematic Reviews Explained" (1 hora)',
+                tarea: 'Simulación de cribado en Rayyan.',
+                entregable: 'Ninguno.'
+            },
+            '7-J': {
+                title: 'Semana 7 (Jueves) — Matriz Comparativa de Diseños',
+                module: 'Diseños',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Síntesis colaborativa',
+                objetivos: ['Integrar todos los diseños.', 'Comparación final.', 'Selección de diseño óptimo para diferentes preguntas.'],
+                temas: ['Resumen: fortalezas/limitaciones de cada diseño.', 'Niveles de evidencia.', 'Cuándo usar cada diseño: algoritmo de decisión.'],
+                actividades: ['Construcción colaborativa de matriz: descriptivo, cohorte, caso-control, RCT, revisión sistemática.', 'Juego: "¿Qué diseño para esta pregunta?"', 'Preparación para Módulo 3.'],
+                lectura: 'Ninguna nueva.',
+                tarea: 'Estudiar matriz — será útil para Quiz (Sem 15).',
+                entregable: 'Matriz completada (documento compartido).'
+            },
+            '8-L': {
+                title: 'Semana 8 (Lunes) — Principios Éticos de Belmont',
+                module: 'Ética',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase + casos',
+                objetivos: ['Principios Belmont: autonomía, beneficencia, justicia.', 'Consentimiento informado básico.', 'Casos de aplicación.'],
+                temas: ['Declaración de Belmont (1979): historia, contexto.', 'Autonomía: respetar decisiones.', 'Beneficencia: maximizar beneficio, minimizar daño.', 'Justicia: distribución equitativa.', 'Ejemplo urológico: screening cáncer vejiga en fumadores.'],
+                actividades: ['Exposición sobre Belmont.', 'Análisis colectivo de caso: ¿dónde se violan los principios?', 'Discusión: poblaciones vulnerables.'],
+                lectura: 'Resumen Declaración de Belmont (20 min), caso ético (20 min)',
+                tarea: 'Reflexión: ¿cuál principio más importante en tu campo?',
+                entregable: 'Ninguno.'
+            },
+            '8-J': {
+                title: 'Semana 8 (Jueves) — Consentimiento Informado',
+                module: 'Ética',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Discusión ética profunda',
+                objetivos: ['Elementos del consentimiento.', 'Competencia y vulnerabilidad.', 'Consentimiento en poblaciones de riesgo.'],
+                temas: ['Consentimiento informado: definición, elementos.', 'Información adecuada, comprensión, voluntariedad.', 'Poblaciones vulnerables: indígenas, rurales, menores.', 'Dilema: investigación en vulnerable ↔ potencial beneficio.'],
+                actividades: ['Análisis de caso real: consentimiento problemático.', 'Grupo: redactar consentimiento informado mejorado.', 'Discusión: ¿cómo asegurar verdadera comprensión?'],
+                lectura: 'ICMJE guidelines: consentimiento (30 min), caso (30 min)',
+                tarea: 'Redactar borrador consentimiento para protocolo futuro.',
+                entregable: 'Ninguno formal.'
+            },
+            '9-L': {
+                title: 'Semana 9 (Lunes) — Comités de Ética (CEI/CEIBA)',
+                module: 'Ética',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase + invitado',
+                objetivos: ['Rol del comité de ética.', 'Proceso de revisión.', 'Cómo someterser a comité.'],
+                temas: ['Comité de Ética en Investigación (CEI) / Comité de Ética, Bioética, Bioseguridad, Ambiental (CEIBA).', 'Composición del comité.', 'Documentos requeridos.', 'Timeline de revisión.', 'Aprobación condicional, rechazos, recursos.'],
+                actividades: ['Clase sobre estructura de comités.', 'Invitado (miembro del comité): Q&A.', 'Recorrido por documentos de protocolo.'],
+                lectura: 'Resolución 8430/1993 resumen (30 min), guía Univalle (20 min)',
+                tarea: 'Ninguna nueva.',
+                entregable: 'Ninguno.'
+            },
+            '9-J': {
+                title: 'Semana 9 (Jueves) — Sesión de Comité Simulada o Visita',
+                module: 'Ética',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Experiencial',
+                objetivos: ['Vivenciar proceso de revisión ética.', 'Preguntas típicas.', 'Argumentación ética.'],
+                temas: ['Simulación: protocolo débil, preguntas del comité.', 'Cómo responder objeciones.', 'Iteración: protocolo mejorado.'],
+                actividades: ['Simulación o visita real al comité CEI/CEIBA.', 'Estudiantes presentan protocolo ficticio.', 'Miembros comité hacen preguntas.', 'Feedback sobre argumentación ética.'],
+                lectura: 'Ninguna nueva.',
+                tarea: 'Reflexión: qué aprendí del proceso.',
+                entregable: 'Ninguno formal.'
+            },
+            '10-L': {
+                title: 'Semana 10 (Lunes) — Integridad en Investigación',
+                module: 'Ética',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Taller + casos',
+                objetivos: ['Reconocer y evitar plagio.', 'Entender LPU (Least Publishable Unit).', 'p-hacking y autocita inflada.'],
+                temas: ['Plagio: definición, formas.', 'Autocitación: cuándo apropiada, cuándo inflada.', 'LPU: presión por publicar vs. rigor.', 'p-hacking: análisis múltiples sin corrección.', 'Cómo citar correctamente.'],
+                actividades: ['Taller: identificar plagio en ejemplos.', 'Grupo: redactar párrafo citando correctamente.', 'Caso: protocolo con "datos duros" (p-hacking).', 'Solución propuesta.'],
+                lectura: '"Integrity in Research" artículo, ICMJE sobre autoría (1 hora)',
+                tarea: 'Estudiar casos de mala conducta real.',
+                entregable: 'Caso análisis (documento).'
+            },
+            '10-J': {
+                title: 'Semana 10 (Jueves) — Análisis de Casos Éticos (Entrega)',
+                module: 'Ética',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Peer-review',
+                objetivos: ['Presentar análisis ético.', 'Recibir retroalimentación.', 'Preparación para Protocolo.'],
+                temas: ['Caso 1 y 2: presentación breve (análisis escrito).', 'Discusión colectiva: ¿qué principios en juego?', 'Recomendaciones alternativas.'],
+                actividades: ['Estudiantes presentan análisis caso (3 min).', 'Preguntas y feedback de compañeros.', 'Revisión por pares: retroalimentación escrita.', 'Instructor proporciona feedback formativo.'],
+                lectura: 'Ninguna nueva.',
+                tarea: 'Incorporar feedback para mejora (si resubmite).',
+                entregable: 'ANÁLISIS ÉTICO (15% calificación) — ENTREGA HOY'
+            },
+            '11-L': {
+                title: 'Semana 11 (Lunes) — CASP: Herramienta de Appraisal',
+                module: 'Appraisal',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Taller de herramienta',
+                objetivos: ['Entender estructura CASP.', 'Cuándo usar cada versión (cohorte, caso-control, RCT).', 'Cómo completar correctamente.'],
+                temas: ['CASP (Critical Appraisal Skills Programme): historia, diseño.', 'CASP cohorte: 12 preguntas.', 'CASP caso-control: preguntas específicas.', 'CASP RCT: 13 preguntas clave.', 'Interpretación: CASP no da "puntuación", da panorama de validez.'],
+                actividades: ['Presentación de herramienta.', 'Descarga CASP, familiarización.', 'Demo: completar CASP para artículo modelo juntos.', 'Paso a paso, explicar cada pregunta.'],
+                lectura: 'Tutorial CASP online (30 min), download herramienta',
+                tarea: 'Descargar tus versiones CASP.',
+                entregable: 'Ninguno.'
+            },
+            '11-J': {
+                title: 'Semana 11 (Jueves) — CASP Práctico: Appraisal en Vivo',
+                module: 'Appraisal',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Trabajo guiado',
+                objetivos: ['Practicar CASP con artículo real.', 'Identificar fortalezas/limitaciones.', 'Justificar cada respuesta.'],
+                temas: ['Appraisal completo de 1 artículo cohorte.', 'Cómo argumentar "Sí", "No", "Parcialmente".', 'Sesgos específicos identificados en este artículo.'],
+                actividades: ['Artículo distribuido.', 'Estudiantes en parejas: completan CASP.', 'Instructor guía discusión.', 'Correcciones y clarificaciones.'],
+                lectura: 'Artículo asignado (~30 min lectura)',
+                tarea: 'Terminar CASP en casa, traer copia a Sem 12.',
+                entregable: 'CASP parcial (será más completo en Sem 13).'
+            },
+            '12-L': {
+                title: 'Semana 12 (Lunes) — Niveles de Evidencia y Grados de Recomendación',
+                module: 'Appraisal',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase + ejemplos',
+                objetivos: ['Entender jerarquía de evidencia.', 'GRADE vs. escala Oxford.', 'Cómo va evidencia → guía clínica.'],
+                temas: ['Pirámide de evidencia: reporte de caso → revisión sistemática.', 'GRADE: calidad de evidencia (alto, moderado, bajo, muy bajo).', 'Escala Oxford: niveles 1–5.', 'Grados de recomendación: fuerte vs. débil.', 'Ejemplo: screening cáncer próstata en guías EAU.'],
+                actividades: ['Construcción de pirámide de evidencia.', 'Análisis de guía clínica: cómo se usó evidencia.', 'Discusión: cuando hay discrepancia nivel evidencia ↔ recomendación.'],
+                lectura: 'GRADE handbook resumen, guía EAU screening (1 hora)',
+                tarea: 'Clasificar 5 artículos por nivel evidencia.',
+                entregable: 'Ninguno.'
+            },
+            '12-J': {
+                title: 'Semana 12 (Jueves) — De Estudios a Guías Clínicas',
+                module: 'Appraisal',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Análisis aplicado',
+                objetivos: ['Rastrear cómo estudio → recomendación.', 'Crítica de guías.', 'Brecha ciencia-práctica.'],
+                temas: ['Caso: EAU guidelines para screening prostate cancer.', 'Qué evidencia apoyó qué recomendación?', 'Qué cambió entre ediciones (2019 vs. 2023)?', 'Brecha: ¿por qué no siempre se sigue guía?'],
+                actividades: ['Lectura de sección de guía.', 'Análisis en grupos: mapear evidencia → recomendación.', 'Discusión: factores que limitan adherencia a guía.'],
+                lectura: 'Sección de guía EAU (~45 min)',
+                tarea: 'Ninguna nueva.',
+                entregable: 'Ninguno.'
+            },
+            '13-L': {
+                title: 'Semana 13 (Lunes) — Bioestadística Conceptual',
+                module: 'Appraisal',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Clase accesible',
+                objetivos: ['p-valor, intervalo confianza, tamaño efecto.', 'Sesgo vs. variabilidad aleatoria.', 'Errores tipo I/II conceptualmente.'],
+                temas: ['p-valor: lo que es y NO es.', 'Intervalo de confianza (IC 95%): interpretación.', 'Tamaño del efecto: cómo reporta investigador.', 'Significancia estadística ≠ significancia clínica.', 'Sesgo sistemático vs. error aleatorio.', 'Errores tipo I (alfa) y II (beta): conceptualmente.'],
+                actividades: ['Clase sin cálculos, solo conceptos.', 'Gráficos: IC, forest plots, curvas de sobrevida.', 'Interpretación: ¿qué dice este IC?'],
+                lectura: '"Statistics Without Math" capítulo, ejemplos (1 hora)',
+                tarea: 'Interpretar 3 tablas de resultados de artículos.',
+                entregable: 'Interpretaciones (documento).'
+            },
+            '13-J': {
+                title: 'Semana 13 (Jueves) — Journal Club: Presentaciones Estudiantes',
+                module: 'Appraisal',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Peer-teaching',
+                objetivos: ['Presentar appraisal crítico de artículos.', 'Defender puntos de vista.', 'Feedback entre pares.'],
+                temas: ['Cada estudiante: 3–4 min presentando appraisal + síntesis de 1 artículo.', 'CASP completado, síntesis crítica (lo que dicen, limitaciones, aplicabilidad).'],
+                actividades: ['Presentaciones orales: estudiantes.', 'Q&A de compañeros.', 'Instructor proporciona feedback.'],
+                lectura: 'Ninguna nueva.',
+                tarea: 'Incorporar feedback, completar síntesis escrita.',
+                entregable: 'RESEÑA CRÍTICA (20% calificación) — Appraisal + síntesis entrega HOY'
+            },
+            '14-L': {
+                title: 'Semana 14 (Lunes) — Componentes de un Protocolo de Investigación',
+                module: 'Capstone',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Taller con andamiaje',
+                objetivos: ['Entender estructura protocolo.', 'Escribir cada sección.', 'Ejemplo modelo.'],
+                temas: ['Secciones: Título, Pregunta PICO, Justificación, Objetivos, Métodos (diseño, población, intervención, medidas resultado), Ética, Cronograma, Referencias.', 'Normas de formato: 5–8 páginas, 1.5 espaciado, margen 1".', 'Ejemplo: protocolo mini bien escrito.'],
+                actividades: ['Presentación de estructura.', 'Análisis línea por línea del protocolo modelo.', 'Taller: estudiantes comienzan a escribir su protocolo con guía.', 'Feedback inmediato: ¿está en buen camino?'],
+                lectura: 'Protocolo modelo (30 min), guía ARRIVE si aplica (30 min)',
+                tarea: 'Borrador Preliminar: Pregunta PICO + Justificación (~2 páginas).',
+                entregable: 'Borrador inicial para feedback Sem 14 (J).'
+            },
+            '14-J': {
+                title: 'Semana 14 (Jueves) — Trabajo en Equipos + Feedback Formativo',
+                module: 'Capstone',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Taller colaborativo',
+                objetivos: ['Avanzar protocolo con feedback.', 'Revisión cruzada entre pares.', 'Preparación para presentación.'],
+                temas: ['Continuación: Métodos, Ética, Cronograma.', 'Revisión por pares: cada estudiante da feedback a compañero.', 'Instructor rotates, da feedback formativo detallado.'],
+                actividades: ['Estudiantes trabajan en protocolos propios.', 'Parejas intercambian borradores, leen, dan feedback escrito.', 'Instructor 1-a-1: mini-sesiones office hours (5 min cada uno).', 'Equipo prepara esquema visual para presentación.'],
+                lectura: 'Ninguna nueva.',
+                tarea: 'Incorporar todos los feedbacks recibidos. Protocolo casi final.',
+                entregable: 'Ninguno formal; borradores en progreso.'
+            },
+            '15-L': {
+                title: 'Semana 15 (Lunes) — Presentaciones Finales (Congreso Simulado)',
+                module: 'Capstone',
+                horario: 'Lunes 10:00–11:00',
+                formato: 'Congreso simulado',
+                objetivos: ['Presentar protocolo ante audiencia.', 'Responder preguntas.', 'Feedback final.'],
+                temas: ['Presentación 5–7 min: oral o póster.', 'Diapositivas o póster profesional.', 'Timing, voz clara, contacto visual.'],
+                actividades: ['Cada estudiante (o pareja) presenta.', 'Compañeros y instructor: preguntas.', 'Feedback constructivo inmediato.'],
+                lectura: 'Ninguna.',
+                tarea: 'Prepararse para presentación.',
+                entregable: 'PRESENTACIÓN ORAL/PÓSTER (15% calificación) — ENTREGA HOY'
+            },
+            '15-J': {
+                title: 'Semana 15 (Jueves) — Cierre: Reflexión y Clausura',
+                module: 'Capstone',
+                horario: 'Jueves 17:00–18:00',
+                formato: 'Reflexión + cierre',
+                objetivos: ['Reflexión sobre aprendizaje.', 'Feedback sobre curso.', 'Próximas oportunidades.'],
+                temas: ['Revisión de objetivos al inicio vs. ahora.', 'Competencias adquiridas.', 'Reflexión: ¿cómo usarás esto en tu carrera?'],
+                actividades: ['Circle talk: cada estudiante reflexiona (2–3 min).', 'Instructor: resumen, qué se llevan.', 'Meta-evaluación del curso (encuesta breve).', 'Información sobre oportunidades: investigación en Univalle, mentorship, etc.'],
+                lectura: 'Ninguna.',
+                tarea: 'Completa encuesta evaluación.',
+                entregable: 'PROTOCOLO FINAL (25% calificación) — ENTREGA HOY'
+            }
+        };
+
+        function loadSession(week, day) {
+            const key = `${week}-${day}`;
+            const session = sessionData[key];
+            if (!session) return;
+
+            const display = document.getElementById('session-display');
+            const content = `
+                <h2>${session.title}</h2>
+                <div class="session-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Módulo:</span>
+                        <span>${session.module}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Horario:</span>
+                        <span>${session.horario}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Formato:</span>
+                        <span>${session.formato}</span>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h3>📌 Objetivos</h3>
+                    <ul>
+                        ${session.objetivos.map(obj => `<li>${obj}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>📚 Temas Clave</h3>
+                    <ul>
+                        ${session.temas.map(tema => `<li>${tema}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>💼 Actividades Sincrónicas</h3>
+                    <ul>
+                        ${session.actividades.map(act => `<li>${act}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>📖 Trabajo Independiente</h3>
+                    <p>${session.lectura}</p>
+                    <p><strong>Tarea:</strong> ${session.tarea}</p>
+                </div>
+
+                <div class="section-block">
+                    <h3>📝 Entregable</h3>
+                    <p>${session.entregable}</p>
+                </div>
+            `;
+            display.innerHTML = content;
+
+            // Update active session in sidebar
+            document.querySelectorAll('.session-item').forEach(el => el.classList.remove('active'));
+            document.querySelector(`.session-item[onclick="loadSession(${week}, '${day}')"]`).classList.add('active');
+        }
+
+        function toggleModule(el) {
+            const toggle = el.querySelector('.module-toggle');
+            const list = el.nextElementSibling;
+            toggle.classList.toggle('open');
+            list.classList.toggle('open');
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

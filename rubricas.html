@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rúbricas — Investigación en Urología</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #FAFAF8;
+            color: #1F2937;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2C5A87 0%, #1a3a57 100%);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #2C5A87;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .section h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.8rem;
+            color: #2C5A87;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .rubric-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .meta-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #2C5A87;
+        }
+        .meta-value {
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 1rem;
+            border: 1px solid #E5E7EB;
+        }
+        th {
+            font-weight: 600;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        /* Color-coded by performance level */
+        .level-exemplary {
+            background-color: #E8F5F0;
+            border-left: 3px solid #4A9B8E;
+        }
+        .level-proficient {
+            background-color: #E8F1F8;
+            border-left: 3px solid #2C5A87;
+        }
+        .level-developing {
+            background-color: #F5F5F0;
+            border-left: 3px solid #E5E7EB;
+        }
+        .level-insufficient {
+            background-color: #FFF5F0;
+            border-left: 3px solid #D97555;
+        }
+        th:first-child {
+            width: 20%;
+            background-color: #F0F3F6;
+        }
+        .criterion-name {
+            font-weight: 600;
+            color: #1F2937;
+        }
+        .summary-table {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+        .summary-table th {
+            background-color: #2C5A87;
+            color: white;
+        }
+        .summary-table td {
+            padding: 0.75rem 1rem;
+        }
+        .ponderacion {
+            text-align: center;
+            font-weight: 600;
+            color: #2C5A87;
+        }
+        .scale-section {
+            background-color: #F0F3F6;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .scale-section h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.2rem;
+            color: #2C5A87;
+            margin-bottom: 1rem;
+        }
+        .scale-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .scale-item:last-child {
+            border-bottom: none;
+        }
+        .scale-range {
+            font-weight: 600;
+            color: #2C5A87;
+        }
+        .scale-label {
+            color: #666;
+        }
+        .note-feedback {
+            background-color: #FFF9E6;
+            border-left: 3px solid #D97555;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        footer {
+            background-color: #2C5A87;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #2C5A87;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        nav a:hover {
+            background-color: #2C5A87;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .section { padding: 1.5rem; }
+            table { font-size: 0.85rem; }
+            th, td { padding: 0.75rem; }
+            .rubric-meta { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rúbricas de Evaluación</h1>
+        <p>Criterios para evaluar los 5 productos summativos del curso</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sesiones.html">Sesiones</a>
+            <a href="rubricas.html" style="background-color: #2C5A87; color: white;">Rúbricas</a>
+            <a href="plantillas.html">Plantillas</a>
+            <a href="quiz-disenos.html">Quiz</a>
+        </nav>
+
+        <!-- Rúbrica 1: Banco PICO -->
+        <div class="section">
+            <h2>Rúbrica 1: Banco de Preguntas PICO</h2>
+            <div class="rubric-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Entrega:</span>
+                    <span class="meta-value">Semana 3</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Ponderación:</span>
+                    <span class="meta-value">15%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Formato:</span>
+                    <span class="meta-value">≥3 preguntas en estructura PICO + búsqueda documentada</span>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criterio</th>
+                        <th class="level-exemplary">Excelente (4)</th>
+                        <th class="level-proficient">Bueno (3)</th>
+                        <th class="level-developing">Satisfactorio (2)</th>
+                        <th class="level-insufficient">Insuficiente (1)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criterion-name">Formulación PICO</td>
+                        <td class="level-exemplary">Las 3+ preguntas están bien estructuradas: P identificado claramente, I específica, C relevante, O medible y significativo clínicamente. Cada componente justificado.</td>
+                        <td class="level-proficient">2–3 preguntas bien estructuradas; algún componente PICO es vago pero interpretable.</td>
+                        <td class="level-developing">1–2 preguntas claramente PICO; otras parcialmente; falta claridad en ≥1 componente.</td>
+                        <td class="level-insufficient">Preguntas no estructuradas en PICO; componentes faltantes o mal interpretables.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Relevancia Clínica</td>
+                        <td class="level-exemplary">Preguntas abordan brechas reales de conocimiento en urología. Justificación clara de importancia.</td>
+                        <td class="level-proficient">Preguntas relevantes, aunque quizás menos novedosas. Alguna justificación.</td>
+                        <td class="level-developing">Preguntas marginalmente relevantes; podrían ser más específicas. Justificación débil.</td>
+                        <td class="level-insufficient">Preguntas no son clínicas o no aplicables a urología; justificación ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Búsqueda Documentada</td>
+                        <td class="level-exemplary">Estrategia PubMed clara (términos MeSH, booleano, filtros) por ≥2 preguntas. Número de resultados reportado. ≥1 artículo por pregunta seleccionado.</td>
+                        <td class="level-proficient">Búsqueda en PubMed para 2–3 preguntas; estrategia parcialmente documentada. Resultados encontrados.</td>
+                        <td class="level-developing">Búsqueda hecha, pero documentación mínima. Pocos artículos identificados.</td>
+                        <td class="level-insufficient">Búsqueda no documentada; evidencia mínima de trabajo.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Claridad y Comunicación</td>
+                        <td class="level-exemplary">Documento bien organizado, sin errores ortográficos. Cada pregunta acompañada de párrafo explicativo.</td>
+                        <td class="level-proficient">Documento organizado, pocos errores. Justificación presente pero breve.</td>
+                        <td class="level-developing">Documento desorganizado; errores frecuentes. Justificación mínima.</td>
+                        <td class="level-insufficient">Documento poco legible; errores abundantes; sin justificación.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Originalidad y Profundidad</td>
+                        <td class="level-exemplary">Preguntas reflejan pensamiento original; muestran curiosidad sobre práctica clínica urológica.</td>
+                        <td class="level-proficient">Preguntas muestran curiosidad; mayormente originales, aunque algunas convencionales.</td>
+                        <td class="level-developing">Preguntas convencionales, pocos muestran pensamiento profundo.</td>
+                        <td class="level-insufficient">Preguntas genéricas, no reflejan reflexión.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-feedback">
+                <strong>Nota de retroalimentación:</strong> Estas preguntas serán refinadas a lo largo del curso, especialmente durante el Módulo 2 y la Capstone. Enfatizar que es una fundación.
+            </div>
+        </div>
+
+        <!-- Rúbrica 2: Análisis Ético -->
+        <div class="section">
+            <h2>Rúbrica 2: Análisis de Casos Éticos</h2>
+            <div class="rubric-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Entrega:</span>
+                    <span class="meta-value">Semana 10</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Ponderación:</span>
+                    <span class="meta-value">15%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Formato:</span>
+                    <span class="meta-value">≥2 reportes de análisis ético (2–3 pág c/u)</span>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criterio</th>
+                        <th class="level-exemplary">Excelente (4)</th>
+                        <th class="level-proficient">Bueno (3)</th>
+                        <th class="level-developing">Satisfactorio (2)</th>
+                        <th class="level-insufficient">Insuficiente (1)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criterion-name">Comprensión de Principios Éticos</td>
+                        <td class="level-exemplary">Aplica correctamente ≥3 principios de Belmont (autonomía, beneficencia, justicia). Explica relación al caso. Referencias a Declaración Helsinki.</td>
+                        <td class="level-proficient">Aplica 2–3 principios correctamente, con explicación clara. Menciona consentimiento. Alguna referencia a guías.</td>
+                        <td class="level-developing">Aplica 1–2 principios; aplicación parcialmente correcta. Mención de consentimiento pero análisis débil.</td>
+                        <td class="level-insufficient">Aplicación errónea de principios; falta de fundamentación ética; sin referencias.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Análisis del Dilema</td>
+                        <td class="level-exemplary">Identifica tensión clara entre principios. Explora múltiples perspectivas. Reconoce complejidad. Analiza implicaciones prácticas.</td>
+                        <td class="level-proficient">Identifica dilema principal; explora 2–3 perspectivas. Reconoce complejidad. Análisis claro.</td>
+                        <td class="level-developing">Identifica un aspecto del dilema; perspectivas limitadas. Análisis algo superficial.</td>
+                        <td class="level-insufficient">Dilema mal entendido; análisis débil o ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Recomendación Justificada</td>
+                        <td class="level-exemplary">Propone recomendación clara y ética. Justificación rigurosa: cita principios, considera costos/beneficios, contexto. Alternativas consideradas y descartadas.</td>
+                        <td class="level-proficient">Recomendación clara; justificación buena, aunque podría ser más profunda. Considera ≥1 alternativa.</td>
+                        <td class="level-developing">Recomendación hecha; justificación presente pero básica. Alternativas poco exploradas.</td>
+                        <td class="level-insufficient">Sin recomendación clara o justificación débil/ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Uso de Literatura</td>
+                        <td class="level-exemplary">≥3 referencias pertinentes (Belmont, ICMJE, Declaración Helsinki). Citas integradas naturalmente en análisis.</td>
+                        <td class="level-proficient">2–3 referencias; citas presentes aunque a veces mecánicas.</td>
+                        <td class="level-developing">1–2 referencias; citas fragmentarias o poco integradas.</td>
+                        <td class="level-insufficient">&lt;1 referencia o citas erróneas.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Reflexión Crítica</td>
+                        <td class="level-exemplary">Reflexiona sobre por qué este dilema es difícil. Reconoce limitaciones de su análisis. Muestra disposición a cambiar de opinión.</td>
+                        <td class="level-proficient">Cierta reflexión crítica; reconoce dificultad. Poco auto-cuestionamiento.</td>
+                        <td class="level-developing">Mínima reflexión crítica; afirmaciones sin cuestionamiento.</td>
+                        <td class="level-insufficient">Sin reflexión; tono prescriptivo.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-feedback">
+                <strong>Nota de retroalimentación:</strong> No hay "respuestas correctas" en ética; el valor está en el proceso de razonamiento.
+            </div>
+        </div>
+
+        <!-- Rúbrica 3: Reseña Crítica -->
+        <div class="section">
+            <h2>Rúbrica 3: Reseña Crítica de Artículos (Appraisal + Síntesis)</h2>
+            <div class="rubric-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Entrega:</span>
+                    <span class="meta-value">Semana 13</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Ponderación:</span>
+                    <span class="meta-value">20%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Formato:</span>
+                    <span class="meta-value">CASP/JBI de ≥3 artículos + síntesis (1–1.5 pág/artículo)</span>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criterio</th>
+                        <th class="level-exemplary">Excelente (4)</th>
+                        <th class="level-proficient">Bueno (3)</th>
+                        <th class="level-developing">Satisfactorio (2)</th>
+                        <th class="level-insufficient">Insuficiente (1)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criterion-name">Dominio CASP/JBI</td>
+                        <td class="level-exemplary">CASP/JBI completado correctamente para ≥3 artículos. Cada pregunta contiene justificación clara. Criterios aplicados consistentemente.</td>
+                        <td class="level-proficient">CASP/JBI completado. Mayoría de preguntas justificadas. Criterios aplicados aunque a veces superficialmente.</td>
+                        <td class="level-developing">CASP/JBI completado, pero justificaciones débiles. Algunos criterios mal aplicados.</td>
+                        <td class="level-insufficient">CASP/JBI incompleto o muy mal completado; sin justificación.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Fortalezas y Limitaciones</td>
+                        <td class="level-exemplary">Identifica ≥3 fortalezas y ≥3 limitaciones por artículo. Diferencia sesgo de variabilidad. Evaluación matizada.</td>
+                        <td class="level-proficient">Identifica ≥2 fortalezas y ≥2 limitaciones por artículo. Diferencia sesgo y variabilidad en general.</td>
+                        <td class="level-developing">Identifica ≥1 fortaleza y ≥1 limitación por artículo. Análisis algo superficial.</td>
+                        <td class="level-insufficient">Identificación mínima o errónea.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Síntesis Crítica</td>
+                        <td class="level-exemplary">Síntesis (1–1.5 pág) responde: ¿Cuán válido es? ¿Cuáles limitaciones amenazan validez? ¿Aplicable a Colombia? Integra con conocimiento previo.</td>
+                        <td class="level-proficient">Síntesis clara; responde mayoría de preguntas. Discusión de limitaciones. Aplicabilidad mencionada.</td>
+                        <td class="level-developing">Síntesis presente; responde algunas preguntas clave. Limitaciones mencionadas pero no profundizadas.</td>
+                        <td class="level-insufficient">Síntesis débil o mínima.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Bioestadística Interpretada</td>
+                        <td class="level-exemplary">Interpreta correctamente p-valor, IC 95%, tamaño de efecto. Discute significancia estadística vs. clínica. Identifica si n es adecuada.</td>
+                        <td class="level-proficient">Interpreta p-valor e IC correctamente. Menciona significancia clínica. Análisis de n presente.</td>
+                        <td class="level-developing">Interpreta p-valor, pero IC o tamaño efecto poco claro. Significancia clínica minimamente discutida.</td>
+                        <td class="level-insufficient">Interpretación errónea; falta de rigor estadístico.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Comparación Entre Artículos</td>
+                        <td class="level-exemplary">Compara fortalezas/limitaciones. Reconoce consenso vs. discrepancia. Propone síntesis integrada. Nivel de evidencia global identificado.</td>
+                        <td class="level-proficient">Algunas comparaciones hechas. Diferencias entre artículos mencionadas. Síntesis parcial.</td>
+                        <td class="level-developing">Comparación mínima; artículos tratados independientemente. Síntesis débil.</td>
+                        <td class="level-insufficient">Sin comparación; sin síntesis integrada.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Comunicación Escrita</td>
+                        <td class="level-exemplary">Prosa clara, académica. Tablas/listas usadas efectivamente. Poco jerga innecesaria. Pocos errores ortográficos.</td>
+                        <td class="level-proficient">Prosa clara mayormente. Algunas tablas/listas. Errores menores.</td>
+                        <td class="level-developing">Prosa clara a ratos; jerga a veces. Errores frecuentes pero legible.</td>
+                        <td class="level-insufficient">Prosa poco clara; jerga inflada; errores abundantes.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-feedback">
+                <strong>Nota de retroalimentación:</strong> El verdadero valor está en la síntesis crítica, no en completar CASP mecánicamente. Se alienta el pensamiento independiente.
+            </div>
+        </div>
+
+        <!-- Rúbrica 4: Protocolo -->
+        <div class="section">
+            <h2>Rúbrica 4: Protocolo de Investigación Escrito</h2>
+            <div class="rubric-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Entrega:</span>
+                    <span class="meta-value">Semana 15</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Ponderación:</span>
+                    <span class="meta-value">25%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Formato:</span>
+                    <span class="meta-value">Protocolo mini (5–8 páginas) con PICO, justificación, objetivos, métodos, ética, cronograma</span>
+                </div>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                <em>Nota: Esta es la rúbrica más ponderada (25%) porque el protocolo integra todas las competencias del curso.
+                Se proporciona feedback formativo intensivo en Semanas 13–14 antes de la entrega final.</em>
+            </p>
+            <table style="margin-top: 1rem;">
+                <thead>
+                    <tr>
+                        <th>Criterio</th>
+                        <th class="level-exemplary">Excelente (4)</th>
+                        <th class="level-proficient">Bueno (3)</th>
+                        <th class="level-developing">Satisfactorio (2)</th>
+                        <th class="level-insufficient">Insuficiente (1)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criterion-name">Pregunta Investigativa (PICO)</td>
+                        <td class="level-exemplary">PICO excelente: claro, específico, contestable, clínicamente relevante. P bien definida (inclusión/exclusión). I específica. C y O medibles.</td>
+                        <td class="level-proficient">PICO claro y contestable; mayoría de componentes bien definidos. Algo vago en I o C pero interpretable.</td>
+                        <td class="level-developing">PICO presente pero falta especificidad. Un componente vago.</td>
+                        <td class="level-insufficient">PICO mal formulado; falta componente(s); no contestable.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Justificación y Significancia</td>
+                        <td class="level-exemplary">Justificación de 1+ páginas explora brecha de conocimiento. Cita literatura reciente (≥5 referencias). Explica por qué ahora. Señala implicaciones clínicas.</td>
+                        <td class="level-proficient">Justificación de ~0.75 página. Cita 3–4 referencias. Explica importancia, aunque podría ser más profunda.</td>
+                        <td class="level-developing">Justificación de ~0.5 página. Pocas referencias (1–2). Importancia mencionada pero no bien justificada.</td>
+                        <td class="level-insufficient">Justificación &lt;0.5 página o ausente. Sin referencias.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Objetivos Claros</td>
+                        <td class="level-exemplary">Objetivo primario único, claro, medible, alcanzable (SMART). 1–3 objetivos secundarios pertinentes. Cada objetivo ligado a PICO.</td>
+                        <td class="level-proficient">Objetivo primario claro. 1–2 secundarios. Mayoría SMART aunque alguno podría ser más específico.</td>
+                        <td class="level-developing">Objetivo primario presente pero no totalmente SMART. Secundarios limitados.</td>
+                        <td class="level-insufficient">Objetivo primario mal definido o ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Métodos Rigurosos</td>
+                        <td class="level-exemplary"><strong>Diseño:</strong> tipo justificado. <strong>Población:</strong> criterios precisos; N estimado con justificación. <strong>Intervención:</strong> operacional. <strong>Medidas resultado:</strong> definiciones operacionales claras. <strong>Confundidores:</strong> identificados y cómo serán controlados.</td>
+                        <td class="level-proficient"><strong>Diseño:</strong> bien descrito, justificación presente. <strong>Población:</strong> criterios claros, N estimado. <strong>Intervención/Medidas:</strong> bien definidas mayormente. Faltan algunos detalles.</td>
+                        <td class="level-developing"><strong>Diseño:</strong> descrito pero justificación débil. <strong>Población:</strong> criterios vagos; N no justificado. <strong>Intervención/Medidas:</strong> imprecisas.</td>
+                        <td class="level-insufficient"><strong>Diseño:</strong> poco claro. <strong>Población/Intervención/Medidas:</strong> mal definidas.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Plan de Análisis</td>
+                        <td class="level-exemplary">Plan de análisis conceptual lógico. Diferencia análisis primario de secundarios. Menciona cómo serán controlados confundidores.</td>
+                        <td class="level-proficient">Plan presente; mayoría es conceptual y apropiado. Algún detalle falta.</td>
+                        <td class="level-developing">Plan presente pero genérico. Poco detalle.</td>
+                        <td class="level-insufficient">Plan mínimo o ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Consideraciones Éticas</td>
+                        <td class="level-exemplary">Análisis ético profundo (0.5–1 página): consentimiento, riesgos (identificados, minimizados), beneficios, confidencialidad. Necesidad de comité ético justificada. Poblaciones vulnerables consideradas si aplica.</td>
+                        <td class="level-proficient">Análisis ético presente; cubre consentimiento, riesgos/beneficios, confidencialidad. Comité ético mencionado.</td>
+                        <td class="level-developing">Análisis ético presente pero superficial. Comité ético poco claro.</td>
+                        <td class="level-insufficient">Análisis ético mínimo o ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Cronograma Realista</td>
+                        <td class="level-exemplary">Cronograma detallado (línea de tiempo con hitos: reclutamiento, seguimiento, análisis, redacción). Realista dado recursos disponibles. Fecha final especificada.</td>
+                        <td class="level-proficient">Cronograma presente; mayoría de hitos claros. Duración estimada razonable.</td>
+                        <td class="level-developing">Cronograma presente pero genérico. Hitos poco claros. Realismo cuestionable.</td>
+                        <td class="level-insufficient">Cronograma mínimo o ausente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Referencias y Originalidad</td>
+                        <td class="level-exemplary">≥10 referencias pertinentes (últimos 10 años), mezcla de estudios originales y revisiones, algunos OA o disponibles en Univalle. Protocolo es original (no copia existente). Es viable: accesible, tiempos realistas, población reclutable.</td>
+                        <td class="level-proficient">8–10 referencias. Mayoría pertinentes. Protocolo mayormente original; viable. Algunos desafíos identificados pero resolubles.</td>
+                        <td class="level-developing">5–7 referencias. Protocolo algo convencional; viabilidad marginal.</td>
+                        <td class="level-insufficient">&lt;5 referencias o protocolo no es original o no es viable.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-feedback">
+                <strong>Nota de retroalimentación:</strong> El mejor protocolo es aquel que un investigador real podría usar como punto de partida. Se alienta viabilidad y rigor metodológico.
+            </div>
+        </div>
+
+        <!-- Rúbrica 5: Presentación -->
+        <div class="section">
+            <h2>Rúbrica 5: Presentación Oral/Póster</h2>
+            <div class="rubric-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Entrega:</span>
+                    <span class="meta-value">Semana 15</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Ponderación:</span>
+                    <span class="meta-value">15%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Formato:</span>
+                    <span class="meta-value">Presentación congreso-style 5–7 minutos (oral o póster)</span>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criterio</th>
+                        <th class="level-exemplary">Excelente (4)</th>
+                        <th class="level-proficient">Bueno (3)</th>
+                        <th class="level-developing">Satisfactorio (2)</th>
+                        <th class="level-insufficient">Insuficiente (1)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criterion-name">Organización y Flujo</td>
+                        <td class="level-exemplary">Estructura clara: intro (por qué importa), métodos (qué harás), impacto esperado, conclusión. Transiciones suave. Flujo lógico fácil de seguir.</td>
+                        <td class="level-proficient">Estructura clara; mayoría de secciones presentes. Transiciones presentes. Flujo lógico aunque a veces distractivo.</td>
+                        <td class="level-developing">Estructura presente pero tal vez no completamente lógica. Transiciones abruptas. Flujo a ratos poco claro.</td>
+                        <td class="level-insufficient">Estructura débil; flujo poco claro; diapositivas desconexas.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Contenido — Pregunta y Justificación</td>
+                        <td class="level-exemplary">PICO expuesto claramente (1–2 diapositivas). Justificación concisa pero convincente: brecha de conocimiento, por qué ahora, implicación clínica. Audiencia entiende "por qué esto importa".</td>
+                        <td class="level-proficient">PICO claro. Justificación presente; explica importancia aunque tal vez breve.</td>
+                        <td class="level-developing">PICO mencionado pero quizás no completamente claro. Justificación mínima.</td>
+                        <td class="level-insufficient">PICO no claro o falta justificación.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Contenido — Métodos</td>
+                        <td class="level-exemplary">Métodos en 1–2 diapositivas: diseño (justificado brevemente), población (N y criterios clave), intervención/medidas resultado (operacionales). Público entiende "cómo se hará".</td>
+                        <td class="level-proficient">Métodos claros; diseño y población presentes. Intervención/medidas resultado mencionadas aunque sin máximo detalle.</td>
+                        <td class="level-developing">Métodos presentes pero algo vago. Detalles clave faltan (N, diseño justificación).</td>
+                        <td class="level-insufficient">Métodos mínimos o no presentados.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Duración y Ritmo</td>
+                        <td class="level-exemplary">Presentación 5–7 min según requerimiento. Ritmo deliberado; no demasiado rápido (audiencia puede seguir) ni demasiado lento. Permite ~1–2 min para preguntas.</td>
+                        <td class="level-proficient">Duración 5–7 min. Ritmo generalmente apropiado; a veces un poco rápido pero legible.</td>
+                        <td class="level-developing">Duración aproximadamente 5–7 min pero con distracciones. Ritmo a ratos incómodo.</td>
+                        <td class="level-insufficient">Duración significativamente fuera de 5–7 min. Ritmo demasiado rápido o muy lento.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Comunicación Verbal (Oral)</td>
+                        <td class="level-exemplary">Voz clara, volumen adecuado, ritmo pausado. Mantiene contacto visual. Muestra confianza sin arrogancia. Poco o nada leyendo de notas; presenta naturalmente.</td>
+                        <td class="level-proficient">Voz clara mayormente; ritmo generalmente pausado. Contacto visual frecuente. Confianza presente. Mira notas ocasionalmente.</td>
+                        <td class="level-developing">Voz audible pero a ratos baja/incómoda. Ritmo irregular. Contacto visual limitado. Nerviosismo evidente. Lee mucho.</td>
+                        <td class="level-insufficient">Voz poco clara; ritmo incómodo. Contacto visual mínimo. Muy nervioso. Lee mayormente.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Respuesta a Preguntas</td>
+                        <td class="level-exemplary">Responde con claridad y confianza. Entiende la pregunta y responde directamente. Si no sabe, lo admite con gracia. Defiende decisiones metodológicas cuando es apropiado.</td>
+                        <td class="level-proficient">Responde mayoría de preguntas claramente. Entiende bien. A veces poca digresión. Confianza presente.</td>
+                        <td class="level-developing">Responde algunas preguntas; otras poco claras. Entiende parcialmente. Algo de digresión. Nerviosismo en preguntas.</td>
+                        <td class="level-insufficient">Responde poco; entiende mal; digresión. Muy nervioso o defensivo.</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-name">Profesionalismo Académico</td>
+                        <td class="level-exemplary">Presentación es académicamente rigurosa (sin exageraciones, lenguaje técnico apropiado pero accesible). Respeta tiempo y audiencia. Viste apropiadamente para congreso. Agradece a audiencia.</td>
+                        <td class="level-proficient">Presentación es rigurosa; lenguaje académico. Respeta tiempo. Viste apropiadamente. Cortesías presentes.</td>
+                        <td class="level-developing">Presentación mayormente rigurosa. Lenguaje a veces casual. Tiempo respetado. Viste aceptablemente.</td>
+                        <td class="level-insufficient">Presentación poco rigurosa; lenguaje casual; falta de respeto al tiempo/audiencia.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-feedback">
+                <strong>Nota de retroalimentación:</strong> Esta es la oportunidad de "vender" la investigación. Los mejores presentadores no solo comparten datos; transmiten pasión por la pregunta.
+            </div>
+        </div>
+
+        <!-- Resumen de Ponderaciones -->
+        <div class="section">
+            <h2>Resumen de Ponderaciones</h2>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Rúbrica</th>
+                        <th>Componente</th>
+                        <th>Ponderación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Banco de Preguntas PICO</td>
+                        <td class="ponderacion">15%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Análisis de Casos Éticos</td>
+                        <td class="ponderacion">15%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Reseña Crítica (Appraisal + Síntesis)</td>
+                        <td class="ponderacion">20%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Protocolo de Investigación Escrito</td>
+                        <td class="ponderacion">25%</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Presentación Oral/Póster</td>
+                        <td class="ponderacion">15%</td>
+                    </tr>
+                    <tr style="background-color: #F0F3F6; font-weight: 600;">
+                        <td colspan="2">Participación y Journales Reflexivos (Formativo → Sumativo)</td>
+                        <td class="ponderacion">10%</td>
+                    </tr>
+                    <tr style="background-color: #2C5A87; color: white; font-weight: 600;">
+                        <td colspan="2">TOTAL</td>
+                        <td style="text-align: center;">100%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; font-style: italic;">
+                *La participación y journales no tienen rúbrica cuantitativa formal; se evalúan cualitativamente y contribuyen 10% a la calificación final si el estudiante demuestra esfuerzo consistente.
+            </p>
+        </div>
+
+        <!-- Escala de Calificación -->
+        <div class="section">
+            <h2>Escala de Calificación Final</h2>
+            <div class="scale-section">
+                <div class="scale-item">
+                    <span class="scale-range">3.5 – 4.0</span>
+                    <span class="scale-label">Sobresaliente (A) — Domina competencias, trabajo excepcional</span>
+                </div>
+                <div class="scale-item">
+                    <span class="scale-range">3.0 – 3.4</span>
+                    <span class="scale-label">Bien (B) — Demuestra competencias claramente, trabajo sólido</span>
+                </div>
+                <div class="scale-item">
+                    <span class="scale-range">2.5 – 2.9</span>
+                    <span class="scale-label">Satisfactorio (C) — Competencias demostradas con limitaciones</span>
+                </div>
+                <div class="scale-item">
+                    <span class="scale-range">2.0 – 2.4</span>
+                    <span class="scale-label">Deficiente (D) — Competencias débiles, trabajo con problemas mayores</span>
+                </div>
+                <div class="scale-item">
+                    <span class="scale-range">&lt; 2.0</span>
+                    <span class="scale-label">Insuficiente (F) — No demuestra competencias, no aprobado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Electiva Profesional en Medicina (617017M) — Investigación en Urología</strong></p>
+        <p>Universidad del Valle | Semestres 2024+</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">Para preguntas sobre rúbricas, contactar al instructor durante office hours o vía correo electrónico.</p>
+    </footer>
+</body>
+</html>

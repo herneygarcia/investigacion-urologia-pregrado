@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación en Urología — Pregrado</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Public Sans', sans-serif; background-color: #FAFAF8; color: #1F2937; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #2C5A87 0%, #1a3a57 100%); color: white; padding: 4rem 1.5rem; text-align: center; }
+        header h1 { font-family: 'DM Sans', sans-serif; font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+        header p { font-size: 1.2rem; opacity: 0.95; max-width: 600px; margin: 0 auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 3rem 0; border-bottom: 1px solid #E5E7EB; }
+        section:last-of-type { border-bottom: none; }
+        h2 { font-family: 'DM Sans', sans-serif; font-size: 2rem; color: #2C5A87; margin-bottom: 1.5rem; font-weight: 700; }
+        h3 { font-family: 'DM Sans', sans-serif; font-size: 1.3rem; color: #1F2937; margin: 1.5rem 0 0.75rem 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2C5A87; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-4px); }
+        .card h4 { color: #2C5A87; margin-bottom: 0.5rem; font-family: 'DM Sans', sans-serif; }
+        .card p { color: #666; font-size: 0.95rem; }
+        .badge { display: inline-block; padding: 0.25rem 0.75rem; background-color: #E8F1F8; color: #2C5A87; border-radius: 12px; font-size: 0.8rem; font-weight: 600; margin-right: 0.5rem; margin-bottom: 0.5rem; }
+        .badge.teal { background-color: #E8F5F0; color: #4A9B8E; }
+        .badge.rust { background-color: #FFE8E0; color: #D97555; }
+        .button { display: inline-block; padding: 0.75rem 1.5rem; background-color: #2C5A87; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: all 0.2s; border: none; cursor: pointer; }
+        .button:hover { background-color: #1a3a57; }
+        .button.secondary { background-color: white; color: #2C5A87; border: 2px solid #2C5A87; }
+        .button.secondary:hover { background-color: #F0F3F6; }
+        .hero-cta { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center; }
+        .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .module-box { background: white; padding: 1.5rem; border-radius: 6px; border-top: 3px solid #2C5A87; text-align: center; }
+        .module-box .number { font-family: 'DM Sans', sans-serif; font-size: 1.8rem; color: #D97555; font-weight: 700; }
+        .module-box .label { font-weight: 600; color: #2C5A87; }
+        .module-box .dates { font-size: 0.85rem; color: #999; }
+        .stat { text-align: center; padding: 1.5rem; }
+        .stat-number { font-family: 'DM Sans', sans-serif; font-size: 2.5rem; color: #2C5A87; font-weight: 700; }
+        .stat-label { color: #666; font-size: 0.95rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+        footer { background-color: #2C5A87; color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        nav { display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap; padding: 1.5rem 0; }
+        nav a { padding: 0.5rem 1rem; background-color: white; border: 1px solid #E5E7EB; border-radius: 4px; text-decoration: none; color: #2C5A87; font-weight: 500; transition: all 0.2s; }
+        nav a:hover { background-color: #2C5A87; color: white; }
+        .highlight { color: #D97555; font-weight: 600; }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .hero-cta { flex-direction: column; }
+            .button { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Investigación en Urología</h1>
+        <p>Electiva Profesional de Pregrado en Medicina (617017M)</p>
+        <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9;">Universidad del Valle | 4 créditos | 15 semanas</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="index.html" style="background-color: #2C5A87; color: white;">Inicio</a>
+            <a href="sesiones.html">Sesiones</a>
+            <a href="rubricas.html">Rúbricas</a>
+            <a href="plantillas.html">Plantillas</a>
+            <a href="quiz-disenos.html">Quiz</a>
+        </nav>
+
+        <!-- Sección Hero -->
+        <section style="padding: 2rem 0; border-bottom: 2px solid #D97555;">
+            <div style="text-align: center;">
+                <h2 style="font-size: 1.8rem;">¿Cómo saben los urólogos lo que saben?</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 1rem auto;">
+                    Este curso te enseña a <span class="highlight">formular preguntas clínicas rigurosas, buscar y evaluar evidencia críticamente, y diseñar un protocolo de investigación viable</span>. No es un taller de estadística ni una preparación para publicar. Es un espacio para desarrollar competencias de pensamiento científico que llevarás toda tu vida profesional.
+                </p>
+                <div class="hero-cta">
+                    <a href="sesiones.html" class="button">Explorar Sesiones</a>
+                    <a href="rubricas.html" class="button secondary">Ver Rúbricas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estructura del Curso -->
+        <section>
+            <h2>5 Módulos en 15 Semanas</h2>
+            <p>El curso está organizado como una progresión lógica: desde los fundamentos hasta la capstone de protocolo de investigación mini.</p>
+            <div class="modules">
+                <div class="module-box">
+                    <div class="number">1</div>
+                    <div class="label">Fundamentos</div>
+                    <div class="dates">Sem 1–3</div>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">Preguntas PICO, búsqueda bibliográfica</p>
+                </div>
+                <div class="module-box">
+                    <div class="number">2</div>
+                    <div class="label">Diseños de Estudio</div>
+                    <div class="dates">Sem 4–7</div>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">Descriptivos, cohorte, caso-control, RCT, revisiones</p>
+                </div>
+                <div class="module-box">
+                    <div class="number">3</div>
+                    <div class="label">Ética e Integridad</div>
+                    <div class="dates">Sem 8–10</div>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">Belmont, consentimiento, comités, integridad</p>
+                </div>
+                <div class="module-box">
+                    <div class="number">4</div>
+                    <div class="label">Appraisal Crítico</div>
+                    <div class="dates">Sem 11–13</div>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">CASP, niveles evidencia, bioestadística conceptual</p>
+                </div>
+                <div class="module-box">
+                    <div class="number">5</div>
+                    <div class="label">Capstone</div>
+                    <div class="dates">Sem 14–15</div>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">Protocolo escrito + presentación</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objetivos y Competencias -->
+        <section>
+            <h2>Objetivos del Curso</h2>
+            <p>Al finalizar, serás capaz de:</p>
+            <div class="grid">
+                <div class="card">
+                    <h4>📋 Formular Preguntas Investigativas</h4>
+                    <p>Transformar preguntas clínicas en preguntas PICO bien estructuradas, contestables, y clínicamente relevantes.</p>
+                </div>
+                <div class="card" style="border-left-color: #4A9B8E;">
+                    <h4>🔍 Evaluar Evidencia Críticamente</h4>
+                    <p>Dominar herramientas como CASP para evaluar la metodología de estudios publicados y entender sesgos.</p>
+                </div>
+                <div class="card" style="border-left-color: #D97555;">
+                    <h4>⚖️ Razonar Éticamente</h4>
+                    <p>Aplicar principios éticos (Belmont) a casos reales y entender el rol de comités de ética.</p>
+                </div>
+                <div class="card">
+                    <h4>📐 Diseñar Protocolos</h4>
+                    <p>Crear un protocolo de investigación mini viable, ético, y con objetivos y métodos claramente definidos.</p>
+                </div>
+                <div class="card" style="border-left-color: #4A9B8E;">
+                    <h4>🎤 Comunicar Resultados</h4>
+                    <p>Presentar tu investigación en formato académico (escrito y oral) de manera clara y profesional.</p>
+                </div>
+                <div class="card" style="border-left-color: #D97555;">
+                    <h4>🧠 Pensar Científicamente</h4>
+                    <p>Desarrollar una mentalidad de aprendizaje reflexivo que te acompañará toda tu carrera clínica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Entregables -->
+        <section>
+            <h2>5 Productos Summativos</h2>
+            <p>El curso se evalúa mediante 5 entregables auténticos que reflejan competencias reales de investigación:</p>
+            <div class="grid">
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge">15%</span>
+                        <span class="badge rust">Sem 3</span>
+                    </div>
+                    <h4>Banco de Preguntas PICO</h4>
+                    <p>≥3 preguntas bien formuladas con búsqueda bibliográfica documentada en PubMed y Rayyan.</p>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge">15%</span>
+                        <span class="badge rust">Sem 10</span>
+                    </div>
+                    <h4>Análisis de Casos Éticos</h4>
+                    <p>≥2 reportes aplicando principios de Belmont a dilemas reales de investigación.</p>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge">20%</span>
+                        <span class="badge rust">Sem 13</span>
+                    </div>
+                    <h4>Reseña Crítica (Appraisal)</h4>
+                    <p>3 appraisals CASP + síntesis crítica integrando hallazgos, limitaciones, y aplicabilidad.</p>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge">25%</span>
+                        <span class="badge rust">Sem 15</span>
+                    </div>
+                    <h4>Protocolo de Investigación</h4>
+                    <p>Protocolo mini (5–8 páginas) viable, ético, con PICO, justificación, métodos, ética, cronograma.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge">15%</span>
+                        <span class="badge rust">Sem 15</span>
+                    </div>
+                    <h4>Presentación Oral/Póster</h4>
+                    <p>Presentación congreso-style (5–7 min) de tu protocolo. Responde preguntas con confianza.</p>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge teal">10%</span>
+                        <span class="badge rust">Continuo</span>
+                    </div>
+                    <h4>Participación + Journales</h4>
+                    <p>Micro-reflexiones semanales y participación activa en talleres y discusiones.</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; text-align: center; color: #999;">
+                <em>100% de calificación final | Sin curvado | Rúbricas públicas desde el día 1</em>
+            </p>
+        </section>
+
+        <!-- Información General -->
+        <section>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Semanas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Créditos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">192</div>
+                    <div class="stat-label">Horas totales</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Horas sincrónicas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">162</div>
+                    <div class="stat-label">Horas independientes</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Productos</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Detalles Prácticos</h3>
+            <ul style="list-style: none; margin-top: 1rem;">
+                <li style="padding: 0.5rem 0;"><strong>Horario:</strong> Lunes 10:00–11:00, Jueves 17:00–18:00</li>
+                <li style="padding: 0.5rem 0;"><strong>Modalidad:</strong> Híbrida (sesiones sincrónicas + asincrónico)</li>
+                <li style="padding: 0.5rem 0;"><strong>Requisito:</strong> Haber cursado Epidemiología Básica (o equivalente)</li>
+                <li style="padding: 0.5rem 0;"><strong>Semestre recomendado:</strong> 6–10 de medicina</li>
+                <li style="padding: 0.5rem 0;"><strong>Docente:</strong> Herney Andrés García Perdomo</li>
+                <li style="padding: 0.5rem 0;"><strong>Contacto:</strong> <a href="mailto:herney.garcia@correounivalle.edu.co" style="color: #2C5A87; text-decoration: none; font-weight: 600;">herney.garcia@correounivalle.edu.co</a></li>
+            </ul>
+        </section>
+
+        <!-- Cómo Usar Este Sitio -->
+        <section>
+            <h2>Cómo Usar Este Sitio</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>📚 Sesiones</h4>
+                    <p>Navega por las 15 semanas organizadas por módulo. Cada sesión detalla objetivos, temas, actividades, trabajo independiente, y entregables.</p>
+                </div>
+                <div class="card">
+                    <h4>⭐ Rúbricas</h4>
+                    <p>Lee los 5 criterios de evaluación para cada producto. Las rúbricas son públicas desde el día 1; siempre sabes sobre qué se te evalúa.</p>
+                </div>
+                <div class="card">
+                    <h4>🛠️ Plantillas</h4>
+                    <p>5 plantillas de trabajo que te guían en cada entregable: PICO, análisis ético, appraisal, protocolo, presentación.</p>
+                </div>
+                <div class="card">
+                    <h4>✅ Quiz</h4>
+                    <p>Autoevaluación sobre diseños de estudio (Módulo 2). Responde preguntas, el sitio calcula tu puntaje automáticamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Final -->
+        <section style="text-align: center; padding: 3rem 0;">
+            <h2>Bienvenida</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+                Este curso es un espacio riguroso pero motivante donde aprenderás a pensar como investigador clínico. No se trata de perfección ni de volverse experto en estadística. Se trata de <span class="highlight">desarrollar una mentalidad científica</span> que te hará mejor clínico durante toda tu carrera.
+            </p>
+            <p style="margin-top: 1rem; color: #999;">
+                ¿Preguntas? Contacta al instructor o explora el sitio comenzando por <a href="sesiones.html" style="color: #2C5A87; font-weight: 600; text-decoration: none;">Sesiones</a>.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>Electiva Profesional en Medicina (617017M) — Investigación en Urología</strong></p>
+        <p>Facultad de Salud, Universidad del Valle</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">Versión 1.0 | Semestres 2024+</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.8;">Contacto: herney.garcia@correounivalle.edu.co</p>
+    </footer>
+</body>
+</html>
