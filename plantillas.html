@@ -4,188 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantillas — Investigación en Urología</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Public Sans', sans-serif; background-color: #FAFAF8; color: #1F2937; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #2C5A87 0%, #1a3a57 100%); color: white; padding: 3rem 1.5rem; text-align: center; }
-        header h1 { font-family: 'DM Sans', sans-serif; font-size: 2rem; font-weight: 700; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
-        nav { display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap; }
-        nav a { padding: 0.5rem 1rem; background-color: white; border: 1px solid #E5E7EB; border-radius: 4px; text-decoration: none; color: #2C5A87; font-weight: 500; }
-        nav a:hover { background-color: #2C5A87; color: white; }
-        nav a.active { background-color: #2C5A87; color: white; }
-        h2 { font-family: 'DM Sans', sans-serif; font-size: 2rem; color: #2C5A87; margin-bottom: 1.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 2rem 0; }
-        .template-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s; cursor: pointer; border-top: 4px solid #2C5A87; }
-        .template-card:hover { transform: translateY(-4px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
-        .card-header { background: linear-gradient(135deg, #2C5A87 0%, #4A9B8E 100%); color: white; padding: 1.5rem; }
-        .card-number { font-family: 'DM Sans', sans-serif; font-size: 2.5rem; font-weight: 700; }
-        .card-title { font-family: 'DM Sans', sans-serif; font-size: 1.2rem; font-weight: 600; margin-top: 0.5rem; }
-        .card-body { padding: 1.5rem; }
-        .card-body h4 { font-family: 'DM Sans', sans-serif; color: #1F2937; margin-bottom: 0.75rem; }
-        .card-body ul { list-style: none; margin-left: 1rem; }
-        .card-body li { padding: 0.5rem 0; position: relative; padding-left: 1.5rem; }
-        .card-body li:before { content: "▸"; position: absolute; left: 0; color: #D97555; }
-        .usage { background-color: #F0F3F6; padding: 1.5rem; border-radius: 6px; margin-top: 2rem; }
-        .usage h3 { font-family: 'DM Sans', sans-serif; color: #2C5A87; }
-        .usage ol { margin-left: 1.5rem; margin-top: 1rem; }
-        .usage li { margin-bottom: 0.75rem; }
-        footer { background-color: #2C5A87; color: white; text-align: center; padding: 2rem; margin-top: 3rem; font-size: 0.9rem; }
+        .template-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .template-card { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); transition: transform 0.2s ease, border-color 0.2s ease; }
+        .template-card:hover { transform: translateY(-4px); border-color: var(--border-bright); }
+        .tpl-header { padding: 1.5rem; }
+        .tpl-number { font-family: var(--font-display); font-size: 2rem; font-weight: 800; }
+        .tpl-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-top: 0.4rem; }
+        .tpl-body { padding: 1.5rem; background: var(--bg-elevated); }
+        .tpl-body h4 { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); margin-bottom: 0.6rem; }
+        .tpl-body ul { list-style: none; margin-bottom: 1rem; }
+        .tpl-body li { padding: 0.4rem 0; padding-left: 1.1rem; position: relative; color: var(--text-muted); font-size: 0.9rem; }
+        .tpl-body li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
+        .tpl-footer { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); padding-top: 0.75rem; border-top: 1px solid var(--border); }
+        .usage-box { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin-top: 1.5rem; }
+        .usage-box h3 { font-size: 1.1rem; margin-bottom: 1rem; }
+        .usage-box ol { margin-left: 1.25rem; color: var(--text-muted); }
+        .usage-box li { margin-bottom: 0.65rem; }
+        @media (max-width: 900px) { .template-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) { .template-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Plantillas de Trabajo</h1>
-        <p>Guías estructuradas para cada entregable del curso</p>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand"><span class="brand-mark">U</span>Investigación Urológica</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="sesiones.html">Sesiones</a>
+                <a href="rubricas.html">Rúbricas</a>
+                <a href="plantillas.html" class="active">Plantillas</a>
+                <a href="quiz-disenos.html">Quiz</a>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 3rem 0 2.5rem;">
+        <div class="container">
+            <div class="hero-eyebrow">Andamiaje, no camisa de fuerza</div>
+            <h1 class="h-display" style="font-size: clamp(2rem, 4.5vw, 3.2rem);">Plantillas de <span class="text-accent">Trabajo</span></h1>
+            <p class="lede">Una guía estructurada para cada uno de los 5 entregables del curso. Úsalas para clarificar tus ideas, no para llenar espacios en blanco.</p>
+        </div>
     </header>
 
-    <div class="container">
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="sesiones.html">Sesiones</a>
-            <a href="rubricas.html">Rúbricas</a>
-            <a href="plantillas.html" class="active">Plantillas</a>
-            <a href="quiz-disenos.html">Quiz</a>
-        </nav>
-
-        <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 2rem auto;">
-            Las plantillas te guían paso a paso en la estructura y contenido de cada producto entregable. Úsalas como andamiaje, pero personaliza con tu contenido. <strong>No son rígidas</strong> — son herramientas para clarificar tus ideas.
-        </p>
-
-        <div class="grid">
-            <!-- Plantilla 1 -->
-            <div class="template-card">
-                <div class="card-header">
-                    <div class="card-number">1</div>
-                    <div class="card-title">Banco de Preguntas PICO</div>
+    <section class="block">
+        <div class="container">
+            <div class="template-grid reveal">
+                <div class="template-card">
+                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-1-bg), var(--bg-elevated));">
+                        <div class="tpl-number" style="color: var(--mod-1);">01</div>
+                        <div class="tpl-title">Banco de Preguntas PICO</div>
+                    </div>
+                    <div class="tpl-body">
+                        <h4>Estructura</h4>
+                        <ul>
+                            <li>P — Población: ¿quién?</li>
+                            <li>I — Intervención: ¿qué?</li>
+                            <li>C — Comparador: ¿con qué se compara?</li>
+                            <li>O — Outcome: ¿qué resultado?</li>
+                            <li>Búsqueda documentada en PubMed/Rayyan</li>
+                        </ul>
+                        <div class="tpl-footer">Semana 3 · 15% calificación</div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h4>📌 Estructura</h4>
-                    <ul>
-                        <li><strong>P (Población):</strong> ¿Quién?</li>
-                        <li><strong>I (Intervención):</strong> ¿Qué intervención?</li>
-                        <li><strong>C (Comparador):</strong> ¿Con qué se compara?</li>
-                        <li><strong>O (Outcome):</strong> ¿Qué resultado?</li>
-                        <li><strong>Búsqueda documentada:</strong> Bases de datos, términos MeSH, resultados</li>
-                    </ul>
-                    <h4 style="margin-top: 1rem;">📋 Entrega</h4>
-                    <ul>
-                        <li>≥3 preguntas PICO bien formuladas</li>
-                        <li>Búsqueda PubMed/Rayyan documentada</li>
-                        <li>Artículos seleccionados por pregunta</li>
-                    </ul>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;"><strong>Semana 3 | 15% calificación</strong></p>
+
+                <div class="template-card">
+                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-3-bg), var(--bg-elevated));">
+                        <div class="tpl-number" style="color: var(--mod-3);">02</div>
+                        <div class="tpl-title">Análisis de Casos Éticos</div>
+                    </div>
+                    <div class="tpl-body">
+                        <h4>Estructura</h4>
+                        <ul>
+                            <li>Caso: descripción del dilema</li>
+                            <li>Principios Belmont en juego</li>
+                            <li>Análisis: ¿qué lo hace difícil?</li>
+                            <li>Opciones A, B, C con pros/contras</li>
+                            <li>Recomendación justificada</li>
+                        </ul>
+                        <div class="tpl-footer">Semana 10 · 15% calificación</div>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-4-bg), var(--bg-elevated));">
+                        <div class="tpl-number" style="color: var(--mod-4);">03</div>
+                        <div class="tpl-title">Appraisal Crítico (CASP)</div>
+                    </div>
+                    <div class="tpl-body">
+                        <h4>Estructura</h4>
+                        <ul>
+                            <li>Tipo de estudio y referencia</li>
+                            <li>CASP completado (12–13 preguntas)</li>
+                            <li>≥3 fortalezas identificadas</li>
+                            <li>≥3 limitaciones identificadas</li>
+                            <li>Síntesis crítica (1–1.5 páginas)</li>
+                        </ul>
+                        <div class="tpl-footer">Semana 13 · 20% calificación</div>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-2-bg), var(--bg-elevated));">
+                        <div class="tpl-number" style="color: var(--mod-2);">04</div>
+                        <div class="tpl-title">Protocolo de Investigación</div>
+                    </div>
+                    <div class="tpl-body">
+                        <h4>Estructura (5–8 páginas)</h4>
+                        <ul>
+                            <li>Pregunta PICO y justificación</li>
+                            <li>Objetivos primario y secundarios</li>
+                            <li>Métodos: diseño, población, medidas</li>
+                            <li>Ética: consentimiento, riesgos</li>
+                            <li>Cronograma y ≥10 referencias</li>
+                        </ul>
+                        <div class="tpl-footer">Semana 15 · 25% calificación</div>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-5-bg), var(--bg-elevated));">
+                        <div class="tpl-number" style="color: var(--mod-5);">05</div>
+                        <div class="tpl-title">Presentación Oral/Póster</div>
+                    </div>
+                    <div class="tpl-body">
+                        <h4>Estructura (5–7 minutos)</h4>
+                        <ul>
+                            <li>Intro: por qué importa (1 min)</li>
+                            <li>Pregunta PICO (1 min)</li>
+                            <li>Métodos: cómo se hará (1.5 min)</li>
+                            <li>Impacto clínico (1 min)</li>
+                            <li>Preguntas: responde con confianza</li>
+                        </ul>
+                        <div class="tpl-footer">Semana 15 · 15% calificación</div>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="tpl-header" style="background: var(--bg-elevated-2);">
+                        <div class="tpl-number" style="color: var(--text-faint);">＋</div>
+                        <div class="tpl-title">Recursos Adicionales</div>
+                    </div>
+                    <div class="tpl-body">
+                        <h4>Consulta también</h4>
+                        <ul>
+                            <li><a href="rubricas.html" style="color: var(--accent);">Rúbricas de evaluación</a></li>
+                            <li><a href="sesiones.html" style="color: var(--accent);">Sesiones del curso</a></li>
+                            <li><a href="quiz-disenos.html" style="color: var(--accent);">Quiz de autoevaluación</a></li>
+                        </ul>
+                        <div class="tpl-footer">Copias editables: consulta al instructor</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Plantilla 2 -->
-            <div class="template-card">
-                <div class="card-header" style="background: linear-gradient(135deg, #D97555 0%, #B8552F 100%);">
-                    <div class="card-number">2</div>
-                    <div class="card-title">Análisis de Casos Éticos</div>
-                </div>
-                <div class="card-body">
-                    <h4>📌 Estructura</h4>
-                    <ul>
-                        <li><strong>Caso:</strong> Descripción del dilema ético</li>
-                        <li><strong>Principios Belmont:</strong> Autonomía, Beneficencia, Justicia</li>
-                        <li><strong>Análisis del dilema:</strong> ¿Qué lo hace difícil?</li>
-                        <li><strong>Opciones (A, B, C):</strong> Pros y contras de cada una</li>
-                        <li><strong>Recomendación justificada:</strong> ¿Cuál es más ética?</li>
-                        <li><strong>Referencias:</strong> Belmont, ICMJE, Declaración Helsinki</li>
-                    </ul>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;"><strong>Semana 10 | 15% calificación</strong></p>
-                </div>
-            </div>
-
-            <!-- Plantilla 3 -->
-            <div class="template-card">
-                <div class="card-header" style="background: linear-gradient(135deg, #4A9B8E 0%, #2A7F8C 100%);">
-                    <div class="card-number">3</div>
-                    <div class="card-title">Appraisal Crítico (CASP)</div>
-                </div>
-                <div class="card-body">
-                    <h4>📌 Estructura</h4>
-                    <ul>
-                        <li><strong>Referencia:</strong> Autor, año, revista</li>
-                        <li><strong>Tipo de estudio:</strong> Descriptivo, cohorte, caso-control, RCT, revisión</li>
-                        <li><strong>CASP completado:</strong> 12–13 preguntas por diseño</li>
-                        <li><strong>Fortalezas:</strong> ≥3 identificadas</li>
-                        <li><strong>Limitaciones:</strong> ≥3 identificadas</li>
-                        <li><strong>Síntesis crítica:</strong> 1–1.5 páginas integrando hallazgos, validez, aplicabilidad</li>
-                    </ul>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;"><strong>Semana 13 | 20% calificación</strong></p>
-                </div>
-            </div>
-
-            <!-- Plantilla 4 -->
-            <div class="template-card">
-                <div class="card-header" style="background: linear-gradient(135deg, #2C5A87 0%, #1a3a57 100%);">
-                    <div class="card-number">4</div>
-                    <div class="card-title">Protocolo de Investigación</div>
-                </div>
-                <div class="card-body">
-                    <h4>📌 Estructura (5–8 páginas)</h4>
-                    <ul>
-                        <li><strong>Pregunta PICO:</strong> Clara, contestable, clínicamente relevante</li>
-                        <li><strong>Justificación:</strong> Brecha de conocimiento, por qué ahora</li>
-                        <li><strong>Objetivos:</strong> Primario (SMART) + 1–3 secundarios</li>
-                        <li><strong>Métodos:</strong> Diseño, población, intervención, medidas resultado</li>
-                        <li><strong>Ética:</strong> Consentimiento, riesgos/beneficios, confidencialidad</li>
-                        <li><strong>Cronograma:</strong> Timeline realista</li>
-                        <li><strong>Referencias:</strong> ≥10 pertinentes</li>
-                    </ul>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;"><strong>Semana 15 | 25% calificación</strong></p>
-                </div>
-            </div>
-
-            <!-- Plantilla 5 -->
-            <div class="template-card">
-                <div class="card-header" style="background: linear-gradient(135deg, #D97555 0%, #B8552F 100%);">
-                    <div class="card-number">5</div>
-                    <div class="card-title">Presentación Oral/Póster</div>
-                </div>
-                <div class="card-body">
-                    <h4>📌 Estructura (5–7 minutos)</h4>
-                    <ul>
-                        <li><strong>Intro:</strong> Por qué importa este tema (1 min)</li>
-                        <li><strong>Pregunta:</strong> PICO claro (1 min)</li>
-                        <li><strong>Métodos:</strong> Cómo se hará (1.5 min)</li>
-                        <li><strong>Impacto:</strong> Implicaciones clínicas (1 min)</li>
-                        <li><strong>Preguntas:</strong> Responde con confianza (1–2 min)</li>
-                    </ul>
-                    <h4 style="margin-top: 1rem;">💡 Tips</h4>
-                    <ul>
-                        <li>4–6 diapositivas máximo (oral)</li>
-                        <li>Tipografía ≥18pt (legible)</li>
-                        <li>Contacto visual, voz clara</li>
-                    </ul>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;"><strong>Semana 15 | 15% calificación</strong></p>
-                </div>
+            <div class="usage-box reveal">
+                <h3>Cómo usar estas plantillas</h3>
+                <ol>
+                    <li>Lee la plantilla completa antes de empezar a escribir.</li>
+                    <li>Comienza con tu contenido, no copies la plantilla.</li>
+                    <li>Autoevalúa: verifica que cubriste cada elemento clave.</li>
+                    <li>Pide feedback a compañeros o al instructor.</li>
+                    <li>Itera basándote en el feedback formativo recibido.</li>
+                </ol>
             </div>
         </div>
+    </section>
 
-        <div class="usage">
-            <h3>💬 Cómo Usar Estas Plantillas</h3>
-            <ol>
-                <li><strong>Lee la plantilla completa</strong> antes de empezar a escribir. Familiarízate con la estructura.</li>
-                <li><strong>Comienza con tu contenido.</strong> No copees la plantilla, úsala como guía.</li>
-                <li><strong>Autoeval.</strong> Al terminar, verifica que cubriste cada elemento clave.</li>
-                <li><strong>Pide feedback.</strong> A compañeros, tutores, o el instructor — las plantillas son puntos de partida, no finales.</li>
-                <li><strong>Itera.</strong> Cada entregable mejora basado en feedback formativo — las plantillas te ayudan a incorporar comentarios de forma estructurada.</li>
-            </ol>
-        </div>
-
-        <div class="usage" style="background-color: #E8F5F0;">
-            <h3>📂 Descarga Completa</h3>
-            <p>Todas las plantillas están disponibles en el documento <strong>"plantillas.md"</strong> de este curso con ejemplos y guías adicionales. Consulta con el instructor si necesitas copias editables en Word/Google Docs.</p>
-        </div>
-    </div>
-
-    <footer>
-        <p><strong>Electiva Profesional en Medicina (617017M) — Investigación en Urología</strong></p>
-        <p>Universidad del Valle | Semestres 2024+</p>
+    <footer class="site-footer">
+        <p><strong>Electiva Profesional en Medicina (617017M)</strong> — Investigación en Urología</p>
+        <p>Universidad del Valle</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
