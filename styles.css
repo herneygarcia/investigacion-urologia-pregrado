@@ -467,6 +467,9 @@ section.block {
     height: 44px;
     width: auto;
     flex-shrink: 0;
+    background: #FFFFFF;
+    padding: 0.4rem 0.6rem;
+    border-radius: var(--radius-sm);
 }
 
 .footer-text { text-align: center; flex: 1; }
