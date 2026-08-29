@@ -106,7 +106,7 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
     - Capítulos sobre diseños: descriptivo, cohorte, caso-control y RCT.
     - **Relevancia**: Referencia estándar para Módulo 2.
 
-19. Sánchez Pedraza R, coordinador. Epidemiología clínica: investigación clínica aplicada. 2.a ed. Bogotá: Editorial Médica Panamericana; 2023.
+19. Ruiz Morales Á, Gómez Restrepo C. Epidemiología Clínica: Investigación clínica aplicada. 2.ª ed. Bogotá: Editorial Médica Panamericana; 2015.
     - Cobertura integral de métodos de investigación clínica, diseños observacionales y experimentales, análisis crítico de evidencia.
     - **Relevancia**: Referencia central para diseños de estudio, appraisal y síntesis de evidencia en contexto clínico colombiano.
 
@@ -309,8 +309,8 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 | Módulo | Referencias Principales |
 |--------|-------------------------|
-| **Mod 1: Fundamentos** | 18–19 (Kirkwood, Sánchez Pedraza), 20 (Sackett EBM), 8 (PICO), 25 (PubMed), 48 (Khan Academy) |
-| **Mod 2: Diseños** | 18–19 (Kirkwood, Sánchez Pedraza), 30–36 (ejemplos urología), 9 (casos urológicos) |
+| **Mod 1: Fundamentos** | 18–19 (Kirkwood, Ruiz Morales & Gómez Restrepo), 20 (Sackett EBM), 8 (PICO), 25 (PubMed), 48 (Khan Academy) |
+| **Mod 2: Diseños** | 18–19 (Kirkwood, Ruiz Morales & Gómez Restrepo), 30–36 (ejemplos urología), 9 (casos urológicos) |
 | **Mod 3: Ética** | 11 (Belmont), 12 (Helsinki), 13 (ICMJE), 14–15 (normativa Colombia), 16–17 (integridad) |
 | **Mod 4: Appraisal** | 21 (CASP), 22 (JBI), 23–24 (GRADE/Oxford), 39–40 (bioestadística) |
 | **Mod 5: Protocolo** | 42–45 (EQUATOR, escritura), 27–29 (gestión referencias) |
@@ -341,11 +341,11 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 **Para entrar al tema rápidamente** (primer contacto):
 1. Lectura: Video Khan Academy sobre método científico (~15 min).
 2. Artículo: Sackett et al. (ref. 20) sobre EBM (~5 min).
-3. Libro: Capítulo introductorio de Sánchez Pedraza (ref. 19) (~20 min).
+3. Libro: Capítulo introductorio de Ruiz Morales & Gómez Restrepo (ref. 19) (~20 min).
 
 **Para profundizar en diseños**:
 1. Kirkwood & Sterne (ref. 18), capítulos selectos.
-2. Sánchez Pedraza (ref. 19), secciones sobre diseños observacionales y experimentales.
+2. Ruiz Morales & Gómez Restrepo (ref. 19), secciones sobre diseños observacionales y experimentales.
 3. Ejemplos urológicos (ref. 30–36).
 4. CASP / JBI tools (ref. 21–22) aplicados a ejemplos.
 
