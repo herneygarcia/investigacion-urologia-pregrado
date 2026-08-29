@@ -101,7 +101,7 @@ Discusiones en pequeños grupos durante sesiones síncronas; trabajo colaborativ
 Se utilizan estudios, protocolos, y dilemas éticos reales de urología como punto de anclaje. No hay casos "hipotéticos simplificados"; la complejidad es real.
 
 ### 5. Reflexión Estructurada
-Journales de aprendizaje breves (micro-reflexiones semanales): ¿qué aprendí? ¿qué me cuestionó? ¿cómo lo aplicaré? Estos no son evaluados formalmente pero son insumo valioso para el estudiante.
+Reflexiones de aprendizaje breves (micro-reflexiones semanales): ¿qué aprendí? ¿qué me cuestionó? ¿cómo lo aplicaré? Estas no son evaluadas formalmente pero son insumo valioso para el estudiante.
 
 ### 6. Tiempo Protegido para el Trabajo Independiente
 La distribución de créditos (30h contacto, 162h independientes) reconoce que el verdadero aprendizaje ocurre fuera del aula. Se proporcionan guías de lectura, listados de tareas, y scaffolding para dirigir el trabajo independiente.
@@ -290,7 +290,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 (Detalles en `evaluacion.md`)
 
 - **Formativa**: Micro-reflexiones, feedback en talleres, pre-tareas.
-- **Sumativa**: Banco PICO (15%), análisis ético (15%), reseña crítica (20%), protocolo escrito (25%), presentación oral (15%), participación/journales (10%).
+- **Sumativa**: Banco PICO (15%), análisis ético (15%), reseña crítica (20%), protocolo escrito (25%), presentación oral (15%), participación/reflexión (10%).
 - **Desglose de horas**: De las 192h totales, ~12h dedicadas a evaluación (exámenes, presentaciones, escritura de reportes finales); el resto es aprendizaje directo + práctica.
 
 ---
