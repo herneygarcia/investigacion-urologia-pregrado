@@ -76,23 +76,13 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
     - Pautas sobre autoría, conflicto de intereses, consentimiento informado e integridad.
     - **Relevancia**: Estándares internacionales para integridad en investigación.
 
-### B. Legislación y Regulaciones Colombia
-
-14. Ministerio de Educación Nacional. Decreto 0808 de Abril 25 de 2002: estructura y características de los créditos académicos. Colombia: Diario Oficial; 2002.
-    - Regulación oficial sobre distribución de horas crédito en educación superior colombiana.
-    - **Relevancia**: Justificación de 192 horas (4 créditos × 48h), distribución independiente.
-
-15. Universidad de Antioquia. Orientaciones para la gestión de los créditos académicos. Medellín: Universidad de Antioquia; 2010.
-    - Documento guía sobre implementación de créditos académicos en pregrado y postgrado.
-    - **Relevancia**: Contexto normativo local de Univalle.
-
 ### C. Integridad en Investigación
 
-16. Bosch S, Albracht B. Research misconduct: a comprehensive review. J Med Ethics. 2015;41(3):200–207. doi:10.1136/medethics-2014-102289
+14. Bosch S, Albracht B. Research misconduct: a comprehensive review. J Med Ethics. 2015;41(3):200–207. doi:10.1136/medethics-2014-102289
     - Análisis de plagio, LPU, p-hacking y autocita inflada.
     - **Relevancia**: Contenido para Sem 10 (integridad).
 
-17. Resnik DB. What is ethics in research & why does it matter? [Internet]. National Institute of Environmental Health Sciences; 2015 [cited 2024]. Available from: https://www.niehs.nih.gov/research/resources/bioethics/whatis/
+15. Resnik DB. What is ethics in research & why does it matter? [Internet]. National Institute of Environmental Health Sciences; 2015 [cited 2024]. Available from: https://www.niehs.nih.gov/research/resources/bioethics/whatis/
     - Guía introductoria sobre integridad en investigación.
     - **Relevancia**: Definición clara de malas prácticas.
 
@@ -102,35 +92,35 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. Libros de Texto y Capítulos
 
-18. Kirkwood BR, Sterne JAC. Essential medical statistics. 2nd ed. Oxford: Blackwell Science; 2003.
+16. Kirkwood BR, Sterne JAC. Essential medical statistics. 2nd ed. Oxford: Blackwell Science; 2003.
     - Capítulos sobre diseños: descriptivo, cohorte, caso-control y RCT.
     - **Relevancia**: Referencia estándar para Módulo 2.
 
-19. Ruiz Morales Á, Gómez Restrepo C. Epidemiología Clínica: Investigación clínica aplicada. 2.ª ed. Bogotá: Editorial Médica Panamericana; 2015.
+17. Ruiz Morales Á, Gómez Restrepo C. Epidemiología Clínica: Investigación clínica aplicada. 2.ª ed. Bogotá: Editorial Médica Panamericana; 2015.
     - Cobertura integral de métodos de investigación clínica, diseños observacionales y experimentales, análisis crítico de evidencia.
     - **Relevancia**: Referencia central para diseños de estudio, appraisal y síntesis de evidencia en contexto clínico colombiano.
 
-20. Sackett DL, Rosenberg WMC, Muir Gray JA, Haynes RB, Richardson WS. Evidence-based medicine: what it is and what it isn't. BMJ. 1996;312(7023):71–72. doi:10.1136/bmj.312.7023.71
+18. Sackett DL, Rosenberg WMC, Muir Gray JA, Haynes RB, Richardson WS. Evidence-based medicine: what it is and what it isn't. BMJ. 1996;312(7023):71–72. doi:10.1136/bmj.312.7023.71
     - Definición fundamental de medicina basada en evidencia.
     - **Relevancia**: Introducción a EBM (Sem 1).
 
 ### B. Herramientas de Appraisal Crítico
 
-21. Critical Appraisal Skills Programme. Checklists & guides [Internet]. Oxford: CASP; 2024 [cited 2024]. Available from: https://casp-uk.net/
+19. Critical Appraisal Skills Programme. Checklists & guides [Internet]. Oxford: CASP; 2024 [cited 2024]. Available from: https://casp-uk.net/
     - Herramientas descargables para appraisal de estudios cohorte, caso-control, RCT y revisiones sistemáticas.
     - **Relevancia**: Herramienta central Sem 11 + 12.
 
-22. Joanna Briggs Institute. JBI critical appraisal checklist [Internet]. 2024 [cited 2024]. Available from: https://jbi.global/critical-appraisal-tools
+20. Joanna Briggs Institute. JBI critical appraisal checklist [Internet]. 2024 [cited 2024]. Available from: https://jbi.global/critical-appraisal-tools
     - Herramientas similares a CASP, enfoque en revisiones sistemáticas y metodología.
     - **Relevancia**: Alternativa a CASP.
 
 ### C. Niveles de Evidencia y Grados de Recomendación
 
-23. Grading of Recommendations, Assessment, Development and Evaluation. GRADE handbook [Internet]. 2024 [cited 2024]. Available from: https://gradepro.org/
+21. Grading of Recommendations, Assessment, Development and Evaluation. GRADE handbook [Internet]. 2024 [cited 2024]. Available from: https://gradepro.org/
     - Sistema de clasificación de evidencia y fuerza de recomendación.
     - **Relevancia**: Contexto de Sem 12.
 
-24. Oxford Centre for Evidence-Based Medicine. Oxford levels of evidence [Internet]. Oxford: University of Oxford; 2011 [cited 2024]. Available from: https://www.cebm.ox.ac.uk/resources/levels-of-evidence
+22. Oxford Centre for Evidence-Based Medicine. Oxford levels of evidence [Internet]. Oxford: University of Oxford; 2011 [cited 2024]. Available from: https://www.cebm.ox.ac.uk/resources/levels-of-evidence
     - Escala de niveles 1–5 para diferentes tipos de estudio.
     - **Relevancia**: Sem 12.
 
@@ -140,25 +130,25 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. PubMed y Bases de Datos
 
-25. U.S. National Library of Medicine. PubMed help [Internet]. Bethesda (MD): NLM; 2024 [cited 2024]. Available from: https://pubmed.ncbi.nlm.nih.gov/help/
+23. U.S. National Library of Medicine. PubMed help [Internet]. Bethesda (MD): NLM; 2024 [cited 2024]. Available from: https://pubmed.ncbi.nlm.nih.gov/help/
     - Guía oficial de uso de PubMed, MeSH y búsqueda booleana.
     - **Relevancia**: Referencia para Sem 2.
 
-26. Bramer WM, Rethlefsen ML, Murad MH, Mast MS. When and how to update systematic reviews: consensus and recommendations. J Clin Epidemiol. 2017;84:11–18. doi:10.1016/j.jclinepi.2016.11.004
+24. Bramer WM, Rethlefsen ML, Murad MH, Mast MS. When and how to update systematic reviews: consensus and recommendations. J Clin Epidemiol. 2017;84:11–18. doi:10.1016/j.jclinepi.2016.11.004
     - Inclusión de estrategias de búsqueda sistemática.
     - **Relevancia**: Búsqueda rigurosa (Sem 2, 7).
 
 ### B. Herramientas de Gestión de Referencias
 
-27. Qatar Computing Research Institute. Rayyan documentation [Internet]. 2024 [cited 2024]. Available from: https://www.rayyan.ai/
+25. Qatar Computing Research Institute. Rayyan documentation [Internet]. 2024 [cited 2024]. Available from: https://www.rayyan.ai/
     - Herramienta libre para gestión de referencias y cribado de títulos/abstracts.
     - **Relevancia**: Herramienta práctica Sem 2–3, 7.
 
-28. Elsevier. Mendeley [Internet]. 2024 [cited 2024]. Available from: https://www.mendeley.com/
+26. Elsevier. Mendeley [Internet]. 2024 [cited 2024]. Available from: https://www.mendeley.com/
     - Herramienta para organizar referencias y generar bibliografías (Harvard, APA).
     - **Relevancia**: Apoyo para citas (Sem 10, 14–15).
 
-29. Corporation for Digital Scholarship. Zotero [Internet]. 2024 [cited 2024]. Available from: https://www.zotero.org/
+27. Corporation for Digital Scholarship. Zotero [Internet]. 2024 [cited 2024]. Available from: https://www.zotero.org/
     - Herramienta de código abierto para gestión de referencias.
     - **Relevancia**: Alternativa gratuita para citas (Sem 10, 14–15).
 
@@ -172,47 +162,47 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 #### Screening y Prevención (Cáncer de Próstata)
 
-30. Schröder FH, Hugosson J, Roobol MJ, et al. Screening and prostate-cancer mortality in a randomized European study. N Engl J Med. 2014;360(13):1320–1328. doi:10.1056/NEJMoa0810084
+28. Schröder FH, Hugosson J, Roobol MJ, et al. Screening and prostate-cancer mortality in a randomized European study. N Engl J Med. 2014;360(13):1320–1328. doi:10.1056/NEJMoa0810084
     - RCT europeo sobre screening de PSA (ERSPC).
     - **Relevancia**: Ejemplo RCT (Sem 6), tema relevante urología.
 
-31. Grossfeld GD, Latini DM, Lubeck DP, et al. Predicting recurrence and progression of prostate cancer. Cancer. 2007;109(12):2423–2430. doi:10.1002/cncr.22675
+29. Grossfeld GD, Latini DM, Lubeck DP, et al. Predicting recurrence and progression of prostate cancer. Cancer. 2007;109(12):2423–2430. doi:10.1002/cncr.22675
     - Estudio cohorte retrospectivo de factores pronósticos.
     - **Relevancia**: Ejemplo cohorte (Sem 5).
 
 #### Microhematuria y Cáncer de Vejiga
 
-32. Grossfeld GD, Litwin MS, Wolf JS, et al. Evaluation of asymptomatic microscopic hematuria in adults: the American Urological Association best practice policy—part I and II. Urology. 2001;57(4):599–603. doi:10.1016/S0090-4295(01)00922-7
+30. Grossfeld GD, Litwin MS, Wolf JS, et al. Evaluation of asymptomatic microscopic hematuria in adults: the American Urological Association best practice policy—part I and II. Urology. 2001;57(4):599–603. doi:10.1016/S0090-4295(01)00922-7
     - Recomendaciones para evaluación de microhematuria asintomática; diagnóstico diferencial.
     - **Relevancia**: Ejemplo de guía clínica; diagnóstico diferencial y screening (Sem 12).
 
-33. Lotan Y, Svatek RS, Sagalowsky AI. Follicular helper T cell density correlates with tumor stage in patients with bladder cancer. J Urol. 2007;177(6):2288–2293. doi:10.1016/j.juro.2007.01.160
+31. Lotan Y, Svatek RS, Sagalowsky AI. Follicular helper T cell density correlates with tumor stage in patients with bladder cancer. J Urol. 2007;177(6):2288–2293. doi:10.1016/j.juro.2007.01.160
     - Estudio cohorte sobre factores pronósticos en cáncer de vejiga.
     - **Relevancia**: Ejemplo de diseño cohorte prospectivo (Sem 5).
 
 #### Masas Renales y Cáncer de Riñón
 
-34. Capitanio U, Bensalah K, Bex A, et al. Epidemiology of renal cell carcinoma. Eur Urol. 2019;75(1):74–84. doi:10.1016/j.eururo.2018.08.022
+32. Capitanio U, Bensalah K, Bex A, et al. Epidemiology of renal cell carcinoma. Eur Urol. 2019;75(1):74–84. doi:10.1016/j.eururo.2018.08.022
     - Revisión sobre epidemiología, factores de riesgo y diagnóstico de cáncer renal.
     - **Relevancia**: Guía de referencia sobre masas renales; ejemplo de síntesis de evidencia (Sem 12).
 
 #### Virus del Papiloma Humano (VPH) y Cáncer de Pene
 
-35. Chahoud J, Spiess PE, Bandoch AC, Almufti SA. Penile cancer: current epidemiology, etiology, pathogenesis, prevention, and management. Oncology. 2021;100(6):355–368. doi:10.1159/000512384
+33. Chahoud J, Spiess PE, Bandoch AC, Almufti SA. Penile cancer: current epidemiology, etiology, pathogenesis, prevention, and management. Oncology. 2021;100(6):355–368. doi:10.1159/000512384
     - Revisión sobre epidemiología, rol del VPH y prevención del cáncer de pene.
     - **Relevancia**: Tema urológico emergente; ejemplo de revisión sistemática (Sem 4).
 
-36. Djajadiningrat RS, Graafland NM, van Werkhoven E, et al. Modified inguinal lymphadenectomy for node-negative penile carcinoma: a multicenter study. Eur Urol Focus. 2021;7(6):1234–1242. doi:10.1016/j.euf.2020.05.007
+34. Djajadiningrat RS, Graafland NM, van Werkhoven E, et al. Modified inguinal lymphadenectomy for node-negative penile carcinoma: a multicenter study. Eur Urol Focus. 2021;7(6):1234–1242. doi:10.1016/j.euf.2020.05.007
     - Estudio multicéntrico cohorte prospectivo sobre linfadenectomía y outcomes.
     - **Relevancia**: Ejemplo de diseño cohorte prospectivo multicéntrico (Sem 5).
 
 ### B. Guías Clínicas (Referencia para Niveles de Evidencia)
 
-37. European Association of Urology. EAU guidelines on prostate cancer, renal cell carcinoma, testicular cancer, penile cancer [Internet]. 2023 [cited 2024]. Available from: https://uroweb.org/guidelines/
+35. European Association of Urology. EAU guidelines on prostate cancer, renal cell carcinoma, testicular cancer, penile cancer [Internet]. 2023 [cited 2024]. Available from: https://uroweb.org/guidelines/
     - Guías de referencia para urología; muestran cómo se sintetiza evidencia.
     - **Relevancia**: Ejemplo real de síntesis de evidencia (Sem 12).
 
-38. American Urological Association. AUA guidelines [Internet]. 2024 [cited 2024]. Available from: https://www.auanet.org/guidelines/
+36. American Urological Association. AUA guidelines [Internet]. 2024 [cited 2024]. Available from: https://www.auanet.org/guidelines/
     - Equivalente norteamericano a EAU.
     - **Relevancia**: Perspectiva comparada.
 
@@ -222,17 +212,17 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. Introducción Accesible
 
-39. Cumming G. Understanding the new statistics: effect sizes, confidence intervals, and meta-analysis. New York: Routledge; 2012.
+37. Cumming G. Understanding the new statistics: effect sizes, confidence intervals, and meta-analysis. New York: Routledge; 2012.
     - Capítulos sobre tamaño de efecto, IC e interpretación.
     - **Relevancia**: Fundamento conceptual Sem 13.
 
-40. Bland JM, Altman DG. Multiple significance tests: the Bonferroni method. BMJ. 1995;310(6973):170. doi:10.1136/bmj.310.6973.170
+38. Bland JM, Altman DG. Multiple significance tests: the Bonferroni method. BMJ. 1995;310(6973):170. doi:10.1136/bmj.310.6973.170
     - Sobre p-valor y multiplicidad de pruebas.
     - **Relevancia**: Concepto de p-hacking (Sem 13).
 
 ### B. Videos Educativos (Abiertos)
 
-41. Starmer J. StatQuest with Josh Starmer [Internet]. YouTube; 2024 [cited 2024]. Available from: https://www.youtube.com/c/joshstarmer
+39. Starmer J. StatQuest with Josh Starmer [Internet]. YouTube; 2024 [cited 2024]. Available from: https://www.youtube.com/c/joshstarmer
     - Explicaciones visuales sobre p-valor, IC, tamaño efecto y distribuciones.
     - **Relevancia**: Recurso recomendado para estudiantes (Sem 13).
 
@@ -242,21 +232,21 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. EQUATOR Network — Guías de Reporting
 
-42. EQUATOR Network. Reporting guidelines for health research [Internet]. 2024 [cited 2024]. Available from: https://www.equator-network.org/
+40. EQUATOR Network. Reporting guidelines for health research [Internet]. 2024 [cited 2024]. Available from: https://www.equator-network.org/
     - Colección de guías: CONSORT (RCT), STROBE (observacional), PRISMA (sistemática), ARRIVE (animal).
     - **Relevancia**: Estándares de metodología/reporting (Sem 14–15).
 
-43. Moher D, Liberati A, Tetzlaff J, Altman DG; PRISMA Group. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. PLoS Med. 2009;6(7):e1000097. doi:10.1371/journal.pmed.1000097
+41. Moher D, Liberati A, Tetzlaff J, Altman DG; PRISMA Group. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. PLoS Med. 2009;6(7):e1000097. doi:10.1371/journal.pmed.1000097
     - Guía de reporte para revisiones sistemáticas.
     - **Relevancia**: Formato de protocolo (Sem 7, 14).
 
 ### B. Escritura Científica
 
-44. Peat J, Elliott E, Baur L, Keena V. Scientific writing: easy when you know how. London: BMJ Books; 2002.
+42. Peat J, Elliott E, Baur L, Keena V. Scientific writing: easy when you know how. London: BMJ Books; 2002.
     - Guía práctica de escritura científica clara.
     - **Relevancia**: Referencia para claridad en protocolo (Sem 14–15).
 
-45. American Psychological Association. Publication manual of the American Psychological Association. 7th ed. Washington (DC): APA; 2020.
+43. American Psychological Association. Publication manual of the American Psychological Association. 7th ed. Washington (DC): APA; 2020.
     - Estándar de citación (alternativa a Harvard).
     - **Relevancia**: Formato de referencias (opcional, Univalle puede preferir Harvard).
 
@@ -266,11 +256,11 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. Normativa Institucional
 
-46. Universidad del Valle. Resoluciones sobre investigación y ética. Cali: Universidad del Valle.
+44. Universidad del Valle. Resoluciones sobre investigación y ética. Cali: Universidad del Valle.
     - Documento de Univalle sobre comité ético institucional (CEI/CEIBA).
     - **Relevancia**: Contactar Oficina de Investigaciones de Univalle para copia actual.
 
-47. Ministerio de Educación Nacional. Decreto 0808/2002. Estándar nacional de crédito académico. Colombia: Diario Oficial; 2002.
+45. Ministerio de Educación Nacional. Decreto 0808/2002. Estándar nacional de crédito académico. Colombia: Diario Oficial; 2002.
     - Justificación de estructura de horas (Sem 1, propuesta).
 
 ---
@@ -279,25 +269,25 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. Tutoriales y Herramientas Gratuitas
 
-48. Khan Academy. Science [Internet]. 2024 [cited 2024]. Available from: https://www.khanacademy.org/
+46. Khan Academy. Science [Internet]. 2024 [cited 2024]. Available from: https://www.khanacademy.org/
     - Videos sobre método científico y experimentos diseño.
     - **Relevancia**: Complemento visual Sem 1.
 
-49. Cochrane Learning. Resources on systematic reviews and meta-analysis [Internet]. 2024 [cited 2024]. Available from: https://learning.cochrane.org/
+47. Cochrane Learning. Resources on systematic reviews and meta-analysis [Internet]. 2024 [cited 2024]. Available from: https://learning.cochrane.org/
     - Tutoriales sobre cómo conducir revisiones sistemáticas.
     - **Relevancia**: Profundización Módulo 2 (Sem 7).
 
-50. Open Access Button. Finding OA research [Internet]. 2024 [cited 2024]. Available from: https://www.openaccessbutton.org/
+48. Open Access Button. Finding OA research [Internet]. 2024 [cited 2024]. Available from: https://www.openaccessbutton.org/
     - Herramienta para ubicar artículos en acceso abierto.
     - **Relevancia**: Facilitar acceso a literatura (Sem 2–3, 11–13).
 
 ### B. Pre-prints y Literatura Abierta
 
-51. National Center for Biotechnology Information. PubMed Central [Internet]. Bethesda (MD): NLM; 2024 [cited 2024]. Available from: https://www.ncbi.nlm.nih.gov/pmc/
+49. National Center for Biotechnology Information. PubMed Central [Internet]. Bethesda (MD): NLM; 2024 [cited 2024]. Available from: https://www.ncbi.nlm.nih.gov/pmc/
     - Acceso abierto a artículos de MEDLINE.
     - **Relevancia**: Acceso a literatura sin suscripción.
 
-52. medRxiv. Preprints in medicine [Internet]. 2024 [cited 2024]. Available from: https://www.medrxiv.org/
+50. medRxiv. Preprints in medicine [Internet]. 2024 [cited 2024]. Available from: https://www.medrxiv.org/
     - Repositorio de pre-prints biomédicos.
     - **Relevancia**: Acceso a trabajos en progreso.
 
@@ -340,12 +330,12 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 **Para entrar al tema rápidamente** (primer contacto):
 1. Lectura: Video Khan Academy sobre método científico (~15 min).
-2. Artículo: Sackett et al. (ref. 20) sobre EBM (~5 min).
-3. Libro: Capítulo introductorio de Ruiz Morales & Gómez Restrepo (ref. 19) (~20 min).
+2. Artículo: Sackett et al. (ref. 18) sobre EBM (~5 min).
+3. Libro: Capítulo introductorio de Ruiz Morales & Gómez Restrepo (ref. 17) (~20 min).
 
 **Para profundizar en diseños**:
-1. Kirkwood & Sterne (ref. 18), capítulos selectos.
-2. Ruiz Morales & Gómez Restrepo (ref. 19), secciones sobre diseños observacionales y experimentales.
+1. Kirkwood & Sterne (ref. 16), capítulos selectos.
+2. Ruiz Morales & Gómez Restrepo (ref. 17), secciones sobre diseños observacionales y experimentales.
 3. Ejemplos urológicos (ref. 30–36).
 4. CASP / JBI tools (ref. 21–22) aplicados a ejemplos.
 
