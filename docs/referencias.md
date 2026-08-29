@@ -154,8 +154,6 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 
 ### A. Artículos Modelo para Enseñanza (por Tema)
 
-**Nota**: Los siguientes artículos sirven como ejemplos para enseñanza; NO se requiere que los estudiantes lean todos. Se sugieren 1–2 por módulo como lecturas modelo.
-
 #### Screening y Prevención (Cáncer de Próstata)
 
 27. Schröder FH, Hugosson J, Roobol MJ, et al. Screening and prostate-cancer mortality in a randomized European study. N Engl J Med. 2014;360(13):1320–1328. doi:10.1056/NEJMoa0810084
@@ -274,10 +272,3 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
     - Repositorio de pre-prints biomédicos.
     - **Relevancia**: Acceso a trabajos en progreso.
 
----
-
-## Conclusión
-
-Esta bibliografía es "viva" — se actualiza cada ciclo del curso conforme nueva literatura surge y se encuentran recursos más relevantes. Estudiantes son alentados a sugerir referencias adicionales, especialmente artículos urológicos recientes que reflejen investigación actual en la especialidad.
-
-El énfasis está en acceso abierto y sostenibilidad: todas las referencias deben ser accesibles sin barreras editoriales o de costo a estudiantes.
