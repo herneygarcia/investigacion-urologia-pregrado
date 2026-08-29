@@ -76,7 +76,7 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
     - Pautas sobre autoría, conflicto de intereses, consentimiento informado e integridad.
     - **Relevancia**: Estándares internacionales para integridad en investigación.
 
-### C. Integridad en Investigación
+### B. Integridad en Investigación
 
 14. Bosch S, Albracht B. Research misconduct: a comprehensive review. J Med Ethics. 2015;41(3):200–207. doi:10.1136/medethics-2014-102289
     - Análisis de plagio, LPU, p-hacking y autocita inflada.
