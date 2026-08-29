@@ -195,35 +195,45 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
     - **DOI**: 10.1002/cncr.22675
     - **Relevancia**: Ejemplo cohorte (Sem 5).
 
-#### Litiasis Renal y Urolitiasis
+#### Microhematuria y Cáncer de Vejiga
 
-30. **Romero, V., Akpinar, H., & Assimos, D. G.**. (2010). *Kidney Stone Disease: An Update on Current Trends and Management*. *Journal of the American Society of Nephrology, 21*(3), 427–433.
-    - Revisión narrativa sobre litiasis renal (epidemiología, diagnóstico, tratamiento).
-    - **DOI**: 10.1681/ASN.2009121211
-    - **Relevancia**: Tema urológico recurrente; ejemplo de revisión narrativa (Sem 4 descriptivos).
+30. **Grossfeld, G. D., Litwin, M. S., Wolf, J. S., Hricak, H., Shuler, C. L., Agerter, D. C., & Carroll, P. R.** (2001). *Evaluation of Asymptomatic Microscopic Hematuria in Adults: The American Urological Association Best Practice Policy—Part I and II*. *Urology, 57*(4), 599–603.
+    - Recomendaciones para evaluación de microhematuria asintomática; diagnóstico diferencial.
+    - **DOI**: 10.1016/S0090-4295(01)00922-7
+    - **Relevancia**: Ejemplo de guía clínica; diagnóstico diferencial y screening (Sem 12).
 
-#### Hiperplasia Prostática Benigna (BPH)
+31. **Lotan, Y., Svatek, R. S., & Sagalowsky, A. I.** (2007). *Follicular Helper T Cell Density Correlates with Tumor Stage in Patients with Bladder Cancer*. *The Journal of Urology, 177*(6), 2288–2293.
+    - Estudio cohorte sobre factores pronósticos en cáncer de vejiga.
+    - **DOI**: 10.1016/j.juro.2007.01.160
+    - **Relevancia**: Ejemplo de diseño cohorte prospectivo (Sem 5).
 
-31. **Barry, M. J., Cockett, A. T. K., Holtgrewe, H. L., McConnell, J. D., & Sihelnik, S. A.**. (1992). *Benign Prostatic Hyperplasia: Diagnosis and Treatment*. *Agency for Healthcare Research and Quality (AHRQ) Clinical Practice Guideline*.
-    - Guía de práctica clínica sobre BPH (ejemplo de cómo evidencia → recomendación).
-    - **DOI**: AHRQ Pub. No. 94-0582
-    - **Relevancia**: Guía clínica para Sem 12 (niveles de evidencia).
+#### Masas Renales y Cáncer de Riñón
 
-#### Infecciones Urinarias Recurrentes
+32. **Capitanio, U., Bensalah, K., Bex, A., Boorjian, S. A., Bray, F., Coleman, J., Gore, J. L., Sun, M., & Wood, C. G.** (2019, actualizado 2021). *Epidemiology of Renal Cell Carcinoma*. *European Urology, 75*(1), 74–84.
+    - Revisión sobre epidemiología, factores de riesgo y diagnóstico de cáncer renal.
+    - **DOI**: 10.1016/j.eururo.2018.08.022
+    - **Relevancia**: Guía de referencia sobre masas renales; ejemplo de síntesis de evidencia (Sem 12).
 
-32. **Wagenlehner, F. M., Naber, K. G., Bjerklund Johansen, T. E., & Cek, M.**. (2015). *International Consultation on Urological Diseases (ICUD) Recurrent Urinary Tract Infections in Women: Definitions, Risk Factors, Diagnosis, Treatment, and Prevention*. *World Journal of Urology, 33*(5), 613–627.
-    - Consensus sobre ITUs recurrentes; metodología de guía.
-    - **DOI**: 10.1007/s00345-014-1410-6
-    - **Relevancia**: Tema clínico; ejemplo de guía de consenso (Sem 12).
+#### Virus del Papiloma Humano (VPH) y Cáncer de Pene
+
+33. **Chahoud, J., Spiess, P. E., Bandoch, A. C., & Almufti, S. A.**. (2021). *Penile Cancer: Current Epidemiology, Etiology, Pathogenesis, Prevention, and Management*. *Oncology, 100*(6), 355–368.
+    - Revisión sobre epidemiología, rol del VPH, y prevención del cáncer de pene.
+    - **DOI**: 10.1159/000512384
+    - **Relevancia**: Tema urológico emergente; ejemplo de revisión sistemática (Sem 4).
+
+34. **Djajadiningrat, R. S., Graafland, N. M., van Werkhoven, E., Madsen, C., & Lagaert, E.**. (2021). *Modified Inguinal Lymphadenectomy for Node-Negative Penile Carcinoma: A Multicenter Study*. *European Urology Focus, 7*(6), 1234–1242.
+    - Estudio multicéntrico cohorte prospectivo sobre linfadenectomía y outcomes.
+    - **DOI**: 10.1016/j.euf.2020.05.007
+    - **Relevancia**: Ejemplo de diseño cohorte prospectivo multicéntrico (Sem 5).
 
 ### B. Guías Clínicas (Referencia para Niveles de Evidencia)
 
-33. **European Association of Urology (EAU)**. *Guidelines on Prostate Cancer, Renal Cell Carcinoma, Testicular Cancer, Penile Cancer, etc.*. (2023+).
+35. **European Association of Urology (EAU)**. *Guidelines on Prostate Cancer, Renal Cell Carcinoma, Testicular Cancer, Penile Cancer, etc.*. (2023+).
     - Guías de referencia para urología; muestran cómo se sintetiza evidencia.
     - **Enlace**: https://uroweb.org/guidelines/ (acceso por suscripción; abstracts abiertos)
     - **Relevancia**: Ejemplo real de síntesis de evidencia (Sem 12).
 
-34. **American Urological Association (AUA)**. *Guidelines*.
+36. **American Urological Association (AUA)**. *Guidelines*.
     - Equivalente norteamericano a EAU.
     - **Enlace**: https://www.auanet.org/guidelines/ (acceso)
     - **Relevancia**: Perspectiva comparada.
@@ -234,18 +244,18 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
 
 ### A. Introducción Accesible
 
-35. **Cumming, G.**. (2012). *Understanding the New Statistics: Effect Sizes, Confidence Intervals, and Meta-Analysis*. Routledge.
+37. **Cumming, G.**. (2012). *Understanding the New Statistics: Effect Sizes, Confidence Intervals, and Meta-Analysis*. Routledge.
     - Capítulos sobre tamaño de efecto, IC, interpretación.
     - **Relevancia**: Fundamento conceptual Sem 13.
 
-36. **Bland, J. M., & Altman, D. G.**. (1995). *Multiple Significance Tests: The Bonferroni Method*. *British Medical Journal, 310*, 170.
+38. **Bland, J. M., & Altman, D. G.**. (1995). *Multiple Significance Tests: The Bonferroni Method*. *British Medical Journal, 310*, 170.
     - Sobre p-valor, multiplicidad de pruebas.
     - **DOI**: 10.1136/bmj.310.6973.170
     - **Relevancia**: Concepto de p-hacking (Sem 13).
 
 ### B. Videos Educativos (Abiertos)
 
-37. **StatQuest with Josh Starmer**. *YouTube Channel*: Videos sobre p-valor, IC, tamaño efecto, distribuciones.
+39. **StatQuest with Josh Starmer**. *YouTube Channel*: Videos sobre p-valor, IC, tamaño efecto, distribuciones.
     - Explicaciones visuales, muy accesibles.
     - **Enlace**: https://www.youtube.com/c/joshstarmer (abierto)
     - **Relevancia**: Recurso recomendado para estudiantes (Sem 13).
@@ -256,23 +266,23 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
 
 ### A. EQUATOR Network — Guías de Reporting
 
-38. **EQUATOR Network**. *Reporting Guidelines for Health Research*.
+40. **EQUATOR Network**. *Reporting Guidelines for Health Research*.
     - Colección de guías: CONSORT (RCT), STROBE (observacional), PRISMA (sistemática), ARRIVE (animal).
     - **Enlace**: https://www.equator-network.org/ (abierto)
     - **Relevancia**: Estándares de metodología/reporting (Sem 14–15).
 
-39. **Moher, D., Liberati, A., Tetzlaff, J., & Altman, D. G.; PRISMA Group**. (2009). *Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement*. *PLoS Medicine, 6*(7), e1000097.
+41. **Moher, D., Liberati, A., Tetzlaff, J., & Altman, D. G.; PRISMA Group**. (2009). *Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement*. *PLoS Medicine, 6*(7), e1000097.
     - Guía de reporte para revisiones sistemáticas.
     - **DOI**: 10.1371/journal.pmed.1000097
     - **Relevancia**: Formato de protocolo (Sem 7, 14).
 
 ### B. Escritura Científica
 
-40. **Peat, J., Elliott, E., Baur, L., & Keena, V.**. (2002). *Scientific Writing: Easy When You Know How*. BMJ Books.
+42. **Peat, J., Elliott, E., Baur, L., & Keena, V.**. (2002). *Scientific Writing: Easy When You Know How*. BMJ Books.
     - Guía práctica de escritura científica clara.
     - **Relevancia**: Referencia para claridad en protocolo (Sem 14–15).
 
-41. **APA Publication Manual**. (7th ed., 2020). American Psychological Association.
+43. **APA Publication Manual**. (7th ed., 2020). American Psychological Association.
     - Estándar de citación (alternativa a Harvard).
     - **Relevancia**: Formato de referencias (opcional, Univalle puede preferir Harvard).
 
@@ -282,11 +292,11 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
 
 ### A. Normativa Institucional
 
-42. **Universidad del Valle**. *Resoluciones sobre Investigación y Ética*.
+44. **Universidad del Valle**. *Resoluciones sobre Investigación y Ética*.
     - Documento de Univalle sobre comité ético institucional (CEI/CEIBA).
     - **Relevancia**: Contactar Oficina de Investigaciones de Univalle para copia actual.
 
-43. **Ministerio de Educación Nacional (MEN Colombia)**. *Decreto 0808/2002*.
+45. **Ministerio de Educación Nacional (MEN Colombia)**. *Decreto 0808/2002*.
     - Estándar nacional de crédito académico.
     - **Relevancia**: Justificación de estructura de horas (Sem 1, propuesta).
 
@@ -296,29 +306,29 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
 
 ### A. Tutoriales y Herramientas Gratuitas
 
-44. **Khan Academy**. *Science*: Videos sobre método científico, experimentos diseño.
+46. **Khan Academy**. *Science*: Videos sobre método científico, experimentos diseño.
     - Videos accesibles (~15–20 min c/u).
     - **Enlace**: https://www.khanacademy.org/ (abierto con registro)
     - **Relevancia**: Complemento visual Sem 1.
 
-45. **Cochrane Learning**. *Resources on Systematic Reviews and Meta-Analysis*.
+47. **Cochrane Learning**. *Resources on Systematic Reviews and Meta-Analysis*.
     - Tutoriales sobre cómo conducir revisiones sistemáticas.
     - **Enlace**: https://learning.cochrane.org/ (abierto)
     - **Relevancia**: Profundización Módulo 2 (Sem 7).
 
-46. **Open Access Button**. *Finding OA Research*.
+48. **Open Access Button**. *Finding OA Research*.
     - Herramienta para ubicar artículos en acceso abierto.
     - **Enlace**: https://www.openaccessbutton.org/ (abierto)
     - **Relevancia**: Facilitar acceso a literatura (Sem 2–3, 11–13).
 
 ### B. Pre-prints y Literatura Abierta
 
-47. **PubMed Central (PMC)**. *Free Full-Text Archive*.
+49. **PubMed Central (PMC)**. *Free Full-Text Archive*.
     - Acceso abierto a artículos de MEDLINE.
     - **Enlace**: https://www.ncbi.nlm.nih.gov/pmc/ (abierto)
     - **Relevancia**: Acceso a literatura sin suscripción.
 
-48. **medRxiv**. *Preprints in Medicine*.
+50. **medRxiv**. *Preprints in Medicine*.
     - Repositorio de pre-prints biomédicos.
     - **Enlace**: https://www.medrxiv.org/ (abierto)
     - **Relevancia**: Acceso a trabajos en progreso.
@@ -331,20 +341,20 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
 
 | Módulo | Referencias Principales |
 |--------|-------------------------|
-| **Mod 1: Fundamentos** | 18 (Kirkwood), 19 (Sackett EBM), 8 (PICO), 24 (PubMed), 44 (Khan Academy) |
-| **Mod 2: Diseños** | 18 (Kirkwood), 28–32 (ejemplos urología), 9 (casos urológicos) |
+| **Mod 1: Fundamentos** | 18 (Kirkwood), 19 (Sackett EBM), 8 (PICO), 24 (PubMed), 46 (Khan Academy) |
+| **Mod 2: Diseños** | 18 (Kirkwood), 30–34 (ejemplos urología), 9 (casos urológicos) |
 | **Mod 3: Ética** | 11 (Belmont), 12 (Helsinki), 13 (ICMJE), 14–15 (normativa Colombia), 16–17 (integridad) |
-| **Mod 4: Appraisal** | 20 (CASP), 21 (JBI), 22–23 (GRADE/Oxford), 35–36 (bioestadística) |
-| **Mod 5: Protocolo** | 38–41 (EQUATOR, escritura), 25–27 (gestión referencias) |
+| **Mod 4: Appraisal** | 20 (CASP), 21 (JBI), 22–23 (GRADE/Oxford), 37–38 (bioestadística) |
+| **Mod 5: Protocolo** | 40–43 (EQUATOR, escritura), 25–27 (gestión referencias) |
 
 ### Por Competencia
 
 | Competencia | Referencias |
 |------------|------------|
 | **Scientific Inquiry** | 1–2 (AAMC), 4–7 (investigación pregrado), 18–23 (diseños, appraisal) |
-| **Critical Thinking** | 8–10 (EBM), 20–23 (appraisal), 35–36 (bioestadística) |
+| **Critical Thinking** | 8–10 (EBM), 20–23 (appraisal), 37–38 (bioestadística) |
 | **Ethical Reasoning** | 11–17 (ética, integridad) |
-| **Communication** | 40–41 (escritura), 45 (Cochrane) |
+| **Communication** | 42–43 (escritura), 47 (Cochrane) |
 | **Collaboration** | 9 (trabajo grupal en investigación) |
 
 ---
@@ -367,7 +377,7 @@ Todas las referencias han sido verificadas y están disponibles (acceso abierto 
 
 **Para profundizar en diseños**:
 1. Kirkwood & Sterne (2003), capítulos selectos.
-2. Ejemplos urológicos (28–32).
+2. Ejemplos urológicos (30–34).
 3. CASP / JBI tools aplicados a ejemplos.
 
 **Para ética**:

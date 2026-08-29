@@ -1,4 +1,4 @@
-# Investigación en Urología — Curso Electivo Pregrado
+# Electiva Profesional en Medicina (617017M) — Investigación en Urología
 
 ## Descripción Rápida
 
@@ -13,7 +13,7 @@ Especificación completa de un curso electivo de investigación clínica para es
 
 | Documento | Contenido | Audiencia |
 |-----------|----------|-----------|
-| **propuesta.md** | Rationale, justificación académica, AAMC competencias, diferenciación del postgrado | Administradores, stakeholders |
+| **propuesta.md** | Rationale, justificación académica, AAMC competencias | Administradores, stakeholders |
 | **microcurriculum.md** | Curriculum completo, tabla de sesiones, objetivos, metodología, productos tangibles | Instructores, estudiantes |
 | **actividades_tareas.md** | Actividades detalladas por módulo, mapeo de 192 horas, andamiaje pedagógico | Instructores, tutores |
 | **rubricas.md** | 5 rúbricas para productos summativos (PICO, ética, appraisal, protocolo, presentación) | Instructores, estudiantes |
@@ -62,7 +62,6 @@ Especificación completa de un curso electivo de investigación clínica para es
 
 ## Notas Importantes
 
-- **Diferenciación**: Este curso es *completamente* diferente al postgrado "Epidemiología e Investigación" — no reutiliza contenido, énfasis pedagógico distinto, competencias de nivel de pregrado.
 - **Acceso Abierto**: Todas las referencias están en acceso abierto o disponibles via Univalle.
 - **Sostenible**: Diseño es teórico pero realista; no requiere recursos costosos.
 - **Adaptable**: Estructura modular permite ajustes según feedback y contexto.

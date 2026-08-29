@@ -1,4 +1,4 @@
-# Propuesta: Investigación en Urología — Electivo para Pregrado
+# Propuesta: Electiva Profesional en Medicina (617017M) — Investigación en Urología
 
 ## Rationale y visión
 
@@ -14,7 +14,7 @@ La Asociación de Colegios Médicos Americanos (AAMC) define **Scientific Inquir
 
 ### Propósito para estudiantes de pregrado
 
-A diferencia de la especialización en urología (que requiere competencias avanzadas en diseño, análisis estadístico, y producción de nueva evidencia), un electivo de pregrado busca:
+Este electivo de pregrado busca:
 - Desmitificar el proceso investigativo: mostrar que la investigación no es un "arte esotérico" sino una metodología enseñable.
 - Despertar curiosidad clínica: ¿por qué los urólogos recomiendan ciertos tratamientos? ¿qué evidencia los respalda?
 - Construir confianza en la lectura crítica: capacitar al estudiante para evaluar activamente la literatura.
@@ -26,7 +26,7 @@ Este es un **electivo** — flexible en cuanto a momento de inscripción (recome
 
 ## Población objetivo
 
-- **Estudiantes de medicina en pregrado** (Especialización en Medicina, Universidad del Valle o equivalente).
+- **Estudiantes de medicina en pregrado** (Universidad del Valle o equivalente).
 - **Semestre**: 6–10 (recomendado después de epidemiología introductoria y clínica básica).
 - **Motivación típica**: interés en urología, investigación clínica, o competencias de lectura crítica.
 - **Tamaño de grupo**: 12–30 estudiantes (facilita discussiones y presentaciones).
@@ -44,12 +44,12 @@ Este es un **electivo** — flexible en cuanto a momento de inscripción (recome
 
 ## Metodología y enfoque pedagógico
 
-Este curso adopta un **modelo centrado en competencias y orientado a productos**, diferente del enfoque de postgrado:
+Este curso adopta un **modelo centrado en competencias y orientado a productos**:
 
 1. **Aprendizaje basado en preguntas**: cada sesión comienza con una pregunta clínica real de urología, no con una lectura de texto.
 2. **Progresión de complejidad**: fundamentos → diseños → ética → appraisal → capstone integrador.
 3. **Herramientas accesibles**: énfasis en PubMed/Rayyan (búsqueda), CASP/JBI (appraisal), conceptos de bioestadística (no R ni análisis computacional).
-4. **Casos de urología**: cada concepto se ancla en ejemplos reales (BPH, urolitiasis, cáncer de próstata, UTIs recurrentes, uro-oncología) — aprenden investigación *a través* de la urología, no urología *a través* de la investigación.
+4. **Casos de urología**: cada concepto se ancla en ejemplos reales (masas renales, microhematuria, cáncer de vejiga, cáncer de próstata, VPH y cáncer de pene) — aprenden investigación *a través* de la urología, no urología *a través* de la investigación.
 5. **Espacio para la autenticidad**: trabajo independiente incluye lectura reflexiva, journals personales de aprendizaje, y tiempo para "digerir" conceptos sin presión de publicación.
 
 ## Productos tangibles
@@ -63,25 +63,12 @@ Al finalizar el curso, cada estudiante habrá producido:
 
 Estos productos son demostrables, compartibles con mentores o investigadores reales, y posibilitan un portafolio de evidencia.
 
-## Innovación y diferenciación
-
-Este electivo **no es una copia del postgrado**. Diferencias clave:
-
-| Aspecto | Postgrado (Epidemiología e Investigación) | Pregrado (Inv. en Urología) |
-|--------|--------|--------|
-| Audiencia | Médicos especialistas en urología | Estudiantes de medicina general |
-| Producto final | Artículo investigativo completo, análisis en R | Protocolo + presentación |
-| Énfasis estadístico | Regresión, modelos multivariables, R | Conceptos cualitativos, CASP/JBI |
-| Duración | 16 semanas intensivas | 15 semanas, más asincrónico |
-| Lectura crítica | Intermedia (asumida) | Introductoria (enseñada) |
-| Narrativa | "De la duda clínica a la evidencia publicada" | "Cómo saben los urólogos lo que saben" |
-
 ## Alineación institucional
 
 - Responde a la misión de la Universidad del Valle: formación integral de profesionales reflexivos y críticos.
 - Fortalece la línea de investigación en urología de la facultad.
 - Complementa electivos clínicos (ej. clínica urológica) con rigor científico.
-- Potencia futuras becas y estudios de postgrado para estudiantes interesados.
+- Prepara a estudiantes interesados para futuras oportunidades en investigación clínica.
 
 ## Referencias (síntesis)
 

@@ -1,34 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantillas — Investigación en Urología</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
     <style>
-        .template-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-        .template-card { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); transition: transform 0.2s ease, border-color 0.2s ease; }
-        .template-card:hover { transform: translateY(-4px); border-color: var(--border-bright); }
-        .tpl-header { padding: 1.5rem; }
-        .tpl-number { font-family: var(--font-display); font-size: 2rem; font-weight: 800; }
-        .tpl-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-top: 0.4rem; }
-        .tpl-body { padding: 1.5rem; background: var(--bg-elevated); }
-        .tpl-body h4 { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); margin-bottom: 0.6rem; }
-        .tpl-body ul { list-style: none; margin-bottom: 1rem; }
-        .tpl-body li { padding: 0.4rem 0; padding-left: 1.1rem; position: relative; color: var(--text-muted); font-size: 0.9rem; }
-        .tpl-body li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
-        .tpl-footer { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); padding-top: 0.75rem; border-top: 1px solid var(--border); }
-        .usage-box { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin-top: 1.5rem; }
-        .usage-box h3 { font-size: 1.1rem; margin-bottom: 1rem; }
-        .usage-box ol { margin-left: 1.25rem; color: var(--text-muted); }
-        .usage-box li { margin-bottom: 0.65rem; }
-        @media (max-width: 900px) { .template-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 640px) { .template-grid { grid-template-columns: 1fr; } }
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .template-card {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .template-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-bright);
+        }
+
+        .tpl-header {
+            padding: 1.5rem;
+        }
+
+        .tpl-number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .tpl-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 0.4rem;
+        }
+
+        .tpl-body {
+            padding: 1.5rem;
+            background: var(--bg-elevated);
+        }
+
+        .tpl-body h4 {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-faint);
+            margin-bottom: 0.6rem;
+        }
+
+        .tpl-body ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .tpl-body li {
+            padding: 0.4rem 0;
+            padding-left: 1.1rem;
+            position: relative;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .tpl-body li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .tpl-footer {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--text-faint);
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .usage-box {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .usage-box h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .usage-box ol {
+            margin-left: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        .usage-box li {
+            margin-bottom: 0.65rem;
+        }
+
+        @media (max-width: 900px) {
+            .template-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .template-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav class="site-nav">
         <div class="nav-inner">
@@ -46,9 +149,11 @@
 
     <header class="hero" style="padding: 3rem 0 2.5rem;">
         <div class="container">
-            <div class="hero-eyebrow">Andamiaje, no camisa de fuerza</div>
-            <h1 class="h-display" style="font-size: clamp(2rem, 4.5vw, 3.2rem);">Plantillas de <span class="text-accent">Trabajo</span></h1>
-            <p class="lede">Una guía estructurada para cada uno de los 5 entregables del curso. Úsalas para clarificar tus ideas, no para llenar espacios en blanco.</p>
+            <div class="hero-eyebrow">El andamiaje</div>
+            <h1 class="h-display" style="font-size: clamp(2rem, 4.5vw, 3.2rem);">Plantillas de <span
+                    class="text-accent">Trabajo</span></h1>
+            <p class="lede">Una guía estructurada para cada uno de los 5 entregables del curso. Úsalas para clarificar
+                tus ideas</p>
         </div>
     </header>
 
@@ -56,7 +161,8 @@
         <div class="container">
             <div class="template-grid reveal">
                 <div class="template-card">
-                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-1-bg), var(--bg-elevated));">
+                    <div class="tpl-header"
+                        style="background: linear-gradient(160deg, var(--mod-1-bg), var(--bg-elevated));">
                         <div class="tpl-number" style="color: var(--mod-1);">01</div>
                         <div class="tpl-title">Banco de Preguntas PICO</div>
                     </div>
@@ -67,14 +173,15 @@
                             <li>I — Intervención: ¿qué?</li>
                             <li>C — Comparador: ¿con qué se compara?</li>
                             <li>O — Outcome: ¿qué resultado?</li>
-                            <li>Búsqueda documentada en PubMed/Rayyan</li>
+                            <li>Búsqueda documentada</li>
                         </ul>
                         <div class="tpl-footer">Semana 3 · 15% calificación</div>
                     </div>
                 </div>
 
                 <div class="template-card">
-                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-3-bg), var(--bg-elevated));">
+                    <div class="tpl-header"
+                        style="background: linear-gradient(160deg, var(--mod-3-bg), var(--bg-elevated));">
                         <div class="tpl-number" style="color: var(--mod-3);">02</div>
                         <div class="tpl-title">Análisis de Casos Éticos</div>
                     </div>
@@ -82,7 +189,7 @@
                         <h4>Estructura</h4>
                         <ul>
                             <li>Caso: descripción del dilema</li>
-                            <li>Principios Belmont en juego</li>
+                            <li>Principios de integridad</li>
                             <li>Análisis: ¿qué lo hace difícil?</li>
                             <li>Opciones A, B, C con pros/contras</li>
                             <li>Recomendación justificada</li>
@@ -92,9 +199,10 @@
                 </div>
 
                 <div class="template-card">
-                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-4-bg), var(--bg-elevated));">
+                    <div class="tpl-header"
+                        style="background: linear-gradient(160deg, var(--mod-4-bg), var(--bg-elevated));">
                         <div class="tpl-number" style="color: var(--mod-4);">03</div>
-                        <div class="tpl-title">Appraisal Crítico (CASP)</div>
+                        <div class="tpl-title">Lectura Crítica (CASP)</div>
                     </div>
                     <div class="tpl-body">
                         <h4>Estructura</h4>
@@ -110,15 +218,17 @@
                 </div>
 
                 <div class="template-card">
-                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-2-bg), var(--bg-elevated));">
+                    <div class="tpl-header"
+                        style="background: linear-gradient(160deg, var(--mod-2-bg), var(--bg-elevated));">
                         <div class="tpl-number" style="color: var(--mod-2);">04</div>
                         <div class="tpl-title">Protocolo de Investigación</div>
                     </div>
                     <div class="tpl-body">
                         <h4>Estructura (5–8 páginas)</h4>
                         <ul>
-                            <li>Pregunta PICO y justificación</li>
-                            <li>Objetivos primario y secundarios</li>
+                            <li>Problema y justificación</li>
+                            <li>Marco teórico y estado del arte</li>
+                            <li>Pregunta y Objetivos</li>
                             <li>Métodos: diseño, población, medidas</li>
                             <li>Ética: consentimiento, riesgos</li>
                             <li>Cronograma y ≥10 referencias</li>
@@ -128,7 +238,8 @@
                 </div>
 
                 <div class="template-card">
-                    <div class="tpl-header" style="background: linear-gradient(160deg, var(--mod-5-bg), var(--bg-elevated));">
+                    <div class="tpl-header"
+                        style="background: linear-gradient(160deg, var(--mod-5-bg), var(--bg-elevated));">
                         <div class="tpl-number" style="color: var(--mod-5);">05</div>
                         <div class="tpl-title">Presentación Oral/Póster</div>
                     </div>
@@ -155,7 +266,8 @@
                         <ul>
                             <li><a href="rubricas.html" style="color: var(--accent);">Rúbricas de evaluación</a></li>
                             <li><a href="sesiones.html" style="color: var(--accent);">Sesiones del curso</a></li>
-                            <li><a href="quiz-disenos.html" style="color: var(--accent);">Quiz de autoevaluación</a></li>
+                            <li><a href="quiz-disenos.html" style="color: var(--accent);">Quiz de autoevaluación</a>
+                            </li>
                         </ul>
                         <div class="tpl-footer">Copias editables: consulta al instructor</div>
                     </div>
@@ -187,4 +299,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

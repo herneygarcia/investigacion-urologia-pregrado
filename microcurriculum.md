@@ -1,11 +1,11 @@
-# Microcurrículo: Investigación en Urología (Pregrado)
+# Microcurrículo: Electiva Profesional en Medicina (617017M) — Investigación en Urología
 
 ## Información General
 
 | Elemento | Descripción |
 |----------|-----------|
-| **Nombre del curso** | Investigación en Urología |
-| **Código** | (Asignado por Univalle) |
+| **Nombre del curso** | Electiva Profesional en Medicina — Investigación en Urología |
+| **Código** | 617017M |
 | **Nivel** | Pregrado en Medicina |
 | **Tipo** | Electivo |
 | **Créditos académicos** | 4 |
@@ -134,8 +134,8 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 **Sesiones sincrónicas**:
 - **Sem 4 (Lun 10–11, Jue 17–18)**: Introducción a diseños: espectro de observacional → experimental. Descriptivos (transversal, serie de casos). Ejemplo: prevalencia de incontinencia urinaria.
-- **Sem 5 (Lun 10–11, Jue 17–18)**: Cohorte y caso-control. Fortalezas, sesgos, cuándo usarlos. Estudio real: cohorte de pacientes con BPH.
-- **Sem 6 (Lun 10–11, Jue 17–18)**: Ensayos clínicos aleatorizados (RCT). Aleatorización, cegamiento, pérdida al seguimiento. Ejemplo: α-bloqueantes vs. inhibidores 5-α en BPH.
+- **Sem 5 (Lun 10–11, Jue 17–18)**: Cohorte y caso-control. Fortalezas, sesgos, cuándo usarlos. Estudio real: cohorte de pacientes con masas renales complejas.
+- **Sem 6 (Lun 10–11, Jue 17–18)**: Ensayos clínicos aleatorizados (RCT). Aleatorización, cegamiento, pérdida al seguimiento. Ejemplo: diferentes estrategias de tratamiento en cáncer renal avanzado.
 - **Sem 7 (Lun 10–11, Jue 17–18)**: Revisiones sistemáticas y meta-análisis. Cómo se sintetiza la evidencia. Prácticas en Rayyan (cribado de títulos/abstracts).
 
 **Trabajo independiente** (~55 horas):
@@ -152,7 +152,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 **Objetivos**: Entender principios éticos, rol de comités, reconocer malas prácticas; aplicar criterios éticos a casos.
 
 **Sesiones sincrónicas**:
-- **Sem 8 (Lun 10–11, Jue 17–18)**: Principios de Belmont (autonomía, beneficencia, justicia). Consentimiento informado. Caso: estudio de urolitiasis en población vulnerable (indígenas rurales). Discusión ética.
+- **Sem 8 (Lun 10–11, Jue 17–18)**: Principios de Belmont (autonomía, beneficencia, justicia). Consentimiento informado. Caso: estudio de screening para cáncer de vejiga en fumadores (poblaciones de riesgo). Discusión ética.
 - **Sem 9 (Lun 10–11, Jue 17–18)**: Comités de ética (CEI/CEIBA en Univalle y hospitales). Proceso de revisión, documentos clave, tiempos. Visita (si es posible) a comité o sesión simulada.
 - **Sem 10 (Lun 10–11, Jue 17–18)**: Integridad: plagio, LPU (Least Publishable Unit), autocita inflada, p-hacking. Caso: protocolo con problemas éticos (identifícalos). Taller: cómo citar, evitar plagio.
 
@@ -222,9 +222,9 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 | 3 | J | Fund | Presentación de preguntas PICO (estudiantes), discussión | Peer-learning |
 | 4 | L | Diseños | Intro diseños: espectro observacional-experimental, descriptivos | Clase + casos |
 | 4 | J | Diseños | Descriptivos profundo: transversal, serie de casos, ejemplo | Caso real + taller |
-| 5 | L | Diseños | Cohorte: diseño, sesgos, ejemplo BPH | Clase + análisis |
+| 5 | L | Diseños | Cohorte: diseño, sesgos, ejemplo masas renales | Clase + análisis |
 | 5 | J | Diseños | Caso-control: diseño, ventajas, limitaciones | Clase + taller |
-| 6 | L | Diseños | RCT: aleatorización, cegamiento, calidad, ejemplo α-bloqueantes | Clase magistral |
+| 6 | L | Diseños | RCT: aleatorización, cegamiento, calidad, ejemplo cáncer renal | Clase magistral |
 | 6 | J | Diseños | RCT análisis profundo, comunes errores | Taller crítico |
 | 7 | L | Diseños | Revisiones sistemáticas & meta-análisis: síntesis de evidencia | Clase + prácticas Rayyan |
 | 7 | J | Diseños | Matriz comparativa: fortalezas/debilidades de diseños | Síntesis colaborativa |

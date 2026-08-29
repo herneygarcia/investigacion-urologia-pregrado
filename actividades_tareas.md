@@ -85,7 +85,7 @@
 | Sem 4, J | Taller crítico | Análisis: leer resumen 1 estudio descriptivo, identificar diseño, fortalezas, limitaciones (en equipos). Presentaciones breves. |
 | Sem 5, L | Clase + análisis | **Cohorte**: diseño prospectivo/retrospectivo, exposición, seguimiento, incidencia. Ejemplo: cohorte α-bloqueantes. |
 | Sem 5, J | Taller | **Caso-control**: diseño retrospectivo, selección, comparación de exposición. Ejemplo: caso-control de litiasis urinaria recurrente. |
-| Sem 6, L | Clase magistral | **RCT**: aleatorización, cegamiento, balanceo de cohortes, intención de tratar. Ejemplo: RCT α-bloqueantes vs 5-ARI en BPH. |
+| Sem 6, L | Clase magistral | **RCT**: aleatorización, cegamiento, balanceo de cohortes, intención de tratar. Ejemplo: RCT de diferentes estrategias de tratamiento en cáncer renal avanzado. |
 | Sem 6, J | Taller crítico | Análisis de RCT: lectura crítica, riesgos de sesgo, validez interna. Discusión: ¿es válido este estudio? |
 | Sem 7, L | Clase + Rayyan | **Revisiones Sistemáticas & Meta-análisis**: proceso (PRISMA), cribado, extracción, síntesis. Demo Rayyan. |
 | Sem 7, J | Síntesis colaborativa | **Matriz de Diseños**: en equipos, completan matriz (diseño | fortalezas | limitaciones | sesgos | cuándo usar). |
@@ -163,7 +163,7 @@
 #### Tareas (≈28 horas)
 1. **Análisis de Casos Éticos Reales** (~20 horas):
    - Se proporcionan 3 casos realistas (basados en dilemas éticos reales, anonimizados):
-     - **Caso 1**: Consentimiento en población indígena rural para estudio de urolitiasis; lenguaje, participación comunitaria.
+     - **Caso 1**: Screening de microhematuria asintomática para detección de cáncer de vejiga en pobladores fumadores; consentimiento, riesgos de sobrediagnóstico, justicia en poblaciones vulnerables.
      - **Caso 2**: Protocolo de investigación con beneficio no claro; riesgo mínimo vs. mayor; compensación estudiantes.
      - **Caso 3**: Divulgación de resultados incidentales (ej. hallazgo de cáncer en imagen); obligación ética del investigador.
    - Para cada caso, estudiante escribe reporte (2–3 páginas):
@@ -225,14 +225,14 @@
 
 #### Tareas (≈25 horas)
 1. **Appraisal Crítico de 3 Artículos** (~18 horas):
-   - Estudiante selecciona 3 artículos sobre un tema urológico de su interés (ej. screening prostate, BPH, urolitiasis recurrente).
+   - Estudiante selecciona 3 artículos sobre un tema urológico de su interés (ej. screening prostate, masas renales, microhematuria, cáncer de vejiga).
    - Para cada artículo:
      - Completa herramienta CASP formal (11 preguntas, "sí/no/parcialmente" + notas).
      - Escribe párrafo de síntesis crítica (1–1.5 páginas): ¿qué dice el estudio? ¿cuán válido es? ¿cuáles son las limitaciones principales?
    - Entrega: 3 × (CASP + párrafo síntesis) = ~6–7 páginas totales, PDF.
 
 2. **Bioestadística Conceptual** (~7 horas):
-   - Ejercicio: te proporciono tabla/gráfico de 1 RCT (ej. α-bloqueantes vs. placebo en BPH).
+   - Ejercicio: te proporciono tabla/gráfico de 1 RCT (ej. comparación de terapias sistémicas en cáncer renal avanzado).
    - Tareas:
      - Interpreta p-valor: ¿significancia estadística? ¿Significancia clínica?
      - Interpreta IC 95%: ¿qué significa? ¿es compatible con "no efecto"?
