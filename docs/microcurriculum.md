@@ -10,21 +10,21 @@
 | **Tipo** | Electivo |
 | **Créditos académicos** | 4 |
 | **Horas totales** | 192 (30 contacto directo, 162 independientes) |
-| **Horario** | Lunes 10:00–11:00 y Jueves 17:00–18:00 |
-| **Modalidad** | Híbrida (sesiones sincrónicas + asincrónico) |
+| **Horario** | Lunes 10:00–11:00, Jueves 17:00–18:00 |
+| **Modalidad** | Híbrida (sincrónico + asincrónico) |
 | **Duración** | 15 semanas (~1 semestre) |
-| **Requisito** | Haber cursado Epidemiología Básica (o equivalente) |
+| **Requisito** | Los previamente establecidos |
 | **Semestre recomendado** | 6–10 |
-| **Docente** | Herney Andrés García Perdomo |
+| **Docente** | Herney Andrés García Perdomo MD MSc EdD PhD FACS |
 | **Institución** | Facultad de Salud, Universidad del Valle |
 
 ---
 
 ## Presentación y Narrativa Central
 
-Este curso propone a estudiantes de pregrado una **experiencia rigurosa y motivante en la construcción del conocimiento investigativo**, usando la urología como lente clínica. La pregunta narrativa que guía el curso es: **¿Cómo saben los urólogos lo que saben?** A través de ella, estudiantes aprenderán a formular preguntas clínicas contestables, buscar y evaluar críticamente la evidencia, y diseñar un protocolo de investigación mini viable.
+Este curso propone a estudiantes de pregrado una **experiencia rigurosa y motivante en la construcción del conocimiento investigativo**, usando la urología como lente clínica. La pregunta narrativa que guía el curso es: **¿Cómo saben los urólogos lo que saben?**
 
-El curso **no es** un taller de redacción, un laboratorio de bioestadística computacional, o una preparación para publicación inmediata. Es un espacio para **desarrollar competencias de pensamiento científico** que los estudiantes llevarán toda su vida profesional, y que les permitirán ser clínicos reflexivos, críticos, y capaces de entender (y quizás contribuir a) la investigación que fundamenta su práctica.
+Aprende a formular preguntas clínicas contestables, evaluar evidencia con rigor, y diseñar un protocolo de investigación viable. Un semestre para pensar como investigador.
 
 ---
 
@@ -59,8 +59,8 @@ Al finalizar el curso, el estudiante será capaz de:
 3. Reconocer y evitar prácticas de integridad cuestionables (plagio, autocita, LPU).
 4. Aplicar criterios éticos a casos de investigación reales.
 
-#### Módulo 4: De la Evidencia a la Práctica
-1. Dominar herramientas de appraisal crítico (CASP, JBI).
+#### Módulo 4: Evidencia a la Práctica
+1. Dominar herramientas de appraisal crítico (CASP).
 2. Entender niveles de evidencia y grados de recomendación.
 3. Grasp conceptos básicos de bioestadística (significancia, confiabilidad, sesgo).
 4. Sintetizar evidencia para responder preguntas clínicas.
@@ -136,12 +136,12 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 - **Sem 4 (Lun 10–11, Jue 17–18)**: Introducción a diseños: espectro de observacional → experimental. Descriptivos (transversal, serie de casos). Ejemplo: prevalencia de incontinencia urinaria.
 - **Sem 5 (Lun 10–11, Jue 17–18)**: Cohorte y caso-control. Fortalezas, sesgos, cuándo usarlos. Estudio real: cohorte de pacientes con masas renales complejas.
 - **Sem 6 (Lun 10–11, Jue 17–18)**: Ensayos clínicos aleatorizados (RCT). Aleatorización, cegamiento, pérdida al seguimiento. Ejemplo: diferentes estrategias de tratamiento en cáncer renal avanzado.
-- **Sem 7 (Lun 10–11, Jue 17–18)**: Revisiones sistemáticas y meta-análisis. Cómo se sintetiza la evidencia. Prácticas en Rayyan (cribado de títulos/abstracts).
+- **Sem 7 (Lun 10–11, Jue 17–18)**: Revisiones sistemáticas y meta-análisis. Cómo se sintetiza la evidencia. Prácticas en Rayyan (tamizaje de títulos/abstracts).
 
 **Trabajo independiente** (~55 horas):
 - Lecturas: 2–3 artículos modelo por cada diseño (1 transversal, 1 cohorte, 1 RCT, 1 revisión sistemática).
 - Tarea principal: Analizar 4 estudios urológicos reales (uno por cada diseño), completar matriz de fortalezas/limitaciones/sesgos.
-- Lectura reflexiva: journales breves sobre qué diseño es "mejor" (respuesta: depende de la pregunta).
+- Lectura reflexiva: reflexiones breves sobre qué diseño es "mejor" (respuesta: depende de la pregunta).
 
 **Producto parcial**: Matriz comparativa de diseños; análisis crítico de estudios modelo.
 
@@ -165,21 +165,21 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 ---
 
-### Semana 11–13: Módulo 4 — De la Evidencia a la Práctica: Appraisal Crítico
+### Semana 11–13: Módulo 4 — Evidencia a la Práctica
 
-**Objetivos**: Dominar CASP/JBI; entender niveles de evidencia; aplicar bioestadística conceptual; sintetizar evidencia.
+**Objetivos**: Dominar CASP; entender niveles de evidencia; aplicar bioestadística conceptual; sintetizar evidencia.
 
 **Sesiones sincrónicas**:
-- **Sem 11 (Lun 10–11, Jue 17–18)**: Herramientas de appraisal: CASP (Critical Appraisal Skills Programme) para estudios cohorte, caso-control, RCT. JBI para revisiones sistemáticas. Demostración: appraisal de un artículo en vivo, paso a paso.
+- **Sem 11 (Lun 10–11, Jue 17–18)**: Herramientas de appraisal: CASP (Critical Appraisal Skills Programme) para estudios cohorte, caso-control, RCT. Demostración: appraisal de un artículo en vivo, paso a paso.
 - **Sem 12 (Lun 10–11, Jue 17–18)**: Niveles de evidencia (GRADE, escala Oxford). Grados de recomendación (fuerte, débil). Cómo van los estudios → las guías de práctica. Ejemplo: Guías EAU (Asociación Europea de Urología) sobre screening de cáncer de próstata.
-- **Sem 13 (Lun 10–11, Jue 17–18)**: Bioestadística conceptual: p-valor, intervalo de confianza, tamaño del efecto, sesgo (sin cálculos). Lectura de tablas y gráficos. Errores tipo I/II. Presentación de estudiantes: appraisal y síntesis de 2–3 artículos en formato de journal club.
+- **Sem 13 (Lun 10–11, Jue 17–18)**: Bioestadística conceptual: p-valor, intervalo de confianza, tamaño del efecto, sesgo (sin cálculos). Lectura de tablas y gráficos. Errores tipo I/II. Presentación de estudiantes: appraisal y síntesis de 1 artículo en formato de club de revistas.
 
 **Trabajo independiente** (~48 horas):
-- Lecturas: Tutoriales CASP/JBI online.
-- Tarea principal: Estudiante selecciona 3 artículos sobre un tema urológico de interés, completa appraisal CASP formal para cada uno, escribe síntesis crítica (2 páginas): ¿qué dice la evidencia? ¿cuán confiable es?
-- Preparación: Presentación oral de journal club (3–4 min por estudiante, turno en Sem 13).
+- Lecturas: Tutoriales CASP online.
+- Tarea principal: Estudiante selecciona 3 artículos sobre un tema urológico de interés, completa appraisal CASP formal para cada uno, escribe síntesis crítica (1–1.5 páginas): ¿qué dice la evidencia? ¿cuán confiable es?
+- Preparación: Presentación oral de club de revistas (3–4 min por estudiante, turno en Sem 13).
 
-**Producto parcial**: Reseña crítica de artículos (appraisal formal), presentación journal club.
+**Producto parcial**: Reseña crítica de artículos (appraisal formal), presentación club de revistas.
 
 ---
 
@@ -188,7 +188,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 **Objetivos**: Integrar todas las competencias en un protocolo coherente, viable, ético, y bien comunicado.
 
 **Sesiones sincrónicas**:
-- **Sem 14 (Lun 10–11, Jue 17–18)**: Componentes de un protocolo: título, pregunta, objetivos, justificación, métodos (diseño, población, intervención, medidas), ética, cronograma. Presentación de ejemplo de protocolo mini (5 páginas). Taller: estudiantes trabajan en equipos pequeños en protocolo propio, reciben feedback.
+- **Sem 14 (Lun 10–11, Jue 17–18)**: Componentes de un protocolo: título, pregunta, objetivos, justificación, marco teórico y estado del arte, métodos (diseño, población, intervención, medidas), ética, cronograma. Presentación de ejemplo de protocolo mini (5–8 páginas). Taller: estudiantes trabajan en equipos pequeños en protocolo propio, reciben feedback.
 - **Sem 15 (Lun 10–11, Jue 17–18)**: Presentaciones: cada estudiante (o pareja) presenta su protocolo en formato de póster/oral estilo congreso (5–7 min). Discusión, preguntas, feedback de pares e instructor.
 
 **Trabajo independiente** (~59 horas acumuladas):
@@ -196,6 +196,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 - Tarea principal (≥3 semanas de trabajo): Escribir protocolo de investigación mini (5–8 páginas):
   - Pregunta PICO clara.
   - Justificación (¿por qué es importante?).
+  - Marco teórico y estado del arte.
   - Objetivos primario/secundarios.
   - Diseño justificado (por qué este diseño vs. otros).
   - Población, criterios inclusión/exclusión.
@@ -203,6 +204,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
   - Consideraciones éticas, consentimiento, riesgos/beneficios.
   - Plan de análisis conceptual (no numérico).
   - Cronograma.
+  - ≥10 referencias recientes.
 - Reiteración y revisiones basadas en feedback.
 - Preparación de presentación/póster.
 
@@ -216,17 +218,17 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 |-----|-----|--------|------|---------|
 | 1 | L | Fund | Intro: proceso científico, pregunta clínica vs. investigativa | Clase magistral + discusión |
 | 1 | J | Fund | PICO: estructura, ejemplos, práctica | Taller interactivo |
-| 2 | L | Fund | Búsqueda bibliográfica: PubMed, MeSH, estrategias | Taller demo |
+| 2 | L | Fund | Búsqueda bibliográfica: PubMed, MeSH, estrategias | Taller demostrativo |
 | 2 | J | Fund | Rayyan, gestión de referencias, trabajo práctico | Taller hands-on |
 | 3 | L | Fund | Síntesis: PICO refinado en equipos | Trabajo colaborativo |
-| 3 | J | Fund | Presentación de preguntas PICO (estudiantes), discussión | Peer-learning |
+| 3 | J | Fund | Presentación de preguntas PICO (estudiantes), discusión | Peer-learning |
 | 4 | L | Diseños | Intro diseños: espectro observacional-experimental, descriptivos | Clase + casos |
 | 4 | J | Diseños | Descriptivos profundo: transversal, serie de casos, ejemplo | Caso real + taller |
 | 5 | L | Diseños | Cohorte: diseño, sesgos, ejemplo masas renales | Clase + análisis |
 | 5 | J | Diseños | Caso-control: diseño, ventajas, limitaciones | Clase + taller |
 | 6 | L | Diseños | RCT: aleatorización, cegamiento, calidad, ejemplo cáncer renal | Clase magistral |
 | 6 | J | Diseños | RCT análisis profundo, comunes errores | Taller crítico |
-| 7 | L | Diseños | Revisiones sistemáticas & meta-análisis: síntesis de evidencia | Clase + prácticas Rayyan |
+| 7 | L | Diseños | Revisiones sistemáticas & meta-análisis: síntesis de evidencia | Clase + prácticas |
 | 7 | J | Diseños | Matriz comparativa: fortalezas/debilidades de diseños | Síntesis colaborativa |
 | 8 | L | Ética | Principios: Belmont, autonomía, beneficencia, justicia | Clase + casos |
 | 8 | J | Ética | Consentimiento informado, caso vulnerable (indígenas, rurales) | Discusión ética profunda |
@@ -234,13 +236,13 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 | 9 | J | Ética | Sesión comité simulada o visita (si es posible) | Experiencial |
 | 10 | L | Ética | Integridad: plagio, LPU, p-hacking, autocita | Taller + casos |
 | 10 | J | Ética | Análisis de casos éticos, revisión de reportes | Peer-review |
-| 11 | L | Lectura crítica | CASP: herramienta, estructura, demo en artículo | Taller de herramienta |
-| 11 | J | Lectura crítica | CASP práctico: estudiantes appraisal en vivo de artículo cohorte | Trabajo guiado |
-| 12 | L | Lectura crítica | Niveles evidencia (GRADE, Oxford), grados recomendación | Clase + ejemplos |
-| 12 | J | Lectura crítica | Cómo los estudios → guías: ejemplo EAU prostate cancer screening | Análisis aplicado |
-| 13 | L | Lectura crítica | Bioestadística conceptual: p, IC, tamaño efecto, sesgos | Clase accesible |
-| 13 | J | Lectura crítica | Journal club: presentaciones estudiantes (3–4 min cada uno) | Peer-teaching |
-| 14 | L | Piedra angular | Componentes protocolo, ejemplo, escritura práctica | Taller scaffolded |
+| 11 | L | Evidencia a la Práctica | CASP: herramienta, estructura, demo en artículo | Taller de herramienta |
+| 11 | J | Evidencia a la Práctica | CASP práctico: estudiantes appraisal en vivo de artículo cohorte | Trabajo guiado |
+| 12 | L | Evidencia a la Práctica | Niveles evidencia (GRADE, Oxford), grados recomendación | Clase + ejemplos |
+| 12 | J | Evidencia a la Práctica | Cómo los estudios → guías: ejemplo EAU prostate cancer screening | Análisis aplicado |
+| 13 | L | Evidencia a la Práctica | Bioestadística conceptual: p, IC, tamaño efecto, sesgos | Clase accesible |
+| 13 | J | Evidencia a la Práctica | Journal club: presentaciones estudiantes (3–4 min cada uno) | Peer-teaching |
+| 14 | L | Piedra angular | Componentes protocolo, ejemplo, escritura práctica | Taller con andamiaje |
 | 14 | J | Piedra angular | Trabajo en equipos, feedback formativo en protocolos | Taller colaborativo |
 | 15 | L | Piedra angular | Presentaciones poster/oral (5–7 min cada uno) | Congreso simulado |
 | 15 | J | Piedra angular | Cierre: reflexión, feedback final, clausura | Reflexión + cierre |
@@ -249,13 +251,12 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 ## Productos Tangibles del Curso
 
-1. **Banco de Preguntas PICO** (semana 3): ≥3 preguntas bien estructuradas en formato PICO, con búsqueda documentada.
-2. **Matriz de Diseños** (semana 7): análisis comparativo de fortalezas, limitaciones, sesgos.
-3. **Análisis de Casos Éticos** (semana 10): ≥2 reportes formales (2–3 páginas c/u) de dilemas éticos reales.
-4. **Reseña Crítica de Artículos** (semana 13): 3 appraisals CASP completos + síntesis (2–3 páginas).
-5. **Presentación Journal Club** (semana 13): 3–4 minutos oral presentando 2–3 artículos sobre tema urológico.
-6. **Protocolo de Investigación Escrito** (semana 15): 5–8 páginas, incluye pregunta, justificación, diseño, métodos, ética, cronograma.
-7. **Presentación Oral/Póster** (semana 15): 5–7 minutos presentando protocolo en formato estilo congreso.
+1. **Banco de Preguntas PICO** (15%, semana 3): ≥3 preguntas bien estructuradas en formato PICO, con búsqueda documentada.
+2. **Análisis de Casos Éticos** (15%, semana 10): ≥2 reportes formales (2–3 páginas c/u) de dilemas éticos reales.
+3. **Reseña Crítica** (20%, semana 13): 3 appraisals CASP completos + síntesis crítica (1–1.5 páginas).
+4. **Protocolo de Investigación Escrito** (25%, semana 15): 5–8 páginas, incluye pregunta, justificación, marco teórico, diseño, métodos, ética, ≥10 referencias, cronograma.
+5. **Presentación Oral/Póster** (15%, semana 15): 5–7 minutos presentando protocolo en formato estilo congreso.
+6. **Participación y Reflexión** (10%, continuo): Reflexiones semanales y participación en talleres.
 
 ---
 
@@ -263,7 +264,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 - **Plataforma**: Univalle LMS (Moodle o equivalente) para asincrónico, Zoom/Teams para sesiones sincrónicas.
 - **Herramientas de búsqueda**: Acceso institucional a PubMed, Rayyan (libre), Google Scholar, SciHub (acceso dentro de red Univalle).
-- **Herramientas de appraisal**: CASP online, JBI online, plantillas (descargables).
+- **Herramientas de appraisal**: CASP online, plantillas (descargables).
 - **Documentos y plantillas**: Disponibles en LMS (protocolo template, rúbricas, listas de verificación).
 - **Lecturas**: Mezcla de artículos OA, acceso institucional (SciHub via Univalle), capítulos de libros de texto (ej. Sackett's EBM, disponibles en biblioteca).
 
@@ -277,9 +278,9 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 3. **Colaboración**: Contactar a comités de ética (CEI/CEIBA) para sesión simulada o invitado. Conectar con investigadores/urólogos locales para mentorship informal del capstone.
 
-4. **Evaluación formativa**: Las micro-reflexiones (journales semanales) no se califican, pero se revisan; feedback oportuno mantiene a estudiantes en carril.
+4. **Evaluación formativa**: Las micro-reflexiones (reflexiones semanales) no se califican, pero se revisan; feedback oportuno mantiene a estudiantes en carril.
 
-5. **Diversidad de aprendizaje**: Sesiones combinan sincrónico (discusión, taller), asincrónico (lecturas, análisis individual), colaborativo (grupo pequeño), y reflexivo (journales). Esto atiende variedad de estilos.
+5. **Diversidad de aprendizaje**: Sesiones combinan sincrónico (discusión, taller), asincrónico (lecturas, análisis individual), colaborativo (grupo pequeño), y reflexivo (reflexiones). Esto atiende variedad de estilos.
 
 6. **Lenguaje**: Textos principalmente en inglés (literatura médica); instrucción y discusión en español. Apoyo para estudiantes menos fluidos en inglés.
 
