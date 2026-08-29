@@ -1,51 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sesiones — Investigación en Urología</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
     <style>
-        .sessions-shell { display: flex; max-width: var(--container); margin: 0 auto; min-height: calc(100vh - 68px); }
-        .sidebar { width: 300px; flex-shrink: 0; border-right: 1px solid var(--border); padding: 1.5rem 0; overflow-y: auto; max-height: calc(100vh - 68px); position: sticky; top: 68px; }
-        .sidebar-module { border-bottom: 1px solid var(--border); }
-        .module-title { padding: 0.9rem 1.5rem; font-family: var(--font-mono); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
-        .module-title:hover { background: var(--bg-elevated); }
-        .module-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 0.6rem; }
-        .module-toggle { font-size: 1rem; color: var(--text-faint); transition: transform 0.2s; }
-        .module-toggle.open { transform: rotate(180deg); }
-        .session-list { display: none; background: var(--bg-elevated); }
-        .session-list.open { display: block; }
-        .session-item { padding: 0.7rem 1.5rem 0.7rem 2.2rem; cursor: pointer; border-left: 2px solid transparent; font-size: 0.85rem; color: var(--text-muted); transition: all 0.15s; }
-        .session-item:hover { background: var(--bg-elevated-2); color: var(--text); }
-        .session-item.active { background: var(--bg-elevated-2); border-left-color: var(--accent); color: var(--accent); font-weight: 600; }
-        .content { flex: 1; padding: 2rem 1.5rem; overflow-y: auto; max-height: calc(100vh - 68px); min-width: 0; }
-        .session-content { background: var(--bg-elevated); border-radius: var(--radius); padding: 2.25rem; border: 1px solid var(--border); }
-        .session-content h2 { font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 1rem; }
-        .session-meta { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: 1.25rem; }
-        .meta-item { display: flex; flex-direction: column; gap: 0.15rem; }
-        .meta-item .meta-label { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); }
-        .meta-item span:last-child { font-size: 0.9rem; color: var(--text); font-weight: 600; }
-        .module-badge { display: inline-flex; padding: 0.25rem 0.7rem; border-radius: var(--radius-pill); font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; width: fit-content; }
-        .section-block { margin-top: 1.25rem; padding: 1.25rem 1.5rem; background: var(--bg-elevated-2); border-radius: var(--radius-sm); border-left: 3px solid var(--accent); }
-        .section-block h3 { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); margin-bottom: 0.75rem; }
-        .section-block ul { margin-left: 1.25rem; color: var(--text-muted); }
-        .section-block li { margin-bottom: 0.4rem; }
-        .section-block p { margin-bottom: 0.4rem; }
-        .toggle-sidebar { display: none; position: sticky; top: 68px; z-index: 40; background: var(--bg); border-bottom: 1px solid var(--border); color: var(--accent); border: none; padding: 0.75rem 1.5rem; width: 100%; text-align: left; font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; cursor: pointer; }
+        .sessions-shell {
+            display: flex;
+            max-width: var(--container);
+            margin: 0 auto;
+            min-height: calc(100vh - 68px);
+        }
+
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            border-right: 1px solid var(--border);
+            padding: 1.5rem 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 68px);
+            position: sticky;
+            top: 68px;
+        }
+
+        .sidebar-module {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .module-title {
+            padding: 0.9rem 1.5rem;
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .module-title:hover {
+            background: var(--bg-elevated);
+        }
+
+        .module-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-right: 0.6rem;
+        }
+
+        .module-toggle {
+            font-size: 1rem;
+            color: var(--text-faint);
+            transition: transform 0.2s;
+        }
+
+        .module-toggle.open {
+            transform: rotate(180deg);
+        }
+
+        .session-list {
+            display: none;
+            background: var(--bg-elevated);
+        }
+
+        .session-list.open {
+            display: block;
+        }
+
+        .session-item {
+            padding: 0.7rem 1.5rem 0.7rem 2.2rem;
+            cursor: pointer;
+            border-left: 2px solid transparent;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            transition: all 0.15s;
+        }
+
+        .session-item:hover {
+            background: var(--bg-elevated-2);
+            color: var(--text);
+        }
+
+        .session-item.active {
+            background: var(--bg-elevated-2);
+            border-left-color: var(--accent);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem 1.5rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 68px);
+            min-width: 0;
+        }
+
+        .session-content {
+            background: var(--bg-elevated);
+            border-radius: var(--radius);
+            padding: 2.25rem;
+            border: 1px solid var(--border);
+        }
+
+        .session-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .session-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.25rem;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .meta-item .meta-label {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-faint);
+        }
+
+        .meta-item span:last-child {
+            font-size: 0.9rem;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .module-badge {
+            display: inline-flex;
+            padding: 0.25rem 0.7rem;
+            border-radius: var(--radius-pill);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 700;
+            width: fit-content;
+        }
+
+        .section-block {
+            margin-top: 1.25rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--bg-elevated-2);
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--accent);
+        }
+
+        .section-block h3 {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-faint);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-block ul {
+            margin-left: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        .section-block li {
+            margin-bottom: 0.4rem;
+        }
+
+        .section-block p {
+            margin-bottom: 0.4rem;
+        }
+
+        .toggle-sidebar {
+            display: none;
+            position: sticky;
+            top: 68px;
+            z-index: 40;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            color: var(--accent);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            width: 100%;
+            text-align: left;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
         @media (max-width: 900px) {
-            .sessions-shell { flex-direction: column; }
-            .sidebar { width: 100%; max-height: none; position: static; border-right: none; border-bottom: 1px solid var(--border); }
-            .content { max-height: none; padding: 1.5rem; }
-            .toggle-sidebar { display: block; }
-            .sidebar.hidden { display: none; }
-            .session-content { padding: 1.5rem; }
+            .sessions-shell {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                max-height: none;
+                position: static;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .content {
+                max-height: none;
+                padding: 1.5rem;
+            }
+
+            .toggle-sidebar {
+                display: block;
+            }
+
+            .sidebar.hidden {
+                display: none;
+            }
+
+            .session-content {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <nav class="site-nav">
         <div class="nav-inner">
@@ -64,7 +266,8 @@
     <header class="hero" style="padding: 2.5rem 0 2rem;">
         <div class="container">
             <div class="hero-eyebrow">15 semanas · 5 módulos</div>
-            <h1 class="h-display" style="font-size: clamp(2rem, 4.5vw, 3.2rem);">Sesiones del <span class="text-accent">Curso</span></h1>
+            <h1 class="h-display" style="font-size: clamp(2rem, 4.5vw, 3.2rem);">Sesiones del <span
+                    class="text-accent">Curso</span></h1>
         </div>
     </header>
 
@@ -74,16 +277,18 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-module">
                 <div class="module-title" onclick="toggleModule(this)">
-                    <span><span class="module-dot" style="background: var(--mod-1);"></span>Módulo 1 · Fundamentos</span>
+                    <span><span class="module-dot" style="background: var(--mod-1);"></span>Módulo 1 ·
+                        Fundamentos</span>
                     <span class="module-toggle open">▾</span>
                 </div>
                 <div class="session-list open">
-                    <div class="session-item active" onclick="loadSession(1, 'L')">Sem 1 (L) · Intro: Proceso Científico</div>
-                    <div class="session-item" onclick="loadSession(1, 'J')">Sem 1 (J) · PICO: Estructura</div>
-                    <div class="session-item" onclick="loadSession(2, 'L')">Sem 2 (L) · PubMed & Búsqueda</div>
-                    <div class="session-item" onclick="loadSession(2, 'J')">Sem 2 (J) · Rayyan & Gestión</div>
-                    <div class="session-item" onclick="loadSession(3, 'L')">Sem 3 (L) · Síntesis PICO</div>
-                    <div class="session-item" onclick="loadSession(3, 'J')">Sem 3 (J) · Presentaciones</div>
+                    <div class="session-item active" onclick="loadSession(1, 'L')">Sem 1 · Intro: Proceso Científico
+                    </div>
+                    <div class="session-item" onclick="loadSession(1, 'J')">Sem 1 · PICO: Estructura</div>
+                    <div class="session-item" onclick="loadSession(2, 'L')">Sem 2 · Búsqueda de la literatura</div>
+                    <div class="session-item" onclick="loadSession(2, 'J')">Sem 2 · Gestor de referencias</div>
+                    <div class="session-item" onclick="loadSession(3, 'L')">Sem 3 · Síntesis PICO</div>
+                    <div class="session-item" onclick="loadSession(3, 'J')">Sem 3 · Presentaciones</div>
                 </div>
             </div>
             <div class="sidebar-module">
@@ -92,14 +297,14 @@
                     <span class="module-toggle">▾</span>
                 </div>
                 <div class="session-list">
-                    <div class="session-item" onclick="loadSession(4, 'L')">Sem 4 (L) · Intro Diseños</div>
-                    <div class="session-item" onclick="loadSession(4, 'J')">Sem 4 (J) · Estudios Descriptivos</div>
-                    <div class="session-item" onclick="loadSession(5, 'L')">Sem 5 (L) · Cohorte</div>
-                    <div class="session-item" onclick="loadSession(5, 'J')">Sem 5 (J) · Caso-Control</div>
-                    <div class="session-item" onclick="loadSession(6, 'L')">Sem 6 (L) · RCT</div>
-                    <div class="session-item" onclick="loadSession(6, 'J')">Sem 6 (J) · RCT Análisis Profundo</div>
-                    <div class="session-item" onclick="loadSession(7, 'L')">Sem 7 (L) · Revisiones Sistemáticas</div>
-                    <div class="session-item" onclick="loadSession(7, 'J')">Sem 7 (J) · Matriz Comparativa</div>
+                    <div class="session-item" onclick="loadSession(4, 'L')">Sem 4 · Intro Diseños</div>
+                    <div class="session-item" onclick="loadSession(4, 'J')">Sem 4 · Estudios Descriptivos</div>
+                    <div class="session-item" onclick="loadSession(5, 'L')">Sem 5 · Cohorte</div>
+                    <div class="session-item" onclick="loadSession(5, 'J')">Sem 5 · Caso-Control</div>
+                    <div class="session-item" onclick="loadSession(6, 'L')">Sem 6 · RCT</div>
+                    <div class="session-item" onclick="loadSession(6, 'J')">Sem 6 · RCT Análisis Profundo</div>
+                    <div class="session-item" onclick="loadSession(7, 'L')">Sem 7 · Revisiones Sistemáticas</div>
+                    <div class="session-item" onclick="loadSession(7, 'J')">Sem 7 · Matriz Comparativa</div>
                 </div>
             </div>
             <div class="sidebar-module">
@@ -108,49 +313,54 @@
                     <span class="module-toggle">▾</span>
                 </div>
                 <div class="session-list">
-                    <div class="session-item" onclick="loadSession(8, 'L')">Sem 8 (L) · Principios Belmont</div>
-                    <div class="session-item" onclick="loadSession(8, 'J')">Sem 8 (J) · Consentimiento Informado</div>
-                    <div class="session-item" onclick="loadSession(9, 'L')">Sem 9 (L) · Comités de Ética</div>
-                    <div class="session-item" onclick="loadSession(9, 'J')">Sem 9 (J) · Sesión Simulada</div>
-                    <div class="session-item" onclick="loadSession(10, 'L')">Sem 10 (L) · Integridad</div>
-                    <div class="session-item" onclick="loadSession(10, 'J')">Sem 10 (J) · Análisis de Casos</div>
+                    <div class="session-item" onclick="loadSession(8, 'L')">Sem 8 · Principios de integridad</div>
+                    <div class="session-item" onclick="loadSession(8, 'J')">Sem 8 · Consentimiento Informado</div>
+                    <div class="session-item" onclick="loadSession(9, 'L')">Sem 9 · Comités de Ética</div>
+                    <div class="session-item" onclick="loadSession(9, 'J')">Sem 9 · Sesión Simulada</div>
+                    <div class="session-item" onclick="loadSession(10, 'L')">Sem 10 · Integridad</div>
+                    <div class="session-item" onclick="loadSession(10, 'J')">Sem 10 · Análisis de Casos</div>
                 </div>
             </div>
             <div class="sidebar-module">
                 <div class="module-title" onclick="toggleModule(this)">
-                    <span><span class="module-dot" style="background: var(--mod-4);"></span>Módulo 4 · Appraisal</span>
+                    <span><span class="module-dot" style="background: var(--mod-4);"></span>Módulo 4 · Lectura
+                        crítica</span>
                     <span class="module-toggle">▾</span>
                 </div>
                 <div class="session-list">
-                    <div class="session-item" onclick="loadSession(11, 'L')">Sem 11 (L) · CASP: Herramienta</div>
-                    <div class="session-item" onclick="loadSession(11, 'J')">Sem 11 (J) · CASP Práctico</div>
-                    <div class="session-item" onclick="loadSession(12, 'L')">Sem 12 (L) · Niveles de Evidencia</div>
-                    <div class="session-item" onclick="loadSession(12, 'J')">Sem 12 (J) · Estudios → Guías</div>
-                    <div class="session-item" onclick="loadSession(13, 'L')">Sem 13 (L) · Bioestadística Conceptual</div>
-                    <div class="session-item" onclick="loadSession(13, 'J')">Sem 13 (J) · Journal Club</div>
+                    <div class="session-item" onclick="loadSession(11, 'L')">Sem 11 · CASP: Herramienta</div>
+                    <div class="session-item" onclick="loadSession(11, 'J')">Sem 11 · CASP Práctico</div>
+                    <div class="session-item" onclick="loadSession(12, 'L')">Sem 12 · Niveles de Evidencia</div>
+                    <div class="session-item" onclick="loadSession(12, 'J')">Sem 12 · Estudios → Guías</div>
+                    <div class="session-item" onclick="loadSession(13, 'L')">Sem 13 · Bioestadística Conceptual
+                    </div>
+                    <div class="session-item" onclick="loadSession(13, 'J')">Sem 13 · Club de revistas</div>
                 </div>
             </div>
             <div class="sidebar-module">
                 <div class="module-title" onclick="toggleModule(this)">
-                    <span><span class="module-dot" style="background: var(--mod-5);"></span>Módulo 5 · Capstone</span>
+                    <span><span class="module-dot" style="background: var(--mod-5);"></span>Módulo 5 · Piedra
+                        angular</span>
                     <span class="module-toggle">▾</span>
                 </div>
                 <div class="session-list">
-                    <div class="session-item" onclick="loadSession(14, 'L')">Sem 14 (L) · Componentes Protocolo</div>
-                    <div class="session-item" onclick="loadSession(14, 'J')">Sem 14 (J) · Trabajo en Equipos</div>
-                    <div class="session-item" onclick="loadSession(15, 'L')">Sem 15 (L) · Presentaciones</div>
-                    <div class="session-item" onclick="loadSession(15, 'J')">Sem 15 (J) · Cierre</div>
+                    <div class="session-item" onclick="loadSession(14, 'L')">Sem 14 · Componentes Protocolo</div>
+                    <div class="session-item" onclick="loadSession(14, 'J')">Sem 14 · Trabajo en Equipos</div>
+                    <div class="session-item" onclick="loadSession(15, 'L')">Sem 15 · Presentaciones</div>
+                    <div class="session-item" onclick="loadSession(15, 'J')">Sem 15 · Cierre</div>
                 </div>
             </div>
         </aside>
 
         <main class="content">
             <div class="session-content" id="session-display">
-                <h2>Semana 1 (Lunes) — Introducción: Proceso Científico</h2>
+                <h2>Semana 1 — Introducción: Proceso Científico</h2>
                 <div class="session-meta">
-                    <div class="meta-item"><span class="meta-label">Módulo</span><span class="module-badge" style="background: var(--mod-1-bg); color: var(--mod-1);">Fundamentos</span></div>
+                    <div class="meta-item"><span class="meta-label">Módulo</span><span class="module-badge"
+                            style="background: var(--mod-1-bg); color: var(--mod-1);">Fundamentos</span></div>
                     <div class="meta-item"><span class="meta-label">Horario</span><span>Lunes 10:00–11:00</span></div>
-                    <div class="meta-item"><span class="meta-label">Formato</span><span>Clase magistral + discusión</span></div>
+                    <div class="meta-item"><span class="meta-label">Formato</span><span>Clase magistral +
+                            discusión</span></div>
                 </div>
                 <div class="section-block">
                     <h3>Objetivos</h3>
@@ -164,7 +374,8 @@
                     <h3>Temas Clave</h3>
                     <ul>
                         <li><strong>Pregunta narrativa:</strong> ¿Cómo saben los urólogos lo que saben?</li>
-                        <li><strong>Ciencia clínica vs. investigación:</strong> Cuándo y por qué surge la pregunta de investigación.</li>
+                        <li><strong>Ciencia clínica vs. investigación:</strong> Cuándo y por qué surge la pregunta de
+                            investigación.</li>
                         <li><strong>PICO:</strong> Estructura para formular preguntas contestables.</li>
                     </ul>
                 </div>
@@ -203,7 +414,7 @@
 
         const sessionData = {
             '1-L': {
-                title: 'Semana 1 (Lunes) — Introducción: Proceso Científico',
+                title: 'Semana 1 — Introducción: Proceso Científico',
                 module: 'Fundamentos',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase magistral + discusión',
@@ -215,7 +426,7 @@
                 entregable: 'Ninguno formal esta semana.'
             },
             '1-J': {
-                title: 'Semana 1 (Jueves) — PICO: Estructura y Ejemplos',
+                title: 'Semana 1 — PICO: Estructura y Ejemplos',
                 module: 'Fundamentos',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Taller interactivo',
@@ -227,7 +438,7 @@
                 entregable: 'Ninguno. Preparación para Sem 3 (Banco PICO).'
             },
             '2-L': {
-                title: 'Semana 2 (Lunes) — Búsqueda Bibliográfica: PubMed',
+                title: 'Semana 2 — Búsqueda Bibliográfica: PubMed',
                 module: 'Fundamentos',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Taller demostrativo',
@@ -239,7 +450,7 @@
                 entregable: 'Ninguno formal.'
             },
             '2-J': {
-                title: 'Semana 2 (Jueves) — Rayyan & Gestión de Referencias',
+                title: 'Semana 2 — Rayyan & Gestión de Referencias',
                 module: 'Fundamentos',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Taller hands-on',
@@ -251,7 +462,7 @@
                 entregable: 'Ninguno. Preparación para Banco PICO.'
             },
             '3-L': {
-                title: 'Semana 3 (Lunes) — Síntesis: PICO Refinado',
+                title: 'Semana 3 — Síntesis: PICO Refinado',
                 module: 'Fundamentos',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Trabajo colaborativo',
@@ -259,11 +470,11 @@
                 temas: ['Revisión de criterios PICO.', 'Errores comunes y cómo corregirlos.', 'Búsqueda iterativa: ajustes necesarios.'],
                 actividades: ['Trabajo en equipos: revisar PICO de compañeros.', 'Retroalimentación estructurada.', 'Ajustes finales.'],
                 lectura: 'Ninguna nueva.',
-                tarea: 'Finalizar Banco PICO para entrega Sem 3 (J).',
+                tarea: 'Finalizar Banco PICO para entrega Sem 3.',
                 entregable: 'Banco de Preguntas PICO (15% de calificación final) — ENTREGA JUEVES'
             },
             '3-J': {
-                title: 'Semana 3 (Jueves) — Presentaciones de Preguntas PICO',
+                title: 'Semana 3 — Presentaciones de Preguntas PICO',
                 module: 'Fundamentos',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Peer-learning',
@@ -275,7 +486,7 @@
                 entregable: 'BANCO PICO DEBIDO HOY (15% calificación) — inicio Módulo 2'
             },
             '4-L': {
-                title: 'Semana 4 (Lunes) — Introducción a Diseños de Estudio',
+                title: 'Semana 4 — Introducción a Diseños de Estudio',
                 module: 'Diseños',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase + casos',
@@ -287,7 +498,7 @@
                 entregable: 'Ninguno.'
             },
             '4-J': {
-                title: 'Semana 4 (Jueves) — Estudios Descriptivos: Profundidad',
+                title: 'Semana 4 — Estudios Descriptivos: Profundidad',
                 module: 'Diseños',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Caso real + taller',
@@ -299,7 +510,7 @@
                 entregable: 'Matriz parcial (input a Sem 7).'
             },
             '5-L': {
-                title: 'Semana 5 (Lunes) — Estudios de Cohorte',
+                title: 'Semana 5 — Estudios de Cohorte',
                 module: 'Diseños',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase + análisis',
@@ -311,7 +522,7 @@
                 entregable: 'Ninguno.'
             },
             '5-J': {
-                title: 'Semana 5 (Jueves) — Estudios de Casos y Controles',
+                title: 'Semana 5 — Estudios de Casos y Controles',
                 module: 'Diseños',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Clase + taller',
@@ -323,7 +534,7 @@
                 entregable: 'Ninguno formal.'
             },
             '6-L': {
-                title: 'Semana 6 (Lunes) — Ensayos Controlados Aleatorizados (RCT)',
+                title: 'Semana 6 — Ensayos Controlados Aleatorizados (RCT)',
                 module: 'Diseños',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase magistral',
@@ -335,7 +546,7 @@
                 entregable: 'Ninguno.'
             },
             '6-J': {
-                title: 'Semana 6 (Jueves) — RCT: Análisis Profundo y Errores Comunes',
+                title: 'Semana 6 — RCT: Análisis Profundo y Errores Comunes',
                 module: 'Diseños',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Taller crítico',
@@ -347,7 +558,7 @@
                 entregable: 'Matriz RCT analysis.'
             },
             '7-L': {
-                title: 'Semana 7 (Lunes) — Revisiones Sistemáticas y Meta-análisis',
+                title: 'Semana 7 — Revisiones Sistemáticas y Meta-análisis',
                 module: 'Diseños',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase + prácticas Rayyan',
@@ -359,7 +570,7 @@
                 entregable: 'Ninguno.'
             },
             '7-J': {
-                title: 'Semana 7 (Jueves) — Matriz Comparativa de Diseños',
+                title: 'Semana 7 — Matriz Comparativa de Diseños',
                 module: 'Diseños',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Síntesis colaborativa',
@@ -371,7 +582,7 @@
                 entregable: 'Matriz completada (documento compartido).'
             },
             '8-L': {
-                title: 'Semana 8 (Lunes) — Principios Éticos de Belmont',
+                title: 'Semana 8 — Principios Éticos de Belmont',
                 module: 'Ética',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase + casos',
@@ -383,7 +594,7 @@
                 entregable: 'Ninguno.'
             },
             '8-J': {
-                title: 'Semana 8 (Jueves) — Consentimiento Informado',
+                title: 'Semana 8 — Consentimiento Informado',
                 module: 'Ética',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Discusión ética profunda',
@@ -395,7 +606,7 @@
                 entregable: 'Ninguno formal.'
             },
             '9-L': {
-                title: 'Semana 9 (Lunes) — Comités de Ética (CEI/CEIBA)',
+                title: 'Semana 9 — Comités de Ética (CEI/CEIBA)',
                 module: 'Ética',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase + invitado',
@@ -407,7 +618,7 @@
                 entregable: 'Ninguno.'
             },
             '9-J': {
-                title: 'Semana 9 (Jueves) — Sesión de Comité Simulada o Visita',
+                title: 'Semana 9 — Sesión de Comité Simulada o Visita',
                 module: 'Ética',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Experiencial',
@@ -419,7 +630,7 @@
                 entregable: 'Ninguno formal.'
             },
             '10-L': {
-                title: 'Semana 10 (Lunes) — Integridad en Investigación',
+                title: 'Semana 10 — Integridad en Investigación',
                 module: 'Ética',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Taller + casos',
@@ -431,7 +642,7 @@
                 entregable: 'Caso análisis (documento).'
             },
             '10-J': {
-                title: 'Semana 10 (Jueves) — Análisis de Casos Éticos (Entrega)',
+                title: 'Semana 10 — Análisis de Casos Éticos (Entrega)',
                 module: 'Ética',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Peer-review',
@@ -443,7 +654,7 @@
                 entregable: 'ANÁLISIS ÉTICO (15% calificación) — ENTREGA HOY'
             },
             '11-L': {
-                title: 'Semana 11 (Lunes) — CASP: Herramienta de Appraisal',
+                title: 'Semana 11 — CASP: Herramienta de Appraisal',
                 module: 'Appraisal',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Taller de herramienta',
@@ -455,7 +666,7 @@
                 entregable: 'Ninguno.'
             },
             '11-J': {
-                title: 'Semana 11 (Jueves) — CASP Práctico: Appraisal en Vivo',
+                title: 'Semana 11 — CASP Práctico: Appraisal en Vivo',
                 module: 'Appraisal',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Trabajo guiado',
@@ -467,7 +678,7 @@
                 entregable: 'CASP parcial (será más completo en Sem 13).'
             },
             '12-L': {
-                title: 'Semana 12 (Lunes) — Niveles de Evidencia y Grados de Recomendación',
+                title: 'Semana 12 — Niveles de Evidencia y Grados de Recomendación',
                 module: 'Appraisal',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase + ejemplos',
@@ -479,7 +690,7 @@
                 entregable: 'Ninguno.'
             },
             '12-J': {
-                title: 'Semana 12 (Jueves) — De Estudios a Guías Clínicas',
+                title: 'Semana 12 — De Estudios a Guías Clínicas',
                 module: 'Appraisal',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Análisis aplicado',
@@ -491,7 +702,7 @@
                 entregable: 'Ninguno.'
             },
             '13-L': {
-                title: 'Semana 13 (Lunes) — Bioestadística Conceptual',
+                title: 'Semana 13 — Bioestadística Conceptual',
                 module: 'Appraisal',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Clase accesible',
@@ -503,7 +714,7 @@
                 entregable: 'Interpretaciones (documento).'
             },
             '13-J': {
-                title: 'Semana 13 (Jueves) — Journal Club: Presentaciones Estudiantes',
+                title: 'Semana 13 — Journal Club: Presentaciones Estudiantes',
                 module: 'Appraisal',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Peer-teaching',
@@ -515,7 +726,7 @@
                 entregable: 'RESEÑA CRÍTICA (20% calificación) — Appraisal + síntesis entrega HOY'
             },
             '14-L': {
-                title: 'Semana 14 (Lunes) — Componentes de un Protocolo de Investigación',
+                title: 'Semana 14 — Componentes de un Protocolo de Investigación',
                 module: 'Capstone',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Taller con andamiaje',
@@ -524,10 +735,10 @@
                 actividades: ['Presentación de estructura.', 'Análisis línea por línea del protocolo modelo.', 'Taller: estudiantes comienzan a escribir su protocolo con guía.', 'Feedback inmediato: ¿está en buen camino?'],
                 lectura: 'Protocolo modelo (30 min), guía ARRIVE si aplica (30 min)',
                 tarea: 'Borrador Preliminar: Pregunta PICO + Justificación (~2 páginas).',
-                entregable: 'Borrador inicial para feedback Sem 14 (J).'
+                entregable: 'Borrador inicial para feedback Sem 14.'
             },
             '14-J': {
-                title: 'Semana 14 (Jueves) — Trabajo en Equipos + Feedback Formativo',
+                title: 'Semana 14 — Trabajo en Equipos + Feedback Formativo',
                 module: 'Capstone',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Taller colaborativo',
@@ -539,7 +750,7 @@
                 entregable: 'Ninguno formal; borradores en progreso.'
             },
             '15-L': {
-                title: 'Semana 15 (Lunes) — Presentaciones Finales (Congreso Simulado)',
+                title: 'Semana 15 — Presentaciones Finales (Congreso Simulado)',
                 module: 'Capstone',
                 horario: 'Lunes 10:00–11:00',
                 formato: 'Congreso simulado',
@@ -551,7 +762,7 @@
                 entregable: 'PRESENTACIÓN ORAL/PÓSTER (15% calificación) — ENTREGA HOY'
             },
             '15-J': {
-                title: 'Semana 15 (Jueves) — Cierre: Reflexión y Clausura',
+                title: 'Semana 15 — Cierre: Reflexión y Clausura',
                 module: 'Capstone',
                 horario: 'Jueves 17:00–18:00',
                 formato: 'Reflexión + cierre',
@@ -623,4 +834,5 @@
         }
     </script>
 </body>
+
 </html>
