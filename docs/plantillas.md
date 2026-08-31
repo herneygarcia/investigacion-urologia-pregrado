@@ -1,6 +1,6 @@
 # Plantillas de Trabajo para Investigación en Urología
 
-Cada producto entregable del curso requiere un conjunto de pasos claros y una estructura coherente. Las siguientes plantillas están diseñadas para guiar tu trabajo en cada etapa de tu investigación.
+Una guía estructurada para cada uno de los 5 entregables del curso. Úsalas para clarificar tus ideas. Cada producto entregable del curso requiere un conjunto de pasos claros y una estructura coherente. Las siguientes plantillas están diseñadas para guiar tu trabajo en cada etapa de tu investigación.
 
 ## Plantilla 1: Banco de Preguntas PICO (Semana 3)
 
@@ -28,8 +28,8 @@ Estructura para analizar un dilema ético real en investigación.
 
 **Actores involucrados:** Lista los grupos con interés en el caso (investigador, pacientes, comité ético, institución).
 
-**Principios Belmont en juego:**
-- **Respeto por las personas:** ¿Se respetar la autonomía y dignidad? ¿Consentimiento informado?
+**Principios de integridad en juego:**
+- **Respeto por las personas:** ¿Se respeta la autonomía y dignidad? ¿Consentimiento informado?
 - **Beneficencia:** ¿Se maximiza beneficio, se minimiza daño?
 - **Justicia:** ¿Distribución justa de riesgos y beneficios?
 
@@ -43,7 +43,7 @@ Estructura para analizar un dilema ético real en investigación.
 
 ---
 
-## Plantilla 3: Reseña Crítica de Artículos — Appraisal CASP (Semana 13)
+## Plantilla 3: Lectura Crítica (CASP) (Semana 13)
 
 Estructura para evaluar la calidad metodológica de un artículo de investigación.
 
@@ -67,6 +67,12 @@ Estructura para evaluar la calidad metodológica de un artículo de investigaci�
 
 **Conclusión del appraisal:** Fortaleza de evidencia (Alta / Moderada / Baja) y razón breve.
 
+**Elementos requeridos:**
+- CASP completado (12–13 preguntas).
+- ≥3 fortalezas identificadas.
+- ≥3 limitaciones identificadas.
+- Síntesis crítica (1–1.5 páginas).
+
 **Síntesis personal:** ¿Cómo se integra este artículo con otros que has leído? ¿Cambia tu comprensión del tema?
 
 ---
@@ -75,45 +81,41 @@ Estructura para evaluar la calidad metodológica de un artículo de investigaci�
 
 Estructura para diseñar un protocolo de investigación viável, ético, original.
 
-### Secciones principales:
+### Secciones principales (5–8 páginas):
 
-**1. Antecedentes y justificación**
+**1. Problema y justificación**
 - Estado actual del conocimiento en el tema.
 - Brecha o pregunta sin respuesta.
 - Por qué tu estudio llenaría esa brecha.
 - Impacto potencial en práctica clínica.
 
-**2. Pregunta de investigación y objetivos**
+**2. Marco teórico y estado del arte**
+- Revisión de la literatura relevante.
+- Posicionamiento del estudio frente a la evidencia existente.
+
+**3. Pregunta de investigación y objetivos**
 - Pregunta PICO clara.
 - Objetivo general.
 - Objetivos específicos (3–4).
 
-**3. Metodología**
+**4. Metodología**
 - Diseño de estudio (justificado).
 - Población: criterios de inclusión/exclusión, tamaño de muestra.
 - Variables: definición operacional, cómo se medirán.
 - Procedimientos: cómo se recolectarán datos.
 - Plan de análisis: estadísticos esperados.
 
-**4. Consideraciones éticas**
+**5. Consideraciones éticas**
 - Aprobación por comité ético esperada.
 - Consentimiento informado (o justificación si no aplica).
 - Riesgos y beneficios anticipados.
 - Plan de confidencialidad/privacidad.
 
-**5. Cronograma y recursos**
+**6. Cronograma y referencias**
 - Timeline (semanas/meses).
 - Presupuesto estimado (si aplica).
 - Personal y equipamiento necesario.
-
-**6. Limitaciones anticipadas**
-- Limitaciones del diseño.
-- Posibles sesgos.
-- Cómo se mitigarán.
-
-**7. Resultados esperados y diseminación**
-- Hipótesis y resultados esperados.
-- Planes de publicación / presentación.
+- ≥10 referencias.
 
 **Formato:** 5–8 páginas, espaciado 1.5, márgenes 1 pulgada, fuente 11pt.
 
@@ -123,34 +125,26 @@ Estructura para diseñar un protocolo de investigación viável, ético, origina
 
 Estructura para presentar tu protocolo de investigación en formato congreso-style (5–7 minutos de charla, o póster visual).
 
-### Para charla oral:
+### Para charla oral (5–7 minutos):
 
-**Slide 1 — Título y autores**
-- Título conciso.
-- Nombres, filiación, email de contacto.
-
-**Slide 2 — Antecedentes**
+**Intro: por qué importa (1 min)**
 - Una frase: ¿Por qué importa este tema?
 - 1–2 números clave que justifiquen la pregunta.
 
-**Slide 3 — Pregunta y objetivos**
+**Pregunta PICO (1 min)**
 - Pregunta PICO clara (una línea).
 - Objetivo primario (máx. 15 palabras).
 
-**Slide 4 — Métodos (resumido)**
+**Métodos: cómo se hará (1.5 min)**
 - Diseño en una palabra.
 - Población (N estimado, criterios clave).
 - Variables principales.
 
-**Slide 5 — Resultados esperados o plan**
-- Si es una propuesta: timeline, cronograma visual.
-- Si es un reporte: gráfico o tabla de hallazgo principal.
-
-**Slide 6 — Conclusión y próximos pasos**
+**Impacto clínico (1 min)**
 - Implicaciones: "Si nuestro protocolo se ejecuta, esperamos..."
 - Próximos pasos.
 
-**Slide 7 — Gracias / contacto**
+**Preguntas: responde con confianza**
 - Contacto para preguntas.
 
 ### Para póster:
@@ -161,6 +155,10 @@ Usa un layout de 3–4 columnas con: Título grande (arriba) → Antecedentes (c
 
 ## Cómo usar estas plantillas
 
-Cada entregable requiere que completes una plantilla completa. Usa la estructura como andamiaje, pero personaliza con tu contenido. Las plantillas no son rígidas — son guías para asegurar claridad y rigor.
+1. Lee la plantilla completa antes de empezar a escribir.
+2. Comienza con tu contenido, no copies la plantilla.
+3. Autoevalúa: verifica que cubriste cada elemento clave.
+4. Pide retroalimentación a compañeros o al profesor.
+5. Continua desarrollando tu trabajo.
 
 **Consejo:** Comienza cada plantilla varias semanas antes de la fecha de entrega. La investigación y síntesis requieren tiempo; estas plantillas aceleran la clarificación de tus ideas.

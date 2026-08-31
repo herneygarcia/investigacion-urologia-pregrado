@@ -32,7 +32,7 @@ D) Revisión sistemática
 
 ## Set B: Casos-Control vs. Cohorte
 
-**Q3. Un hospital reporta que 30 hombres con cáncer de vejiga fumaban en el pasado, vs. solo 5 entre 30 controles sin cáncer. ¿Es un diseño casos-control o cohorte?**
+**Q3. Un hospital reporta que 30 hombres con cáncer de vejiga fumaban en el pasado, vs. 5 sin cáncer (controles). ¿Es un diseño casos-control o cohorte?**
 
 A) Cohorte prospectivo  
 B) Cohorte retrospectivo  
@@ -73,12 +73,12 @@ D) Estudio descriptivo
 **Q6. Una universidad recopila datos de 80 pacientes operados de resección de próstata: 40 con técnica abierta, 40 con laparoscopia. Compara tiempo de recuperación, sangrado, incontinencia. ¿Es RCT?**
 
 A) Sí, es RCT porque hay dos grupos de intervención  
-B) No, es un estudio observacional (cuasi-experimental) porque los grupos NO fueron asignados aleatoriamente  
+B) No, es observacional porque NO fue asignación aleatoria  
 C) Es un descriptor retrospectivo  
 D) Es imposible determinarlo con la información dada  
 
 **Respuesta correcta: B**  
-*Explicación:* Los grupos fueron elegidos (técnica abierta vs. laparoscopia) pero NO aleatoriamente asignados. Es observacional/cuasi-experimental, no RCT.
+*Explicación:* Los grupos fueron elegidos (técnica abierta vs. laparoscopia) pero NO aleatoriamente asignados. Es observacional, no RCT.
 
 ---
 
@@ -100,29 +100,26 @@ D) 4 > 2 > 1 > 3
 
 A) Muy fuerte — puede probar causalidad  
 B) Fuerte — sugiere relación clara  
-C) Moderada — sugiere asociación pero sesgos de selección posibles  
+C) Moderada — sugiere asociación pero sesgos posibles  
 D) Débil — solo reportes anecdóticos  
 
 **Respuesta correcta: C**  
-*Explicación:* Los casos-controles son observacionales; pueden tener sesgos de sesgo de memoria (recall bias) y sesgo de selección. Sugieren asociación pero no prueban causalidad. Evidencia moderada.
+*Explicación:* Los casos-controles son observacionales; pueden tener sesgos de memoria (recall bias). Sugieren asociación pero no prueban causalidad. Evidencia moderada.
 
 ---
 
 ## Puntuación
 
-- **7–8 correctas:** Excelente dominio de diseños.
-- **5–6 correctas:** Buena comprensión; revisa los casos-control vs. cohorte.
-- **3–4 correctas:** Comprensión básica; estudia Semanas 4–5 material.
-- **0–2 correctas:** Revisita el módulo de diseños antes de la Semana 15.
+- **8 correctas:** Dominas los diseños de estudio. Pasa a appraisal y métodos.
+- **6–7 correctas:** Buena comprensión. Revisa los diseños que fallaste.
+- **4–5 correctas:** Comprensión básica. Vuelve a revisar Sesiones 4–7 antes de Módulo 3.
+- **0–3 correctas:** Necesitas estudiar más. Consulta la matriz de diseños y Sesiones 4–7.
 
 ---
 
 ## Recursos para estudio adicional
 
 Vuelve a revisar:
-- **Semana 4:** Estudios descriptivos (transversales, series de casos, reportes de casos).
-- **Semana 5:** Estudios observacionales analíticos (cohorte, casos-control).
-- **Semana 6:** Ensayos controlados aleatorizados (RCT).
-- **Semana 7:** Revisiones sistemáticas y meta-análisis.
-
-Capítulos recomendados en *Epidemiología para la Práctica Clínica* (Sackett et al., o Hulley & Cummings).
+- → Sesiones 4–7 para detalles de cada diseño.
+- → Rúbricas para criterios de evaluación de protocolos.
+- → Matriz comparativa de diseños (materiales del curso).

@@ -54,15 +54,15 @@ Al finalizar el curso, el estudiante será capaz de:
 4. Analizar ejemplos de estudios reales en urología.
 
 #### Módulo 3: Ética e Integridad en Investigación
-1. Explicar principios éticos de investigación (autonomía, beneficencia, justicia).
+1. Analizar principios éticos de investigación (autonomía, beneficencia, justicia).
 2. Describir el rol de comités de ética e institucionales (CEI/CEIBA).
-3. Reconocer y evitar prácticas de integridad cuestionables (plagio, autocita, LPU).
+3. Reconocer y evitar prácticas de integridad cuestionables (plagio, autocita inflada, p-hacking, LPU).
 4. Aplicar criterios éticos a casos de investigación reales.
 
 #### Módulo 4: Evidencia a la Práctica
 1. Dominar herramientas de appraisal crítico (CASP).
 2. Entender niveles de evidencia y grados de recomendación.
-3. Grasp conceptos básicos de bioestadística (significancia, confiabilidad, sesgo).
+3. Comprender conceptos básicos de bioestadística (p-valor, IC 95%, tamaño del efecto, sesgo).
 4. Sintetizar evidencia para responder preguntas clínicas.
 
 #### Módulo 5: Piedra Angular — Diseño de Protocolo de Investigación
@@ -95,7 +95,7 @@ Cada sesión comienza con una pregunta clínica de urología. Los estudiantes ex
 Algunas sesiones requieren lectura previa (artículo, capítulo, video corto ~15 min); la sesión sincrónica se dedica a discusión, análisis profundo, y resolución de preguntas. Otras sesiones son completamente sincrónicas (introducción + taller).
 
 ### 3. Aprendizaje Colaborativo
-Discusiones en pequeños grupos durante sesiones síncronas; trabajo colaborativo en asignaciones (ej. bank de preguntas PICO compartido, revisión cruzada de appraisals). Peer-teaching: estudiantes explican conceptos a compañeros.
+Discusiones en pequeños grupos durante sesiones síncronas; trabajo colaborativo en asignaciones (ej. Banco de preguntas PICO compartido, revisión cruzada de appraisals). Peer-teaching: estudiantes explican conceptos a compañeros.
 
 ### 4. Análisis de Casos Reales
 Se utilizan estudios, protocolos, y dilemas éticos reales de urología como punto de anclaje. No hay casos "hipotéticos simplificados"; la complejidad es real.
@@ -115,13 +115,13 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 **Objetivos**: Entender el proceso científico, formular preguntas clínicas contestables, dominar búsqueda bibliográfica.
 
 **Sesiones sincrónicas**:
-- **Sem 1 (Lun 10–11, Jue 17–18)**: Introducción: ¿Cómo saben los urólogos lo que saben? La pregunta clínica vs. la pregunta investigativa. Estructura PICO — concepto, ejemplos.
-- **Sem 2 (Lun 10–11, Jue 17–18)**: Taller de búsqueda bibliográfica: PubMed (MeSH, truncado, booleano), Rayyan (gestión de referencias). Demostración en vivo, práctica guiada.
+- **Sem 1 (Lun 10–11, Jue 17–18)**: Introducción: Proceso Científico — ¿Cómo saben los urólogos lo que saben? La pregunta clínica vs. la pregunta investigativa. Estructura PICO — concepto, ejemplos.
+- **Sem 2 (Lun 10–11, Jue 17–18)**: Taller de búsqueda bibliográfica: PubMed (MeSH, truncado, operadores booleanos), Rayyan (gestión de referencias). Demostración en vivo, práctica guiada.
 - **Sem 3 (Lun 10–11, Jue 17–18)**: Síntesis: formulación PICO refinada, búsqueda en equipos pequeños, discusión de hallazgos.
 
 **Trabajo independiente** (~50 horas totales, distribuidas):
-- Lecturas: "What is Science?" (capítulo introductorio), PICO explicado (1 video corto, 1 artículo breve).
-- Tareas: Formular 5 preguntas clínicas de urología propias y transformarlas en 5 preguntas PICO bien estructuradas. Ejecutar búsquedas en PubMed, guardar en Rayyan.
+- Lecturas: Video PICO (15 min), Epidemiología Clínica. Ruiz Morales et al.
+- Tareas: Formular 3 preguntas clínicas de urología propias y transformarlas en 3 preguntas PICO bien estructuradas. Ejecutar búsquedas en PubMed, guardar en Rayyan.
 - Lectura crítica de artículos: 2–3 artículos urológicos accesibles.
 
 **Producto parcial**: Banco de preguntas PICO (≥3 preguntas bien formuladas con búsqueda documentada).
@@ -133,9 +133,9 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 **Objetivos**: Clasificar y entender fortalezas/limitaciones de diseños; identificar diseño óptimo para cada pregunta.
 
 **Sesiones sincrónicas**:
-- **Sem 4 (Lun 10–11, Jue 17–18)**: Introducción a diseños: espectro de observacional → experimental. Descriptivos (transversal, serie de casos). Ejemplo: prevalencia de incontinencia urinaria.
+- **Sem 4 (Lun 10–11, Jue 17–18)**: Introducción a diseños: espectro de observacional → experimental. Descriptivos (transversal, serie de casos, reporte de caso). Ejemplo: prevalencia de incontinencia urinaria.
 - **Sem 5 (Lun 10–11, Jue 17–18)**: Cohorte y caso-control. Fortalezas, sesgos, cuándo usarlos. Estudio real: cohorte de pacientes con masas renales complejas.
-- **Sem 6 (Lun 10–11, Jue 17–18)**: Ensayos clínicos aleatorizados (RCT). Aleatorización, cegamiento, pérdida al seguimiento. Ejemplo: diferentes estrategias de tratamiento en cáncer renal avanzado.
+- **Sem 6 (Lun 10–11, Jue 17–18)**: Experimentos clínicos (RCT). Aleatorización, cegamiento, pérdida al seguimiento. Ejemplo: diferentes estrategias de tratamiento en cáncer renal avanzado.
 - **Sem 7 (Lun 10–11, Jue 17–18)**: Revisiones sistemáticas y meta-análisis. Cómo se sintetiza la evidencia. Prácticas en Rayyan (tamizaje de títulos/abstracts).
 
 **Trabajo independiente** (~55 horas):
@@ -157,7 +157,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 - **Sem 10 (Lun 10–11, Jue 17–18)**: Integridad: plagio, LPU (Least Publishable Unit), autocita inflada, p-hacking. Caso: protocolo con problemas éticos (identifícalos). Taller: cómo citar, evitar plagio.
 
 **Trabajo independiente** (~50 horas):
-- Lecturas: Declaración de Helsinki resumida, pautas ICMJE (International Committee of Medical Journal Editors), capítulo sobre integridad.
+- Lecturas: pautas ICMJE (International Committee of Medical Journal Editors), Resolución 8430/1993 resumen, video de resumen de integridad.
 - Tarea principal: Analizar 2–3 casos éticos de investigación urológica (reales o realistas), escribir reporte ético (2–3 páginas) por caso.
 - Lectura: Artículo sobre mala conducta en investigación médica.
 
@@ -176,7 +176,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 **Trabajo independiente** (~48 horas):
 - Lecturas: Tutoriales CASP online.
-- Tarea principal: Estudiante selecciona 3 artículos sobre un tema urológico de interés, completa appraisal CASP formal para cada uno, escribe síntesis crítica (1–1.5 páginas): ¿qué dice la evidencia? ¿cuán confiable es?
+- Tarea principal: Estudiante selecciona un artículo sobre un tema urológico de interés, completa appraisal CASP formal, escribe síntesis crítica (1–1.5 páginas): ¿qué dice la evidencia? ¿cuán confiable es?
 - Preparación: Presentación oral de club de revistas (3–4 min por estudiante, turno en Sem 13).
 
 **Producto parcial**: Reseña crítica de artículos (appraisal formal), presentación club de revistas.
@@ -188,11 +188,11 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 **Objetivos**: Integrar todas las competencias en un protocolo coherente, viable, ético, y bien comunicado.
 
 **Sesiones sincrónicas**:
-- **Sem 14 (Lun 10–11, Jue 17–18)**: Componentes de un protocolo: título, pregunta, objetivos, justificación, marco teórico y estado del arte, métodos (diseño, población, intervención, medidas), ética, cronograma. Presentación de ejemplo de protocolo mini (5–8 páginas). Taller: estudiantes trabajan en equipos pequeños en protocolo propio, reciben feedback.
-- **Sem 15 (Lun 10–11, Jue 17–18)**: Presentaciones: cada estudiante (o pareja) presenta su protocolo en formato de póster/oral estilo congreso (5–7 min). Discusión, preguntas, feedback de pares e instructor.
+- **Sem 14 (Lun 10–11, Jue 17–18)**: Componentes de un protocolo: título, pregunta PICO, justificación, objetivos, métodos (diseño, población, intervención, medidas resultado), ética, cronograma, referencias. Presentación de ejemplo de protocolo mini (5–8 páginas). Taller: estudiantes comienzan a escribir su protocolo con guía; en equipos con revisión por pares y feedback formativo — el instructor rota entre equipos.
+- **Sem 15 (Lun 10–11, Jue 17–18)**: Presentaciones: cada estudiante (o pareja) presenta su protocolo en formato de póster/oral estilo congreso (5–7 min). Discusión, preguntas, feedback de pares e instructor. Sesión de cierre: ronda de reflexión, meta-evaluación del curso (encuesta breve) e información sobre oportunidades de investigación.
 
 **Trabajo independiente** (~59 horas acumuladas):
-- Lecturas: Ejemplos de protocolos, guías de escritura (ARRIVE, STROBE si aplica).
+- Lecturas: Ejemplos de protocolos, guías de reporting (Red Ecuador: CONSORT, PRISMA, STROBE).
 - Tarea principal (≥3 semanas de trabajo): Escribir protocolo de investigación mini (5–8 páginas):
   - Pregunta PICO clara.
   - Justificación (¿por qué es importante?).
@@ -216,7 +216,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 | Sem | L/J | Módulo | Tema | Formato |
 |-----|-----|--------|------|---------|
-| 1 | L | Fund | Intro: proceso científico, pregunta clínica vs. investigativa | Clase magistral + discusión |
+| 1 | L | Fund | Intro: proceso científico, pregunta clínica vs. investigativa | Clase + discusión |
 | 1 | J | Fund | PICO: estructura, ejemplos, práctica | Taller interactivo |
 | 2 | L | Fund | Búsqueda bibliográfica: PubMed, MeSH, estrategias | Taller demostrativo |
 | 2 | J | Fund | Rayyan, gestión de referencias, trabajo práctico | Taller práctico |
@@ -227,9 +227,9 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 | 5 | L | Diseños | Cohorte: diseño, sesgos, ejemplo masas renales | Clase + análisis |
 | 5 | J | Diseños | Caso-control: diseño, ventajas, limitaciones | Clase + taller |
 | 6 | L | Diseños | RCT: aleatorización, cegamiento, calidad, ejemplo cáncer renal | Clase magistral |
-| 6 | J | Diseños | RCT análisis profundo, comunes errores | Taller crítico |
+| 6 | J | Diseños | RCT: análisis profundo, errores comunes | Taller crítico |
 | 7 | L | Diseños | Revisiones sistemáticas & meta-análisis: síntesis de evidencia | Clase + prácticas |
-| 7 | J | Diseños | Matriz comparativa: fortalezas/debilidades de diseños | Síntesis colaborativa |
+| 7 | J | Diseños | Matriz comparativa: fortalezas/limitaciones de diseños | Síntesis colaborativa |
 | 8 | L | Ética | Principios: Belmont, autonomía, beneficencia, justicia | Clase + casos |
 | 8 | J | Ética | Consentimiento informado, caso vulnerable (indígenas, rurales) | Discusión ética profunda |
 | 9 | L | Ética | Comités ética (CEI/CEIBA): procesos, documentos, timelines | Clase + invitado |
@@ -241,7 +241,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 | 12 | L | Evidencia a la Práctica | Niveles evidencia (GRADE, Oxford), grados recomendación | Clase + ejemplos |
 | 12 | J | Evidencia a la Práctica | Cómo los estudios → guías: ejemplo EAU prostate cancer screening | Análisis aplicado |
 | 13 | L | Evidencia a la Práctica | Bioestadística conceptual: p, IC, tamaño efecto, sesgos | Clase accesible |
-| 13 | J | Evidencia a la Práctica | Journal club: presentaciones estudiantes (3–4 min cada uno) | Peer-teaching |
+| 13 | J | Evidencia a la Práctica | Club de Revistas: presentaciones estudiantes (3–4 min cada uno) | Peer-teaching |
 | 14 | L | Piedra angular | Componentes protocolo, ejemplo, escritura práctica | Taller con andamiaje |
 | 14 | J | Piedra angular | Trabajo en equipos, feedback formativo en protocolos | Taller colaborativo |
 | 15 | L | Piedra angular | Presentaciones poster/oral (5–7 min cada uno) | Congreso simulado |
@@ -252,8 +252,8 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 ## Productos Tangibles del Curso
 
 1. **Banco de Preguntas PICO** (15%, semana 3): ≥3 preguntas bien estructuradas en formato PICO, con búsqueda documentada.
-2. **Análisis de Casos Éticos** (15%, semana 10): ≥2 reportes formales (2–3 páginas c/u) de dilemas éticos reales.
-3. **Reseña Crítica** (20%, semana 13): 3 appraisals CASP completos + síntesis crítica (1–1.5 páginas).
+2. **Análisis de Casos Éticos** (15%, semana 10): Un reporte formal aplicando los principios de integridad científica a dilemas reales.
+3. **Reseña Crítica** (20%, semana 13): Dos evaluaciones críticas formales (appraisal CASP + síntesis crítica).
 4. **Protocolo de Investigación Escrito** (25%, semana 15): 5–8 páginas, incluye pregunta, justificación, marco teórico, diseño, métodos, ética, ≥10 referencias, cronograma.
 5. **Presentación Oral/Póster** (15%, semana 15): 5–7 minutos presentando protocolo en formato estilo congreso.
 6. **Participación y Reflexión** (10%, continuo): Reflexiones semanales y participación en talleres.
@@ -276,7 +276,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 2. **Flexibilidad**: Si hay festivos o conflictos, sesiones pueden reorganizarse (intercambiar Lunes↔Jueves, grabar para asincrónico).
 
-3. **Colaboración**: Contactar a comités de ética (CEI/CEIBA) para sesión simulada o invitado. Conectar con investigadores/urólogos locales para mentorship informal del capstone.
+3. **Colaboración**: Contactar a comités de ética (CEI/CEIBA) para sesión simulada o invitado. Conectar con investigadores/urólogos locales para mentoría informal del protocolo final.
 
 4. **Evaluación formativa**: Las micro-reflexiones (reflexiones semanales) no se califican, pero se revisan; feedback oportuno mantiene a estudiantes en carril.
 

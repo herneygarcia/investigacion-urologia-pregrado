@@ -84,7 +84,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 | 3 | Reseña Crítica + Appraisal | 13 | 20% | Digital (PDF/Word) con archivos CASP |
 | 4 | Protocolo de Investigación | 15 | 25% | Digital (PDF/Word) |
 | 5 | Presentación Oral/Póster | 15 | 15% | En vivo (oral) o digital (póster PDF) |
-| — | **Participación/Journales** | Continuo | **10%** | Formativo → contribuye a sumativo |
+| — | **Participación y Reflexión** | Continuo | **10%** | Formativo → contribuye a sumativo |
 | — | **TOTAL** | — | **100%** | — |
 
 ---
@@ -95,7 +95,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 #### 1. Banco de Preguntas PICO (Sem 3) — 15%
 
-**Entrega**: Banco de ≥3 preguntas clínicas en formato PICO, con búsqueda documentada en PubMed/Rayyan.
+**Entrega**: Banco de tres preguntas clínicas en formato PICO, con búsqueda documentada en PubMed/Rayyan.
 
 **Rúbrica**: Matriz de 5 criterios (formulación PICO, relevancia clínica, búsqueda documentada, claridad, originalidad).
 
@@ -107,9 +107,9 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 #### 2. Análisis de Casos Éticos (Sem 10) — 15%
 
-**Entrega**: ≥2 reportes de análisis ético (2–3 páginas c/u) aplicando principios de Belmont a dilemas reales.
+**Entrega**: Un reporte de análisis ético (2–3 páginas) aplicando los principios de integridad científica a dilemas reales.
 
-**Rúbrica**: 6 criterios (comprensión ética, análisis del dilema, recomendación justificada, literatura, claridad, reflexión crítica).
+**Rúbrica**: 5 criterios (principios éticos, análisis del dilema, recomendación, literatura, reflexión crítica).
 
 **Escala**: 4 = 15%, 3 = 13%, 2 = 10%, 1 = 5%.
 
@@ -119,9 +119,9 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 #### 3. Reseña Crítica + Appraisal (Sem 13) — 20%
 
-**Entrega**: 3 appraisals formales (CASP o JBI, ≥1 página c/u) + síntesis crítica (1–1.5 páginas por artículo) = ~6–7 páginas totales.
+**Entrega**: Dos evaluaciones críticas formales (appraisal CASP o JBI + síntesis crítica de 1–1.5 páginas).
 
-**Rúbrica**: 7 criterios (dominio CASP/JBI, identificación fortalezas/limitaciones, síntesis crítica, bioestadística, comparación entre artículos, comunicación escrita, selección de artículos).
+**Rúbrica**: 5 criterios (dominio CASP/JBI, fortalezas/limitaciones, síntesis crítica, bioestadística, comparación).
 
 **Escala**: 4 = 20%, 3 = 17%, 2 = 12%, 1 = 6%.
 
@@ -133,7 +133,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 **Entrega**: Protocolo mini (5–8 páginas) con secciones: pregunta PICO, justificación, objetivos, métodos, ética, cronograma, referencias.
 
-**Rúbrica**: 8 criterios (PICO, justificación, objetivos, métodos rigurosos, plan análisis, consideraciones éticas, cronograma, referencias, originalidad/viabilidad, formato).
+**Rúbrica**: 5 criterios (Pregunta PICO, justificación, métodos rigurosos, consideraciones éticas, originalidad/viabilidad).
 
 **Escala**: 4 = 25%, 3 = 21%, 2 = 15%, 1 = 8%.
 
@@ -142,7 +142,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 - Sem 14 office hours opcionales con instructor (1-a-1 guidance).
 - Feedback cualitativo después de presentación oral (Sem 15).
 
-**Re-submisión**: Si estudiante recibe 2 o inferior en protocolo, puede resubmeter versión mejorada hasta 1 semana después de Sem 15 con feedback formal. Calificación será promediado (ej. 2 inicial → revisión → 3 final = promedio 2.5).
+**Re-submisión**: Si estudiante recibe 2 o inferior en protocolo, puede volver a enviar una versión mejorada hasta 1 semana después de Sem 15 con feedback formal. Calificación será promediado (ej. 2 inicial → revisión → 3 final = promedio 2.5).
 
 ---
 
@@ -152,7 +152,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 **Formato**: Presentación individual/dupla de protocolo de investigación. Audiencia = compañeros + instructor.
 
-**Rúbrica**: 8 criterios (organización/flujo, contenido pregunta/justificación, contenido métodos, consideraciones ética/implicaciones, duración/ritmo, ayudas visuales, comunicación verbal, respuesta a preguntas, profesionalismo).
+**Rúbrica**: 5 criterios (organización, contenido, duración/ritmo, comunicación verbal, respuesta a preguntas).
 
 **Escala**: 4 = 15%, 3 = 13%, 2 = 10%, 1 = 5%.
 
@@ -162,7 +162,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 ---
 
-### Participación / Journales (Continuo) — 10%
+### Participación y Reflexión (Continuo) — 10%
 
 **Componentes**:
 - Micro-reflexiones/journales semanales (≥10 entradas con esfuerzo evidente) → 5%.

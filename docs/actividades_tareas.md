@@ -9,8 +9,8 @@
   - Módulo 1 (Fund): ~50h
   - Módulo 2 (Diseños): ~55h
   - Módulo 3 (Ética): ~50h
-  - Módulo 4 (Appraisal): ~48h
-  - Módulo 5 (Capstone): ~59h
+  - Módulo 4 (Evidencia a la Práctica): ~48h
+  - Módulo 5 (Piedra angular): ~59h
   - **Total**: 162h independiente + 30h contacto = 192h ✓
 
 ---
@@ -27,26 +27,26 @@
 | Sesión | Formato | Actividad | Tiempo |
 |--------|---------|----------|--------|
 | Sem 1, L | Clase + discusión | **Intro**: proceso científico, pregunta clínica vs. investigativa; por qué investigan los urólogos; introducción a PICO. | 60 min |
-| Sem 1, J | Taller interactivo | **PICO**: estructura P-I-C-O, ejemplos (3 casos urológicos reales), ejercicio: formular PICO de un caso. | 60 min |
-| Sem 2, L | Taller demo | **Búsqueda BibliográficaI**: PubMed — login, MeSH, truncado, booleano, filtros. Demo en vivo (tema: screening prostate cancer). | 60 min |
-| Sem 2, J | Taller práctico | **Rayyan**: importar referencias, etiquetas, cribado de títulos/abstracts. Estudiantes práctica en equipos. | 60 min |
+| Sem 1, J | Taller interactivo | **PICO**: estructura P-I-C-O, ejemplos urológicos (cáncer de próstata, cálculos renales), trabajo en parejas: reformular preguntas clínicas en PICO con retroalimentación en vivo. | 60 min |
+| Sem 2, L | Taller demostrativo | **Búsqueda Bibliográfica**: PubMed — MeSH, truncado, operadores booleanos, filtros. Demo en vivo; práctica guiada: estudiantes buscan en sus preguntas PICO; resolución de problemas (¿por qué demasiados o pocos resultados?). | 60 min |
+| Sem 2, J | Taller práctico | **Rayyan**: importar referencias, etiquetas, cribado de títulos/abstracts. Paso a paso; importar 10+ artículos; práctica: tamizaje colaborativo (revisión simulada). | 60 min |
 | Sem 3, L | Trabajo colaborativo | **Síntesis en equipos**: 4–5 equipos, cada uno refina su PICO, presenta búsqueda de referencia. | 60 min |
-| Sem 3, J | Peer-learning | **Presentaciones PICO**: cada equipo presenta su pregunta (2 min), feedback colectivo, validación. Cierre: resumen de aprendizajes. | 60 min |
+| Sem 3, J | Peer-learning | **Presentaciones PICO**: cada estudiante presenta sus 3 mejores preguntas PICO (2–3 min), feedback colectivo, validación. Cierre: resumen de aprendizajes. | 60 min |
 
 ### Trabajo Independiente (~50 horas)
 
 #### Lecturas (≈10 horas)
-- Video: "The Scientific Method in Medicine" (15 min; Khan Academy o similar, libre).
-- Artículo: "Formulating Answerable Questions" (5 páginas; ej. Sackett EBM introductor, OA).
-- Documento: PICO Template and Examples (Univalle LMS, 3 páginas).
-- Artículos de ejemplo: 2 estudios urológicos accesibles (descriptivo + cohorte pequeño; ~10 páginas c/u).
+- Sem 1, L: [Video PICO](https://youtu.be/mIvfKwM1NB8) (15 min).
+- Sem 1, J: [Epidemiología Clínica](https://drive.google.com/file/d/1ulfG7CZ3vAnDV2wnn4qd3G6EycskH_tw/view?usp=drive_link). Ruiz Morales et al.
+- Sem 2, L: [Tutorial estrategias de búsqueda](https://youtu.be/qT_UCS7M5Vw).
+- Sem 2, J: [Tutorial Rayyan](https://youtu.be/WkkkaKwqFeg).
 
 #### Tareas Prácticas (≈25 horas)
 1. **Banco de Preguntas PICO** (≥3 preguntas, ≥2 por estudiante):
-   - Cada estudiante identifica 5 preguntas clínicas propias de urología (de clínica, charlas, lecturas).
-   - Transforma 3–5 de ellas en formato PICO bien estructurado.
+   - Cada estudiante formula 3 preguntas clínicas de interés propias de urología (de clínica, charlas, lecturas).
+   - Transforma 3 de ellas en formato PICO bien estructurado (traer 3 preguntas PICO propias para Sem 2).
    - Incluye justificación breve: ¿por qué es importante esta pregunta? (1–2 líneas).
-   - Entrega: archivo Word/PDF con banco, compartido en LMS o carpeta colaborativa.
+   - Entrega: archivo Word/PDF con banco, compartido en LMS o carpeta colaborativa. Banco de Preguntas PICO (15% de calificación final) — ENTREGA JUEVES (Sem 3).
    - Tiempo: ~15 horas (incl. investigación previa, reflexión).
 
 2. **Búsqueda Documentada** (~10 horas):
@@ -64,7 +64,7 @@
 
 #### Apoyo y Andamiaje
 - Plantilla de PICO interactiva (LMS) con ejemplos rellenos.
-- Video tutorial de PubMed (Univalle Library, 8 min).
+- [Tutorial de estrategias de búsqueda](https://youtu.be/qT_UCS7M5Vw).
 - Sesión de oficina (hours) para preguntas sobre búsqueda.
 - Foro LMS para preguntas sobre PICO (respuestas del instructor 24–48h).
 
@@ -82,20 +82,24 @@
 | Sesión | Formato | Actividad |
 |--------|---------|----------|
 | Sem 4, L | Clase + casos | **Intro Diseños**: espectro observacional-experimental. Descriptivos: transversal, serie casos. Ejemplo: prevalencia incontinencia urinaria. |
-| Sem 4, J | Taller crítico | Análisis: leer resumen 1 estudio descriptivo, identificar diseño, fortalezas, limitaciones (en equipos). Presentaciones breves. |
-| Sem 5, L | Clase + análisis | **Cohorte**: diseño prospectivo/retrospectivo, exposición, seguimiento, incidencia. Ejemplo: cohorte α-bloqueantes. |
-| Sem 5, J | Taller | **Caso-control**: diseño retrospectivo, selección, comparación de exposición. Ejemplo: caso-control de litiasis urinaria recurrente. |
+| Sem 4, J | Caso real + taller | Análisis en profundidad de un artículo transversal; taller: matriz fortalezas/limitaciones; discusión: ¿por qué se eligió este diseño? Entregable: matriz parcial (input a Sem 7). |
+| Sem 5, L | Clase + análisis | **Cohorte**: diseño prospectivo/retrospectivo, exposición, seguimiento, incidencia. Ejemplo: cohorte pacientes con masas renales complejas. |
+| Sem 5, J | Clase + taller | **Caso-control**: diseño retrospectivo, selección de casos y controles, OR vs. RR, sesgos de memoria y selección. |
 | Sem 6, L | Clase magistral | **RCT**: aleatorización, cegamiento, balanceo de cohortes, intención de tratar. Ejemplo: RCT de diferentes estrategias de tratamiento en cáncer renal avanzado. |
 | Sem 6, J | Taller crítico | Análisis de RCT: lectura crítica, riesgos de sesgo, validez interna. Discusión: ¿es válido este estudio? |
-| Sem 7, L | Clase + Rayyan | **Revisiones Sistemáticas & Meta-análisis**: proceso (PRISMA), cribado, extracción, síntesis. Demo Rayyan. |
+| Sem 7, L | Clase + prácticas | **Revisiones Sistemáticas & Meta-análisis**: proceso (PRISMA), cribado, extracción, síntesis. Demo Rayyan. |
 | Sem 7, J | Síntesis colaborativa | **Matriz de Diseños**: en equipos, completan matriz (diseño | fortalezas | limitaciones | sesgos | cuándo usar). |
 
 ### Trabajo Independiente (~55 horas)
 
 #### Lecturas (≈15 horas)
-- Capítulos: "Study Design" (Epidemiology textbook, ej. Kirkwood; 20 páginas).
-- Artículos modelo (≈50 páginas total): 1 transversal, 1 cohorte, 1 caso-control, 1 RCT, 1 revisión sistemática (todos en urología, accesibles).
-- Video: "Understanding Cohort Studies" (10 min; epidemiology education channel).
+- Sem 4, L: [Video: Diseños de estudio](https://youtu.be/eRB9RGWzJOc). [Epidemiología Clínica](https://drive.google.com/file/d/1ulfG7CZ3vAnDV2wnn4qd3G6EycskH_tw/view?usp=drive_link). Ruiz Morales et al.
+- Sem 4, J: Leer un estudio de corte transversal.
+- Sem 5, L / Sem 5, J: [Epidemiología Clínica](https://drive.google.com/file/d/1ulfG7CZ3vAnDV2wnn4qd3G6EycskH_tw/view?usp=drive_link). Ruiz Morales et al.
+- Sem 6, L: [Red Ecuador](https://www.equator-network.org/) - Guía CONSORT.
+- Sem 6, J: Artículo sobre ["Red Flags in RCTs"](https://3ieimpact.org/blogs/ten-things-can-go-wrong-randomised-controlled-trials).
+- Sem 7, L: Tutorial: ["Systematic Reviews Explained"](https://youtu.be/85_FxPmrFRY).
+- Artículos modelo: 1 transversal, 1 cohorte, 1 caso-control, 1 RCT (todos en urología, accesibles).
 
 #### Tareas (≈30 horas)
 1. **Matriz Comparativa de Diseños** (~12 horas):
@@ -107,7 +111,7 @@
      - Sesgos comunes (~2).
      - Ejemplo urológico (título + referencia).
      - Cuándo usarlo (criterios de elegancia).
-   - Entrega: tabla (Excel o PDF).
+   - Entrega: matriz completada (documento compartido). Estudiar matriz — será útil para Quiz (Sem 15).
 
 2. **Análisis de Estudios Reales** (~18 horas):
    - Se proporcionan 4 estudios urológicos (uno por cada diseño principal: transversal, cohorte, caso-control, RCT).
@@ -144,21 +148,20 @@
 
 | Sesión | Formato | Actividad |
 |--------|---------|----------|
-| Sem 8, L | Clase + casos | **Principios de Belmont**: autonomía, beneficencia, no maleficencia, justicia. Caso: consentimiento en población vulnerable. |
-| Sem 8, J | Discusión ética | **Estudio real problemático**: presentación de protocolo ético cuestionable, estudiantes identifican problemas, discusión. |
+| Sem 8, L | Clase + casos | **Principios éticos**: autonomía, beneficencia, justicia (Informe Belmont); integridad científica. Caso: consentimiento en población vulnerable. |
+| Sem 8, J | Discusión ética profunda | **Estudio real problemático**: presentación de protocolo ético cuestionable, estudiantes identifican problemas, discusión. |
 | Sem 9, L | Clase + invitado | **Comités de Ética**: estructura CEI/CEIBA (Univalle), documentos necesarios, timeline. Invitado: miembro de comité ético. |
 | Sem 9, J | Experiencial | **Sesión Comité Simulada** o **Visita Real** (si CEI acepta): estudiantes observan (o roleplay) presentación de protocolo, preguntas, aprobación. |
-| Sem 10, L | Taller | **Integridad**: plagio (cómo citaremos, Mendeley/Zotero), LPU, p-hacking, autocita inflada. Ejercicio: cita incorrecta — identifica problema. |
-| Sem 10, J | Peer-review | **Análisis de Casos Éticos**: estudiantes presentan reportes (5 min c/u), peers + instructor feedback. |
+| Sem 10, L | Taller + casos | **Integridad**: plagio, LPU, p-hacking, autocita inflada, cómo citar correctamente. Taller: identificar plagio en ejemplos; caso: protocolo con "datos duros" (p-hacking). Entregable: caso análisis (documento). |
+| Sem 10, J | Peer-review | **Análisis de Casos Éticos**: estudiantes presentan análisis de caso (3 min c/u), peers + instructor feedback. |
 
 ### Trabajo Independiente (~50 horas)
 
 #### Lecturas (≈12 horas)
-- Documento: Principios de Belmont (OA, 4 páginas, español).
-- Capítulo: Ética en investigación clínica (ej. Guyonnet et al., 10 páginas).
-- Artículo: Mala conducta en investigación médica (PMC, 8 páginas).
-- Video: "Research Ethics & Informed Consent" (10 min; Coursera Ethics in Research).
-- Lecturas locales: Resoluciones Univalle sobre ética en investigación (si disponibles en web).
+- Sem 8, L: [Resumen integridad](https://youtu.be/r8lFKvC_11w).
+- Sem 8, J: [ICMJE guidelines](https://www.icmje.org/).
+- Sem 9, L: Resolución 8430/1993 resumen (30 min).
+- Sem 10, L: [ICMJE guidelines](https://www.icmje.org/).
 
 #### Tareas (≈28 horas)
 1. **Análisis de Casos Éticos Reales** (~20 horas):
@@ -166,13 +169,13 @@
      - **Caso 1**: Screening de microhematuria asintomática para detección de cáncer de vejiga en pobladores fumadores; consentimiento, riesgos de sobrediagnóstico, justicia en poblaciones vulnerables.
      - **Caso 2**: Protocolo de investigación con beneficio no claro; riesgo mínimo vs. mayor; compensación estudiantes.
      - **Caso 3**: Divulgación de resultados incidentales (ej. hallazgo de cáncer en imagen); obligación ética del investigador.
-   - Para cada caso, estudiante escribe reporte (2–3 páginas):
+   - Para el caso asignado, estudiante escribe reporte (2–3 páginas):
      - Resumen del caso.
      - Principio(s) ético(s) en juego (Belmont: autonomía, beneficencia, justicia).
      - Análisis de dilema: ¿qué es lo "correcto" eticamente? ¿hay tensión entre principios?
      - Recomendación: ¿qué harías? ¿cómo lo justificas?
      - Fuentes: referencias a Belmont, ICMJE, guías locales.
-   - Entrega: 3 reportes (1 página c/u mínimo), total ≈6–9 páginas, PDF.
+   - Entrega: un reporte de análisis ético — ANÁLISIS ÉTICO (15% calificación) — ENTREGA HOY (jueves Sem 10).
 
 2. **Integridad en Investigación** (~8 horas):
    - Ejercicio práctico: te proporciono 5 oraciones o párrafos "citados" (algunos mal citados, algunos plagiados).
@@ -184,7 +187,7 @@
 - **Journal reflexivo** (3 entradas):
   - Sem 8: ¿Cuál principio (autonomía/beneficencia/justicia) te parece más importante en urología?
   - Sem 9: Reflexión: ¿cuán bien entiendas el consentimiento informado? ¿Has visto problemas en clínica?
-  - Sem 10: Síntesis: si diseñases tu propio estudio (Capstone), ¿qué consideraciones éticas serían críticas?
+   - Sem 10: Síntesis: si diseñases tu propio estudio (Piedra angular), ¿qué consideraciones éticas serían críticas?
 
 #### Apoyo
 - Casos éticos en LMS (versión imprimible).
@@ -195,7 +198,7 @@
 
 ---
 
-## Módulo 4: De la Evidencia a la Práctica (Sem 11–13)
+## Módulo 4: Evidencia a la Práctica (Sem 11–13)
 
 ### Objetivos
 - Dominar herramientas de appraisal crítico (CASP, JBI).
@@ -207,38 +210,37 @@
 
 | Sesión | Formato | Actividad |
 |--------|---------|----------|
-| Sem 11, L | Taller herramienta | **CASP**: estructura, 11 preguntas, criterios de calidad. Demo: appraisal completo de 1 artículo en vivo (cohorte urológica). |
+| Sem 11, L | Taller herramienta | **CASP**: estructura, 12 preguntas (cohorte) / 13 preguntas clave (RCT), criterios de calidad. Demo: completar CASP para artículo modelo, paso a paso, explicando cada pregunta. Tarea: descargar las versiones CASP. |
 | Sem 11, J | Trabajo guiado | Estudiantes appraisal otro artículo (cohorte) en equipos, guiados. Discusión de criterios controversiales. |
 | Sem 12, L | Clase + ejemplos | **Niveles de Evidencia** (GRADE, Oxford); **Grados de Recomendación** (fuerte, débil). Ejemplo: Guías EAU prostate cancer screening. |
 | Sem 12, J | Análisis aplicado | Cómo un estudio individual (RCT) contribuye a una guía clínica. Análisis: ¿cambiaría recomendación si RCT tuviera limitaciones? |
 | Sem 13, L | Clase accesible | **Bioestadística Conceptual**: p-valor, IC 95%, tamaño efecto (d de Cohen, OR, RR), sesgo sistemático. *Sin cálculos*; énfasis en interpretación. |
-| Sem 13, J | Peer-teaching | **Journal Club**: 3–4 estudiantes presentan (5 min c/u) síntesis de 2–3 artículos sobre tema propio. Audiencia preguntas. |
+| Sem 13, J | Peer-teaching | **Club de Revistas**: cada estudiante presenta (3–4 min) appraisal + síntesis crítica de 1 artículo. Audiencia preguntas. |
 
 ### Trabajo Independiente (~48 horas)
 
 #### Lecturas (≈10 horas)
-- Tutorial CASP online (disponible librement; 30 min interactivo).
-- Capítulo: "Critical Appraisal" (ej. Sackett, 15 páginas).
-- Artículo: "Understanding Levels of Evidence" (GRADE, 8 páginas).
-- Video: "Interpreting P-values and Confidence Intervals" (10 min; StatQuest con Josh Starmer).
-- Guía rápida: bioestadística en medicina (1 página, infografía).
+- Sem 11, L: [Tutorial CASP](https://youtu.be/kmHFeikOdqg) online. [Herramienta CASP](https://casp-uk.net/casp-tools-checklists/)
+- Sem 11, J: Leer artículo.
+- Sem 12, L: [GRADE handbook](https://www.gradepro.org/)
+- Sem 12, J: Leer [esquema para evaluación de guías clínicas](https://www.agreetrust.org/) (AGREE).
+- Sem 13, L: ["Statistics Without pain"](https://youtu.be/9O4NeYsLPSo)
 
 #### Tareas (≈25 horas)
-1. **Appraisal Crítico de 3 Artículos** (~18 horas):
-   - Estudiante selecciona 3 artículos sobre un tema urológico de su interés (ej. screening prostate, masas renales, microhematuria, cáncer de vejiga).
-   - Para cada artículo:
-     - Completa herramienta CASP formal (11 preguntas, "sí/no/parcialmente" + notas).
-     - Escribe párrafo de síntesis crítica (1–1.5 páginas): ¿qué dice el estudio? ¿cuán válido es? ¿cuáles son las limitaciones principales?
-   - Entrega: 3 × (CASP + párrafo síntesis) = ~6–7 páginas totales, PDF.
+1. **Appraisal Crítico / Reseña Crítica** (~18 horas):
+   - Estudiante selecciona un artículo sobre un tema urológico de su interés (ej. screening prostate, masas renales, microhematuria, cáncer de vejiga).
+   - Completa herramienta CASP formal (12 preguntas para cohorte / 13 para RCT; respuestas "Sí", "No", "Parcialmente" + notas).
+   - Escribe síntesis crítica (1–1.5 páginas): ¿qué dice el estudio? ¿cuán válido es? ¿cuáles son las limitaciones principales?
+   - Entrega: RESEÑA CRÍTICA (20% calificación) — Entrega HOY (jueves Sem 13). CASP parcial se completa en Sem 11.
 
 2. **Bioestadística Conceptual** (~7 horas):
    - Ejercicio: te proporciono tabla/gráfico de 1 RCT (ej. comparación de terapias sistémicas en cáncer renal avanzado).
    - Tareas:
      - Interpreta p-valor: ¿significancia estadística? ¿Significancia clínica?
      - Interpreta IC 95%: ¿qué significa? ¿es compatible con "no efecto"?
-     - Calcula tamaño efecto (dado N y datos; plantilla proporcionada): ¿efecto pequeño, mediano, grande?
-     - Identifica potencial sesgo: allocation bias, loss-to-follow-up, etc.
-   - Formato: hoja de trabajo (tabla + preguntas de opción múltiple + respuestas cortas), 2–3 páginas.
+      - Interpreta tamaño del efecto conceptualmente (sin cálculos): ¿efecto pequeño, mediano, grande?
+      - Identifica potencial sesgo: allocation bias, loss-to-follow-up, etc.
+    - Formato: hoja de trabajo (tabla + preguntas de opción múltiple + respuestas cortas), 2–3 páginas. Entregable: interpretaciones (documento). Tarea: interpretar 3 tablas de resultados de artículos.
 
 #### Reflexión (≈13 horas)
 - **Journal reflexivo** (3 entradas + preparación presentación):
@@ -255,7 +257,7 @@
 
 ---
 
-## Módulo 5: Capstone — Protocolo de Investigación (Sem 14–15)
+## Módulo 5: Piedra angular — Protocolo de Investigación (Sem 14–15)
 
 ### Objetivos
 - Integrar competencias de módulos 1–4 en un protocolo coherente.
@@ -266,17 +268,16 @@
 
 | Sesión | Formato | Actividad |
 |--------|---------|----------|
-| Sem 14, L | Taller scaffolded | **Componentes de Protocolo**: secciones (título, pregunta, justificación, métodos, ética, cronograma). Ejemplo modelo (5 pág.). Taller: Yo escribo intro, ustedes métodos. |
-| Sem 14, J | Taller colaborativo | Estudiantes en equipos pequeños presentan **primer borrador** de protocolo (1 página); reciben feedback in-vivo. |
-| Sem 15, L | Congreso simulado | **Presentaciones Póster/Oral**: mitad de la clase presenta (5–7 min c/u). Preguntas de pares e instructor. |
-| Sem 15, J | Congreso simulado (continuación) + Cierre | Segunda mitad presenta. Reflexión final grupal, retroalimentación general, clausura. |
+| Sem 14, L | Taller con andamiaje | **Componentes de Protocolo**: secciones (título, pregunta PICO, justificación, objetivos, métodos, ética, cronograma, referencias). Normas: 5–8 páginas, 1.5 espaciado, margen 1". Taller: estudiantes comienzan a escribir su protocolo con guía y feedback inmediato. |
+| Sem 14, J | Taller colaborativo | Estudiantes trabajan en sus protocolos (borrador: Pregunta PICO + Justificación, ~2 páginas); revisión por pares y feedback in vivo — el instructor rota entre equipos. Incorporar todos los feedbacks recibidos. Protocolo casi final. Entregable: ninguno formal; borradores en progreso. |
+| Sem 15, L | Congreso simulado | **Presentaciones Póster/Oral**: cada estudiante (o pareja) presenta (5–7 min, oral o póster). Preguntas de pares e instructor. Entregable: PRESENTACIÓN ORAL/PÓSTER (15% calificación) — ENTREGA HOY. |
+| Sem 15, J | Reflexión + cierre | Ronda de reflexión: cada estudiante reflexiona (2–3 min); resumen del profesor; meta-evaluación del curso (encuesta breve); información sobre oportunidades (investigación en Univalle, mentoría, etc.). Clausura. Entregable: PROTOCOLO FINAL (25% calificación) — ENTREGA HOY. Tarea: completar encuesta de evaluación. |
 
 ### Trabajo Independiente (~59 horas acumuladas)
 
 #### Lecturas (≈5 horas)
-- Capítulo: "Writing a Research Protocol" (ej. EQUATOR Network guide, 8 páginas).
+- Sem 14, L: [Red Ecuador: CONSORT, PRISMA, STROBE](https://www.equator-network.org/)
 - Ejemplos: 2 protocolos mini aceptados por comité ético Univalle (si disponibles, anonimizados; ~10 pág.).
-- Checklist: ARRIVE (animal research) o STROBE (observacional), abstracto (~2 pág.).
 
 #### Tareas (≈45 horas)
 1. **Protocolo de Investigación Mini** (~35–40 horas):
@@ -302,7 +303,7 @@
      7. **Cronograma** (0.5 pág.):
         - Línea de tiempo: reclutamiento, seguimiento, análisis, redacción (en meses).
         - Hito: fecha de conclusión.
-     8. **Referencias** (0.5–1 pág.): ≥8 referencias (estilo Harvard o APA).
+     8. **Referencias** (0.5–1 pág.): ≥10 referencias (estilo Harvard o APA).
    - **Calidad esperada**: riguroso, viable (realista de ejecutar en 1–2 años), original, ético.
    - **Entrega**: PDF, plantilla proporcionada (LMS), 5–8 páginas.
 
@@ -333,7 +334,7 @@
 | **Lecturas** | ~47h | Artículos, capítulos, videos (todas anotadas). |
 | **Tareas de análisis** | ~78h | Matrices, análisis de casos, appraisal, protocolo. |
 | **Reflexión / Journales** | ~20h | Micro-reflexiones semanales, no calificadas pero recomendadas. |
-| **Preparación presentaciones** | ~10h | Journal club, presentación capstone. |
+| **Preparación presentaciones** | ~10h | Club de Revistas, presentación del protocolo. |
 | **Evaluación/Revisión** | ~7h | Revisión por pares, ajustes en base a feedback. |
 | **Total Independiente** | **~162h** | ✓ |
 
@@ -343,7 +344,7 @@
 
 1. **Scaffolding y apoyos**: Cada módulo proporciona plantillas, guías de lectura, tutoriales de video, y hours de oficina. Estudiantes no están solos.
 
-2. **Flexibilidad**: Si estudiante retrasa tarea, deadlines pueden ajustarse (comunicar con instructor ≥1 semana antes). No hay "puntos perdidos"; hay feedback y reenvío.
+2. **Flexibilidad**: Si estudiante retrasa tarea, deadlines pueden ajustarse (comunicar con instructor ≥1 semana antes). No hay "puntos perdidos"; hay feedback y el trabajo se vuelve a enviar (si aplica).
 
 3. **Autenticidad**: Tareas no son "busy work"; cada una desarrolla competencia real. Protocolo final es potencialmente viable y podría presentarse a comité ético.
 

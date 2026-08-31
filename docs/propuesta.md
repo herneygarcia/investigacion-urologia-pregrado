@@ -34,7 +34,7 @@ Este es un **electivo** — flexible en cuanto a momento de inscripción (recome
 ## Duración y carga académica
 
 - **Créditos académicos**: 4 (48h × 4 = **192 horas totales** de trabajo estudiantil).
-- **Modalidad**: Híbrida (presencial + virtual asincrónico).
+- **Modalidad**: Híbrida (sincrónico + asincrónico).
 - **Horario**: Lunes 10:00–11:00 y Jueves 17:00–18:00 (2 horas/semana de contacto directo).
 - **Duración**: 15 semanas (≈4 meses), alineado con calendarios semestrales.
 - **Distribución de horas**:
@@ -47,7 +47,7 @@ Este es un **electivo** — flexible en cuanto a momento de inscripción (recome
 Este curso adopta un **modelo centrado en competencias y orientado a productos**:
 
 1. **Aprendizaje basado en preguntas**: cada sesión comienza con una pregunta clínica real de urología, no con una lectura de texto.
-2. **Progresión de complejidad**: fundamentos → diseños → ética → appraisal → capstone integrador.
+2. **Progresión de complejidad**: fundamentos → diseños → ética → lectura crítica → protocolo integrador.
 3. **Herramientas accesibles**: énfasis en PubMed/Rayyan (búsqueda), CASP/JBI (appraisal), conceptos de bioestadística (no R ni análisis computacional).
 4. **Casos de urología**: cada concepto se ancla en ejemplos reales (masas renales, microhematuria, cáncer de vejiga, cáncer de próstata, VPH y cáncer de pene) — aprenden investigación *a través* de la urología, no urología *a través* de la investigación.
 5. **Espacio para la autenticidad**: trabajo independiente incluye lectura reflexiva, journals personales de aprendizaje, y tiempo para "digerir" conceptos sin presión de publicación.
@@ -55,11 +55,12 @@ Este curso adopta un **modelo centrado en competencias y orientado a productos**
 ## Productos tangibles
 
 Al finalizar el curso, cada estudiante habrá producido:
-- Un **banco de preguntas PICO** en urología (≥3 preguntas bien formuladas).
-- Una **reseña crítica de un artículo** (appraisal formal con rúbrica).
-- Un **análisis de caso ético** de investigación.
+- Un **banco de preguntas PICO** en urología (tres preguntas bien formuladas, con búsqueda documentada).
+- Una **reseña crítica** (dos evaluaciones críticas formales, con rúbrica).
+- Un **análisis de caso ético** de investigación (un reporte).
 - Un **protocolo de investigación mini** (5–8 páginas): pregunta, objetivos, métodos, consideraciones éticas — *no* análisis de datos real, pero un diseño viable.
 - Un **póster y presentación oral** (estilo congreso) del protocolo.
+- **Participación continua**: micro-reflexiones semanales y participación en talleres.
 
 Estos productos son demostrables, compartibles con mentores o investigadores reales, y posibilitan un portafolio de evidencia.
 

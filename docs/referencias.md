@@ -92,7 +92,7 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
     - Capítulos sobre diseños: descriptivo, cohorte, caso-control y RCT.
     - **Relevancia**: Referencia estándar para Módulo 2.
 
-16. Ruiz Morales Á, Gómez Restrepo C. Epidemiología Clínica: Investigación clínica aplicada. 2.ª ed. Bogotá: Editorial Médica Panamericana; 2015.
+16. Ruiz Morales Á, Gómez Restrepo C. [Epidemiología Clínica](https://drive.google.com/file/d/1ulfG7CZ3vAnDV2wnn4qd3G6EycskH_tw/view?usp=drive_link): Investigación clínica aplicada. 2.ª ed. Bogotá: Editorial Médica Panamericana; 2015.
     - Cobertura integral de métodos de investigación clínica, diseños observacionales y experimentales, análisis crítico de evidencia.
     - **Relevancia**: Referencia central para diseños de estudio, appraisal y síntesis de evidencia en contexto clínico colombiano.
 
@@ -151,8 +151,6 @@ Las referencias están formateadas en **estilo Vancouver**, el estándar de cita
 ---
 
 ## Sección V: Urología Clínica — Ejemplos y Casos
-
-### A. Artículos Modelo para Enseñanza (por Tema)
 
 #### Screening y Prevención (Cáncer de Próstata)
 
