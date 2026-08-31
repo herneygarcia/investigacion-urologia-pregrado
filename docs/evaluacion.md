@@ -37,7 +37,7 @@ El énfasis es en **competencias demostradas a través de productos auténticos*
 
 ### 2. Participación en Talleres y Discusiones Sincrónicas
 
-**Formato**: Trabajo en equipos pequeños, discusiones colaborativas, ejercicios hands-on durante sesiones Lun/Jue.
+**Formato**: Trabajo en equipos pequeños, discusiones colaborativas, ejercicios prácticos durante sesiones Lun/Jue.
 
 **Observación**: Instructor nota:
 - ¿Participa el estudiante? (cantidad)

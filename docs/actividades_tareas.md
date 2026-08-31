@@ -29,7 +29,7 @@
 | Sem 1, L | Clase + discusión | **Intro**: proceso científico, pregunta clínica vs. investigativa; por qué investigan los urólogos; introducción a PICO. | 60 min |
 | Sem 1, J | Taller interactivo | **PICO**: estructura P-I-C-O, ejemplos (3 casos urológicos reales), ejercicio: formular PICO de un caso. | 60 min |
 | Sem 2, L | Taller demo | **Búsqueda BibliográficaI**: PubMed — login, MeSH, truncado, booleano, filtros. Demo en vivo (tema: screening prostate cancer). | 60 min |
-| Sem 2, J | Taller hands-on | **Rayyan**: importar referencias, etiquetas, cribado de títulos/abstracts. Estudiantes práctica en equipos. | 60 min |
+| Sem 2, J | Taller práctico | **Rayyan**: importar referencias, etiquetas, cribado de títulos/abstracts. Estudiantes práctica en equipos. | 60 min |
 | Sem 3, L | Trabajo colaborativo | **Síntesis en equipos**: 4–5 equipos, cada uno refina su PICO, presenta búsqueda de referencia. | 60 min |
 | Sem 3, J | Peer-learning | **Presentaciones PICO**: cada equipo presenta su pregunta (2 min), feedback colectivo, validación. Cierre: resumen de aprendizajes. | 60 min |
 

@@ -219,7 +219,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 | 1 | L | Fund | Intro: proceso científico, pregunta clínica vs. investigativa | Clase magistral + discusión |
 | 1 | J | Fund | PICO: estructura, ejemplos, práctica | Taller interactivo |
 | 2 | L | Fund | Búsqueda bibliográfica: PubMed, MeSH, estrategias | Taller demostrativo |
-| 2 | J | Fund | Rayyan, gestión de referencias, trabajo práctico | Taller hands-on |
+| 2 | J | Fund | Rayyan, gestión de referencias, trabajo práctico | Taller práctico |
 | 3 | L | Fund | Síntesis: PICO refinado en equipos | Trabajo colaborativo |
 | 3 | J | Fund | Presentación de preguntas PICO (estudiantes), discusión | Peer-learning |
 | 4 | L | Diseños | Intro diseños: espectro observacional-experimental, descriptivos | Clase + casos |
