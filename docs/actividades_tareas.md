@@ -228,9 +228,10 @@
 
 #### Tareas (≈25 horas)
 1. **Appraisal Crítico / Reseña Crítica** (~18 horas):
-   - Estudiante selecciona un artículo sobre un tema urológico de su interés (ej. screening prostate, masas renales, microhematuria, cáncer de vejiga).
-   - Completa herramienta CASP formal (12 preguntas para cohorte / 13 para RCT; respuestas "Sí", "No", "Parcialmente" + notas).
-   - Escribe síntesis crítica (1–1.5 páginas): ¿qué dice el estudio? ¿cuán válido es? ¿cuáles son las limitaciones principales?
+   - Estudiante selecciona 2 artículos sobre un tema urológico de su interés (ej. screening prostate, masas renales, microhematuria, cáncer de vejiga).
+   - Para cada artículo:
+     - Completa herramienta CASP formal (12 preguntas para cohorte / 13 para RCT; respuestas "Sí", "No", "Parcialmente" + notas).
+     - Escribe síntesis crítica (1–1.5 páginas): ¿qué dice el estudio? ¿cuán válido es? ¿cuáles son las limitaciones principales?
    - Entrega: RESEÑA CRÍTICA (20% calificación) — Entrega HOY (jueves Sem 13). CASP parcial se completa en Sem 11.
 
 2. **Bioestadística Conceptual** (~7 horas):

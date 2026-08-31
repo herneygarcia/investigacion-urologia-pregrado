@@ -176,7 +176,7 @@ La distribución de créditos (30h contacto, 162h independientes) reconoce que e
 
 **Trabajo independiente** (~48 horas):
 - Lecturas: Tutoriales CASP online.
-- Tarea principal: Estudiante selecciona un artículo sobre un tema urológico de interés, completa appraisal CASP formal, escribe síntesis crítica (1–1.5 páginas): ¿qué dice la evidencia? ¿cuán confiable es?
+- Tarea principal: Estudiante selecciona 2 artículos sobre un tema urológico de interés, completa appraisal CASP formal para cada uno, escribe síntesis crítica (1–1.5 páginas por artículo): ¿qué dice la evidencia? ¿cuán confiable es?
 - Preparación: Presentación oral de club de revistas (3–4 min por estudiante, turno en Sem 13).
 
 **Producto parcial**: Reseña crítica de artículos (appraisal formal), presentación club de revistas.

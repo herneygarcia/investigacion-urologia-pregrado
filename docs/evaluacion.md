@@ -119,7 +119,7 @@ Cinco productos somit-idos que contabilizan 90% de la calificación final:
 
 #### 3. Reseña Crítica + Appraisal (Sem 13) — 20%
 
-**Entrega**: Dos evaluaciones críticas formales (appraisal CASP o JBI + síntesis crítica de 1–1.5 páginas).
+**Entrega**: Dos evaluaciones críticas formales (appraisal CASP o JBI + síntesis crítica de 1–1.5 páginas c/u).
 
 **Rúbrica**: 5 criterios (dominio CASP/JBI, fortalezas/limitaciones, síntesis crítica, bioestadística, comparación).
 
